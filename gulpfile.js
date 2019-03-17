@@ -15,7 +15,6 @@ var gulp = require('gulp'),
     csscomb = require('gulp-csscomb'); //сортировка стилей по алфавиту + форматирование
     prefixer = require('gulp-autoprefixer'), //добавляет вендроные префиксы
     postcss = require('gulp-postcss'),
-    stylelint = require('stylelint'), //набор правил для контроля стилистики кода CSS
     cssnano = require('cssnano'), // сжатие css файлов
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
@@ -74,6 +73,8 @@ gulp.task('/deploy', async function() {
   .pipe(gulp.dest('./src'))
   gulp.src('./victory/csscomb.json')
   .pipe(gulp.dest('./node_modules/gulp-csscomb/node_modules/csscomb/config'))
+  gulp.src('./victory/csscomb.json')
+  .pipe(gulp.dest('./node_modules/csscomb/config'))
   gulp.src('./victory/postcss.config.js')
   .pipe(gulp.dest('./'));
 });
@@ -97,7 +98,6 @@ gulp.task('/html', async function() {
 
 gulp.task('/css', async function() {
     var processors = [
-    stylelint(config),
     cssnano(),
   ];
   return gulp.src(path.src.css)
