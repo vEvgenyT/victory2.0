@@ -8,14 +8,10 @@
   },
   "homepage": "https://github.com/vEvgenyT/victory",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/vEvgenyT/victory"
+    "type": "git",
+    "url": "git+https://github.com/vEvgenyT/victory.git"
   },
-  "author": {
-    "name": "Yevghen Tereshchenkov",
-    "email": "hello@victory.studio",
-    "url": "https://victory.studio"
-  },
+  "author": "Yevghen Tereshchenkov <hello@victory.studio> (https://victory.studio)",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -27,12 +23,14 @@
     "gulp-csscomb": "^3.0.8",
     "gulp-order": "^1.2.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-shorthand": "^1.1.0",
-    "stylelint": "^9.10.1"
+    "gulp-shorthand": "^1.1.0"
   },
   "browserslist": [
     "> 0.3%",
     "last 3 years",
     "not ie < 10"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/vEvgenyT/victory/issues"
+  }
 }
