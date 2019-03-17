@@ -16,7 +16,6 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'), //добавляет вендроные префиксы
     postcss = require('gulp-postcss'),
     stylelint = require('stylelint'), //набор правил для контроля стилистики кода CSS
-    config = require('./stylelintrc.config.js'), //правила для контроля стилистики кода CSS
     cssnano = require('cssnano'), // сжатие css файлов
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
@@ -67,17 +66,15 @@ gulp.task('/deploy', async function() {
           gulp.src('*.*', {read: false})
             .pipe(gulp.dest(folder[i]))
         };
-  gulp.src('./.victory/*.css')
+  gulp.src('./victory/*.css')
   .pipe(gulp.dest('./src/css'))
-  gulp.src('./.victory/*.js')
+  gulp.src('./victory/index.js')
   .pipe(gulp.dest('./src/js'))
-  gulp.src('./.victory/*.html')
+  gulp.src('./victory/*.html')
   .pipe(gulp.dest('./src'))
-  gulp.src('./.victory/csscomb.json')
+  gulp.src('./victory/csscomb.json')
   .pipe(gulp.dest('./node_modules/gulp-csscomb/node_modules/csscomb/config'))
-  gulp.src('./.victory/postcss.config.js')
-  .pipe(gulp.dest('./'));
-    gulp.src('./.victory/stylelintrc.config.js')
+  gulp.src('./victory/postcss.config.js')
   .pipe(gulp.dest('./'));
 });
 
