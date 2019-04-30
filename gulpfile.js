@@ -176,7 +176,7 @@ gulp.task('/img', async function() {
 gulp.task('/browser-sync', async function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browser Sync
         server: { // Определяем параметры сервера
-            baseDir: 'src/' // Директория для сервера - app
+            baseDir: 'bundles/' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,
