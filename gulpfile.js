@@ -12,10 +12,11 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'), //автообновление браузера при изменении файлов
     order = require("gulp-order"), //определение порядка конкантенации файлов
     concat = require('gulp-concat'), //объединение нескольких файлов в один
-    csscomb = require('gulp-csscomb'); //сортировка стилей по алфавиту + форматирование
+    csscomb = require('gulp-csscomb'), //сортировка стилей по алфавиту + форматирование
     prefixer = require('gulp-autoprefixer'), //добавляет вендроные префиксы
     postcss = require('gulp-postcss'),
     cssnano = require('cssnano'), // сжатие css файлов
+    clear = require('del'), // очистка папок
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
 
@@ -215,3 +216,7 @@ gulp.task('/help', function(){
 });
 
 // -= ******************************************************** =- \\
+
+gulp.task('/clear', function() {
+    return clear.sync('victory/')
+});
