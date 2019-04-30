@@ -61,7 +61,7 @@ var path = {
 // Deploy //////////////////////////////////////////////////////////
 // Создание каталога папок/файлов будущего проекта
  
-gulp.task('/deploy', async function() {
+gulp.task('/deploy', ['/clear'], async function() {
         for (let i = 0; i < folder.length; i++) {
           gulp.src('*.*', {read: false})
             .pipe(gulp.dest(folder[i]))
