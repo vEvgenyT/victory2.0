@@ -60,7 +60,9 @@ var path = {
 
 // Deploy //////////////////////////////////////////////////////////
 // Создание каталога папок/файлов будущего проекта
- 
+gulp.task('/start', ['/deploy', '/clear']);
+
+
 gulp.task('/deploy', async function() {
         for (let i = 0; i < folder.length; i++) {
           gulp.src('*.*', {read: false})
