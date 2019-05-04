@@ -60,8 +60,6 @@ var path = {
 
 // Deploy //////////////////////////////////////////////////////////
 // Создание каталога папок/файлов будущего проекта
-gulp.task('/start', ['/deploy', '/clear']);
-
 
 gulp.task('/deploy', async function() {
         for (let i = 0; i < folder.length; i++) {
@@ -80,6 +78,8 @@ gulp.task('/deploy', async function() {
   .pipe(gulp.dest('./node_modules/csscomb/config'))
   gulp.src('./victory/postcss.config.js')
   .pipe(gulp.dest('./'));
+
+  setTimeout(function() {return clear.sync('victory/')}, 200)
 });
 
 // -= ******************************************************** =- \\
@@ -218,7 +218,3 @@ gulp.task('/help', function(){
 });
 
 // -= ******************************************************** =- \\
-
-gulp.task('/clear', function() {
-    return clear.sync('victory/')
-});
