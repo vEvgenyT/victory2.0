@@ -7,3 +7,6 @@ Thumb.db
 *.log
 *.psd
 *.ai
+*.jpg
+*.svg
+*.png
