@@ -10,3 +10,5 @@ Thumb.db
 *.jpg
 *.svg
 *.png
+*.fig
+*.sketch

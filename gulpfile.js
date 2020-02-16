@@ -1,11 +1,11 @@
-// $$\    $$\$$$$$$\  $$$$$$\$$$$$$$$\  $$$$$$\  $$$$$$$\$$\     $$\ 
+// $$\    $$\$$$$$$\  $$$$$$\$$$$$$$$\  $$$$$$\  $$$$$$$\$$\     $$\
 // $$ |   $$ \_$$  _|$$  __$$\__$$  __|$$  __$$\ $$  __$$\$$\   $$  |
-// $$ |   $$ | $$ |  $$ /  \__| $$ |   $$ /  $$ |$$ |  $$ \$$\ $$  / 
-// \$$\  $$  | $$ |  $$ |       $$ |   $$ |  $$ |$$$$$$$  |\$$$$  /  
-//  \$$\$$  /  $$ |  $$ |       $$ |   $$ |  $$ |$$  __$$<  \$$  /   
-//   \$$$  /   $$ |  $$ |  $$\  $$ |   $$ |  $$ |$$ |  $$ |  $$ |    
-// $$\\$  /  $$$$$$\ \$$$$$$  | $$ |    $$$$$$  |$$ |  $$ |  $$ |    
-// \__|\_/   \______| \______/  \__|    \______/ \__|  \__|  \__|    
+// $$ |   $$ | $$ |  $$ /  \__| $$ |   $$ /  $$ |$$ |  $$ \$$\ $$  /
+// \$$\  $$  | $$ |  $$ |       $$ |   $$ |  $$ |$$$$$$$  |\$$$$  /
+//  \$$\$$  /  $$ |  $$ |       $$ |   $$ |  $$ |$$  __$$<  \$$  /
+//   \$$$  /   $$ |  $$ |  $$\  $$ |   $$ |  $$ |$$ |  $$ |  $$ |
+// $$\\$  /  $$$$$$\ \$$$$$$  | $$ |    $$$$$$  |$$ |  $$ |  $$ |
+// \__|\_/   \______| \______/  \__|    \______/ \__|  \__|  \__|
 
 
 var gulp = require('gulp'),
@@ -16,6 +16,7 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'), //добавляет вендроные префиксы
     postcss = require('gulp-postcss'),
     cssnano = require('cssnano'), // сжатие css файлов
+    gcmq = require('gulp-group-css-media-queries'), //сортировка медиа запросов
     clear = require('del'), // очистка папок
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
@@ -114,6 +115,7 @@ gulp.task('/css', async function() {
     .pipe(shorthand())
     .pipe(prefixer())
     .pipe(csscomb())
+    .pipe(gcmq())
     .pipe(postcss(processors))
     .pipe(gulp.dest(path.bundles.css));
 });
@@ -207,8 +209,8 @@ gulp.task('/run', ['/browser-sync'], function() {
 // -= ******************************************************** =- \\
 
 
-gulp.task('/compile', ['/css', '/js', '/html', '/img', '/fonts']);
-gulp.task('/interpret', ['/css', '/js', '/html', '/img', '/fonts', '/run']);
+gulp.task('/compile', ['/html', '/css', '/js', '/img', '/fonts']);
+gulp.task('/interpret', ['/html', '/css', '/js', '/img', '/fonts', '/run']);
 
 
 // HELP ///////////////////////////////////////////////////////////
