@@ -15,12 +15,12 @@ var gulp = require('gulp'),
     csscomb = require('gulp-csscomb'), //сортировка стилей по алфавиту + форматирование
     prefixer = require('gulp-autoprefixer'), //добавляет вендроные префиксы
     postcss = require('gulp-postcss'),
-    cssnano = require('cssnano'), // сжатие css файлов
+    cssnano = require('cssnano'), // сжатие css файлов,
+    svgo = require('gulp-svgo'), //минификация svg
     gcmq = require('gulp-group-css-media-queries'), //сортировка медиа запросов
     clear = require('del'), // очистка папок
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
-
 
 var folder = [
   './src/css',
@@ -36,10 +36,14 @@ var folder = [
 var path = {
     src: {
         html: 'src/**/*.html',
-        css: 'src/**/*.css',
         js: 'src/**/*.js',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
+        css: ['src/**/normalize.css',
+              'src/**/fonts.css',
+              'src/**/global.css'
+
+        ]
     },
     bundles: {
         html: 'bundles/',
@@ -105,18 +109,18 @@ gulp.task('/css', async function() {
     cssnano(),
   ];
   return gulp.src(path.src.css)
-    .pipe(order([
-    "**/*reset*.css",
-    "**/*normalize*.css",
-    "**/*style*.css",
-    "**/*media*.css"
-  ], { base: './' }))
+  //   .pipe(order([
+  //   "**/*reset*.css",
+  //   "**/*normalize*.css",
+  //   "**/*style*.css",
+  //   "**/*media*.css"
+  // ], { base: './' }))
     .pipe(concat('style.css'))
     .pipe(shorthand())
     .pipe(prefixer())
     .pipe(csscomb())
     .pipe(gcmq())
-    .pipe(postcss(processors))
+    // .pipe(postcss(processors))
     .pipe(gulp.dest(path.bundles.css));
 });
 
@@ -167,6 +171,7 @@ gulp.task('/fonts', async function() {
 
 gulp.task('/img', async function() {
     return gulp.src(path.src.img)
+    .pipe(svgo())
     .pipe(gulp.dest(path.bundles.img));
 });
 

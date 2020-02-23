@@ -26,7 +26,8 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-order": "^1.2.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-shorthand": "^1.1.0"
+    "gulp-shorthand": "^1.1.0",
+    "gulp-svgo": "^2.1.1"
   },
   "browserslist": [
     "> 0.3%",
