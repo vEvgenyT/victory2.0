@@ -1,0 +1,8 @@
+.header-nav__item {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 336px;
+  margin: 0;
+  padding: 0;
+}

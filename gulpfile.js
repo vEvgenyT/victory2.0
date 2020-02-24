@@ -41,7 +41,10 @@ var path = {
         fonts: 'src/fonts/**/*.*',
         css: ['src/**/normalize.css',
               'src/**/fonts.css',
-              'src/**/global.css'
+              'src/**/global.css',
+              'src/**/header.css',
+              'src/**/main-heading/**/*.css',
+              'src/**/header/**/*.css'
 
         ]
     },

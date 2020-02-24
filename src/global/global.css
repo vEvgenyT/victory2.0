@@ -6,6 +6,7 @@
   line-height: 72px;
   letter-spacing: -0.028em;
   color: #100F0F;
+  margin-bottom: 64px;
 }
 
 .g_h2-w {
@@ -75,7 +76,7 @@ font-weight: normal;
 font-size: 19px;
 line-height: 32px;
 letter-spacing: -0.006em;
-color: #C4C4C4;
+color: #C4C2C0;
 }
 
 .g_p-b {
@@ -106,8 +107,9 @@ font-weight: 500;
 font-size: 19px;
 line-height: 32px;
 letter-spacing: -0.006em;
-text-decoration-line: underline;
+text-decoration-line: none;
 color: #2A2928;
+border-bottom: 1px solid #2A2928
 }
 
 .g_figcaption {
@@ -199,5 +201,60 @@ letter-spacing: 0.006em;
 color: #100F0F;
 text-decoration: none;
 }
+
+.g_a-small {
+  font-family: Manrope, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 32px;
+letter-spacing: -0.006em;
+text-decoration-line: underline;
+color: #787571;
+}
+
+.g_a-big {
+  font-family: Manrope, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 72px;
+text-align: center;
+letter-spacing: -0.028em;
+text-decoration-line: underline;
+color: #2A2928;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.wrapper {
+  margin: 0 56px;
+}
+
+.g-picture {
+  display: block;
+  text-align: center;
+  margin : 0 0 96px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
