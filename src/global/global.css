@@ -98,6 +98,7 @@ line-height: 32px;
 letter-spacing: -0.006em;
 text-decoration-line: underline;
 color: #C4C4C4;
+/*width: 244px;*/
 }
 
 .g_a-b {
@@ -109,7 +110,8 @@ line-height: 32px;
 letter-spacing: -0.006em;
 text-decoration-line: none;
 color: #2A2928;
-border-bottom: 1px solid #2A2928
+border-bottom: 1px solid #2A2928;
+/*width: 244px;*/
 }
 
 .g_figcaption {
@@ -239,7 +241,9 @@ color: #2A2928;
   margin : 0 0 96px 0;
 }
 
-
+.g-page__section {
+  margin: 336px 56px;
+}
 
 
 

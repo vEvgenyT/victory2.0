@@ -1,0 +1,18 @@
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(7, auto);
+  grid-gap: 32px;
+  margin-bottom: 96px;
+  grid-template-areas:
+                                            "wild wild wild wild . . . . ."
+                                            "wild wild wild wild . . . . ."
+                                            "wild wild wild wild . beard beard beard beard"
+                                            ". . . . . beard beard beard beard"
+                                            "leica leica leica leica  . beard beard beard beard"
+                                            "leica leica leica leica . . . . ."
+                                            "leica leica leica leica . . . . .";
+}
+
+
+

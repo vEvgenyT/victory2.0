@@ -43,8 +43,9 @@ var path = {
               'src/**/fonts.css',
               'src/**/global.css',
               'src/**/header.css',
+              'src/**/header/**/*.css',
               'src/**/main-heading/**/*.css',
-              'src/**/header/**/*.css'
+              'src/**/portfolio/**/*.css'
 
         ]
     },
