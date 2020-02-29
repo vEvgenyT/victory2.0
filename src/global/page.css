@@ -1,0 +1,297 @@
+.g-h1 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 72px;
+letter-spacing: -0.028em;
+color: #100F0F;
+}
+
+.g-h2 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 54px;
+line-height: 64px;
+letter-spacing: -0.022em;
+color: #100F0F;
+}
+
+.g-h3 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+letter-spacing: -0.006em;
+color: #100F0F;
+}
+
+.g-h5 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #100F0F;
+}
+
+.g-h6 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #100F0F;
+}
+
+.g-p {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 32px;
+letter-spacing: -0.006em;
+color: #100F0F;
+}
+
+.g-p_grey70 {
+  color: #444340;
+}
+
+.g-a {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 32px;
+letter-spacing: -0.006em;
+text-decoration-line: none;
+color: #2A2928;
+}
+
+.g-span {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 28px;
+color: #444340;
+}
+
+.g-tag {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 28px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: #5F5C59;
+}
+
+.g-tag-link {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 28px;
+color: #444340;
+}
+
+.g-a-mail {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 32px;
+text-decoration-line: underline;
+color: #100F0F;
+}
+
+.g-small {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 32px;
+letter-spacing: -0.006em;
+text-decoration-line: underline;
+color: #787571;
+}
+
+.g-big {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 72px;
+text-align: center;
+letter-spacing: -0.028em;
+text-decoration-line: underline;
+color: #2A2928;
+}
+
+.g-nav {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+letter-spacing: 0.006em;
+color: #100F0F;
+}
+
+.g-lng {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+color: #100F0F;
+text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 56px 0;
+}
+
+.page_margin {
+  margin: 336px 0;
+}
+
+.page_footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  position: relative;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* ************************************************************** */
+.h1 {
+  max-width: 704px;
+}
+
+.p {
+  max-width: 612px;
+}
+
+.a {
+  max-width: 244px;
+}
+
+.a_style {
+  border-bottom: 1px solid #2A2928;
+}
+
+.heading__h1 {
+  margin: 0 0 64px;
+}
+
+.heading__p {
+  margin: 0 0 96px;
+}
+
+
+
+/* ************************************************************** */
+
+.heading-h2{}
+
+
+.tag {
+  width: 244px;
+}
+
+.tag::before {
+  content: "";
+  border-bottom: 1px solid #5F5C59;
+  width: 60px;
+  position: relative;
+  display: inline-block;
+  margin: 0 32px 2px 0;
+  vertical-align: middle;
+}
+
+.heading__tag {
+  margin: 0 0 168px;
+}
+
+.h2 {
+  max-width: 704px;
+}
+
+/* ************************************************************** */
+
+
+.page-img {
+  width: 46vw;
+  margin: 0 0 128px;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

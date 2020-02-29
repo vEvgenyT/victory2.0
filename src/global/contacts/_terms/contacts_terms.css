@@ -1,0 +1,7 @@
+.contacts_terms {
+  grid-area: terms;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}

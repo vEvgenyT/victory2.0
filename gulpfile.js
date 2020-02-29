@@ -41,11 +41,11 @@ var path = {
         fonts: 'src/fonts/**/*.*',
         css: ['src/**/normalize.css',
               'src/**/fonts.css',
-              'src/**/global.css',
-              'src/**/header.css',
-              'src/**/header/**/*.css',
-              'src/**/main-heading/**/*.css',
-              'src/**/portfolio/**/*.css'
+              'src/**/page.css',
+              'src/**/service/**/*.css',
+              'src/**/advantages/**/*.css',
+              'src/**/contacts/**/*.css',
+              'src/**/header/**/*.css'
 
         ]
     },

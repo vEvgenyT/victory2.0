@@ -1,0 +1,7 @@
+.service {
+  display: flex;
+  flex-flow: column wrap;
+}
+.service-items {
+  align-self: flex-end;
+}

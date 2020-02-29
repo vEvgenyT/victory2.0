@@ -1,0 +1,11 @@
+.service-items__type {
+  display: flex;
+  justify-content: space-between;
+  width: 796px;
+  margin: 0 0 48px 0;
+}
+
+.service-items__type:last-child {
+  border-bottom: none;
+  margin: 0 0 96px;
+}

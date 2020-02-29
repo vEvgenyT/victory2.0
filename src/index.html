@@ -24,7 +24,7 @@
     <link rel="canonical" href="https://victory.net.ua">
     <!-- <base href="https://www.victory.net.ua"> -->
     <meta name="robots" content="notranslate">
-    <meta name="keywords" content="разработка сайта под ключ, создание сайта на заказ, ui/ux дизайн сайта, веб разработка, заказать сайт, стоимость сайта, Украина, Мариуполь, веб дизайн сайта, верстка сайта">
+    <meta name="keywords" content="">
     <meta name="subject" content="веб дизайн и верстка сайтов">
     <meta name="description" content="Я веб дизайнер и разработчик. Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный веб дизайн и удобную структуру.">
     <meta name="author" content="victory.net.ua">
@@ -124,175 +124,218 @@
     </noscript>
 
 
-    <header class="header page__header header_style">
+
+    <header class="header wrapper">
       <a href="https://www.victory.net.ua/" class="header__logo"><img src="img/logo_desktop.svg" alt="Логотип студии victory в виде буквы В латинского алфавита"></a>
 
-      <nav>
-        <ul class="header-nav__item">
-          <li><a href="#" class="g_span-nav" aria-label="ссылка на раздел 'Обо мне'">Обо мне</a></li>
-          <li><a href="#" class="g_span-nav" aria-label="ссылка на раздел 'Портфолио'">Портфолио</a></li>
-          <li><a href="#" class="g_span-nav" aria-label="ссылка на раздел 'Услуги'">Услуги</a></li>
-          <li><a href="#" class="g_span-nav" aria-label="ссылка на раздел 'Контакты'">Контакты</a></li>
+      <nav class="header__menu">
+        <ul class=" header__menu_style header__items">
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Обо мне'">Обо мне</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Портфолио'">Портфолио</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Услуги'">Услуги</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Контакты'">Контакты</a></li>
         </ul>
       </nav>
 
-      <fieldset class="header-lng">
-        <label class="g_span-lng"><input type="radio" name="language" value="ua" aria-label="переключение на Украинский язык" class="visually-hidden">ua</label>
-        <label class="g_span-lng"><input type="radio" name="language" value="en" aria-label="переключение на Английский язык" class="visually-hidden">en</label>
+      <fieldset class="g-lng header__field">
+        <label class=""><input type="radio" name="language" value="ua" aria-label="переключение на Украинский язык" class="visually-hidden">ua</label>
+        <label class=""><input type="radio" name="language" value="en" aria-label="переключение на Английский язык" class="visually-hidden">en</label>
       </fieldset>
     </header>
 
 
+
     <main>
-      <article>
-        <picture class="g-picture">
-          <!-- <source srcset="img/griffin.svg" media="(min-width: 1024px)" class="g-picture"> -->
-            <img src="img/griffin@x3.png" style="width: 50vw; height: auto" alt="иллюстрация грифона развивающегося на ветру">
+      <article class="wrapper">
+
+        <picture class="picture">
+          <!-- <source srcset="img/griffin.svg" media="(min-width: 1024px)" class=""> -->
+            <img src="img/griffin@x3.png" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
         </picture>
-        <h1 tabindex="0" class="g_h1 wrapper main-heading__title">Веб дизайн и&nbsp;разработка сайтов</h1>
-        <p class="g_p-b main-heading__text main-heading__paragraph">Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный дизайн и&nbsp;удобную структуру.</p>
-        <a href="#" class="g_a-b wrapper" aria-label="ссылка на раздел 'Обо мне'">Давайте познакомимся</a>
+
+        <h1 tabindex="0" class="g-h1 h1 heading__h1">Веб дизайн и&nbsp;разработка сайтов</h1>
+
+        <p class="g-p p heading__p">Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный дизайн и&nbsp;удобную структуру.</p>
+
+        <a href="#" class="g-a a a_style" aria-label="ссылка на раздел 'Обо мне'">Давайте познакомимся</a>
 
 
-        <section aria-labelledby="portfolio" class="portfolio wrapper g-page__section">
+
+        <section aria-labelledby="portfolio" class="page_margin">
+
           <h2 class="visually-hidden" aria-hidden="true" tabindex="-1" id="portfolio">Портфолио</h2>
 
-          <div class="portfolio-items">
+          <div>
 
-          <figure class="portfolio-items__unit">
+          <figure>
             <picture>
               <source srcset="img/griffin.png">
-              <img src="#" class="portfolio-unit__img_style" alt="Работа Wild">
+              <img src="#" alt="Работа Wild">
             </picture>
             <figcaption>
-            <h3 class="g_h5-b portfolio-items__title_style portfolio-items__title">Wild Nature</h3>
-            <p class="g_figcaption portfolio-items__title_style portfolio-items__desc">Работа посвящена вымирающим видам животных</p>
+            <h3>Wild Nature</h3>
+            <p>Работа посвящена вымирающим видам животных</p>
             </figcaption>
           </figure>
 
-          <figure class="portfolio-items__unit">
+          <figure>
             <picture>
               <source srcset="img/griffin.png">
-              <img src="#" class="portfolio-unit__img_style" alt="Работа Beard humor">
+              <img src="#" alt="Работа Beard humor">
             </picture>
             <figcaption>
-            <h3 class="g_h5-b portfolio-items__title_style portfolio-items__title">Beard Humor</h3>
-            <p class="g_figcaption portfolio-items__title_style portfolio-items__desc">Только юмор, анекдоты и хорошее настроение</p>
+            <h3>Beard Humor</h3>
+            <p>Только юмор, анекдоты и хорошее настроение</p>
             </figcaption>
           </figure>
 
-          <figure class="portfolio-items__unit">
+          <figure>
             <picture>
               <source srcset="img/griffin.png">
-              <img src="#" class="portfolio-unit__img_style" alt="Работа Leica">
+              <img src="#" alt="Работа Leica">
             </picture>
             <figcaption>
-            <h3 class="g_h5-b portfolio-items__title_style portfolio-items__title">Leica</h3>
-            <p class="g_figcaption portfolio-items__title_style portfolio-items__desc">История первой компактной фотокамеры</p>
+            <h3>Leica</h3>
+            <p>История первой компактной фотокамеры</p>
             </figcaption>
           </figure>
         </div>
 
-          <a href="#" class="g_a-b">Смотреть все работы</a>
+          <a href="#">Смотреть все работы</a>
         </section>
 
 
-        <section aria-labelledby="service" itemscope itemtype="http://schema.org/Service" style="background-color: #000000" class="g-page__section">
-          <p id="service" tabindex="-1" class="g_tag-w">услуги</p>
-          <h2 tabindex="0" class="g_h2-w">Что я делаю</h2>
-          <ul>
-            <li aria-labelledby="all-in-1-solution">
-              <h3 id="all-in-1-solution" class="g_h6" itemprop="serviceType">Комплексные решения</h3>
-              <ul>
-                <li itemprop="name" class="g_p-w">интернет магазин</li>
-                <li itemprop="name" class="g_p-w">лендинг</li>
-                <li itemprop="name" class="g_p-w">портфолио</li>
-                <li itemprop="name" class="g_p-w">корпоративный</li>
-                <li itemprop="name" class="g_p-w">промо</li>
+
+        <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service">
+
+          <p id="service" tabindex="-1" class="g-tag tag heading__tag">услуги</p>
+          <h2 tabindex="0" class="g-h2 h2 service__h2">Что я делаю</h2>
+
+          <ul class="service-items">
+
+            <li aria-labelledby="all-in-1-solution" class="service-items__type service-items__type_style">
+              <h3 id="all-in-1-solution" class="g-h5 service-items__type-title" itemprop="serviceType">Комплексные решения</h3>
+              <ul class="service-items__item-group">
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">лендинг</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">портфолио</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">промо</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">корпоративный</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">интернет магазин</li>
               </ul>
             </li>
-            <li aria-labelledby="web-design">
-              <h3 id="web-design" itemprop="serviceType" class="g_h6">Веб дизайн</h3>
-              <ul>
-                <li itemprop="name" class="g_p-w">UI/UX</li>
-                <li itemprop="name" class="g_p-w">прототипирование</li>
-                <li itemprop="name" class="g_p-w">дизайн сайтов</li>
-                <li itemprop="name" class="g_p-w">анимация</li>
-                <li itemprop="name" class="g_p-w">микровзаимодействия</li>
+
+            <li aria-labelledby="web-design" class="service-items__type service-items__type_style">
+              <h3 id="web-design" class="g-h5 service-items__type-title" itemprop="serviceType">Веб дизайн</h3>
+              <ul class="service-items__item-group">
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">UI/UX</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">прототипирование</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">дизайн сайтов</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">анимация</li>
               </ul>
             </li>
-            <li aria-labelledby="development">
-              <h3 id="development" itemprop="serviceType" class="g_h6">Разработка</h3>
-              <ul>
-                <li itemprop="name" class="g_p-w">верстка html, css, js</li>
-                <li itemprop="name" class="g_p-w">интеграция с CMS</li>
-                <li itemprop="name" class="g_p-w">Верстка на Tilda</li>
-                <li itemprop="name" class="g_p-w">Верстка на Readymag</li>
+
+            <li aria-labelledby="development" class="service-items__type service-items__type_style">
+              <h3 id="development" class="g-h5 service-items__type-title" itemprop="serviceType">Разработка</h3>
+              <ul class="service-items__item-group">
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка html, css, js</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка на Tilda</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка на Readymag</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">интеграция с CMS</li>
               </ul>
             </li>
           </ul>
-          <a href="#" class="g_a-w">Узнать больше</a>
+
+          <a href="#" class="g-a a a_style service_a">Узнать больше</a>
         </section>
-        <section aria-labelledby="advantages">
-          <p id="advantages" class="g_tag-b">преимущества</p>
-          <h2 tabindex="0" class="g_h2-b">Лучшие практики и&nbsp;подходы в&nbsp;создании сайтов</h2>
-          <dl>
-            <dt class="g_h5-b">Доступность</dt>
-            <dd class="g_span-b">Люди с ограниченными возможностями будут взаимодействовать с контентом на сайте, благодаря разработке в соответствии со стандартами WCAG</dd>
-            <dt class="g_h5-b">Сначала смартфоны.</dt>
-            <dd class="g_span-b">Разработка ведется от телефонов к десктопу.  Это благоприятно сказывается на SEO и комфорте от использования сайта с мобильных устройств.</dd>
-            <dt class="g_h5-b">Кроссбраузерность</dt>
-            <dd class="g_span-b">Верстка выглядит превосходно на современных устройствах и веб-браузерах.</dd>
-            <dt class="g_h5-b">SPA</dt>
-            <dd class="g_span-b">Максимальная интерактивность и безупречный UX для пользователей.</dd>
-            <dt class="g_h5-b">Интеграция с CMS</dt>
-            <dd class="g_span-b">Интегрирую статическую верстку на: Wordpress, Tilda, Readymag.</dd>
-            <dt class="g_h5-b">Веб дизайн</dt>
-            <dd class="g_span-b">Эффективный и актуальный визуальный язык для бизнеса в сети интернет.</dd>
-            <dt class="g_h5-b">Анимация</dt>
-            <dd class="g_span-b">Создаю анимацию: от перехода при наведении курсора до анимации основанной на webGL и взаимодействии с пользователем.</dd>
-            <dt class="g_h5-b">Оптимизация графики</dt>
-            <dd class="g_span-b">Графические файлы оптимизированы под дисплеи с высоким разрешением (Retina) и современные форматы (WebP).</dd>
-            <dt class="g_h5-b">Стандартизация</dt>
-            <dd class="g_span-b">Придерживаюсь передовых практик написания кода, отраслевых стандартов, использую собственную систему контроля, метрик и чек-листов.</dd>
+
+
+
+        <section aria-labelledby="advantages" class="page_margin wrapper">
+
+          <p id="advantages" class="g-tag tag heading__tag">преимущества</p>
+          <h2 tabindex="0" class="g-h2 h2 advantages__h2">Лучшие практики и&nbsp;подходы в&nbsp;создании сайтов</h2>
+
+          <dl class="advantages">
+            <dt class="g-h5 advantages__dt">Доступность</dt>
+            <dd class="g-span advantages__inner-margin">Люди с ограниченными возможностями будут взаимодействовать с контентом на сайте, благодаря разработке в соответствии со стандартами WCAG.</dd>
+            <dt class="g-h5 advantages__dt">Сначала смартфоны</dt>
+            <dd class="g-span advantages__inner-margin">Разработка ведется от телефонов к десктопу.  Это благоприятно сказывается на SEO и комфорте от использования сайта с мобильных устройств.</dd>
+            <dt class="g-h5 advantages__dt">Кроссбраузерность</dt>
+            <dd class="g-span advantages__inner-margin">Верстка выглядит превосходно на современных устройствах и веб-браузерах.</dd>
+            <dt class="g-h5 advantages__dt">SPA</dt>
+            <dd class="g-span advantages__inner-margin">Максимальная интерактивность и безупречный UX для пользователей.</dd>
+            <dt class="g-h5 advantages__dt">Интеграция с CMS</dt>
+            <dd class="g-span advantages__inner-margin">Интегрирую статическую верстку на: Wordpress, Tilda, Readymag.</dd>
+            <dt class="g-h5 advantages__dt">Веб дизайн</dt>
+            <dd class="g-span advantages__inner-margin">Эффективный и актуальный визуальный язык для бизнеса в сети интернет.</dd>
+            <dt class="g-h5 advantages__dt">Анимация</dt>
+            <dd class="g-span advantages__inner-margin">Создаю анимацию: от перехода при наведении курсора до анимации основанной на webGL и взаимодействии с пользователем.</dd>
+            <dt class="g-h5 advantages__dt">Оптимизация графики</dt>
+            <dd class="g-span advantages__inner-margin">Графические файлы оптимизированы под дисплеи с высоким разрешением (Retina) и современные форматы (WebP).</dd>
+            <dt class="g-h5 advantages__dt">Стандартизация</dt>
+            <dd class="g-span advantages__inner-margin">Придерживаюсь передовых практик написания кода, отраслевых стандартов, использую собственную систему контроля, метрик и чек-листов.</dd>
           </dl>
         </section>
       </article>
     </main>
-    <footer>
-      <section aria-label="контакты">
-          <h3 class="g_h3-w">Давайте работать вместе, чтобы создать лучший цифровой продукт</h3>
-          <section aria-labelledby="e-mail">
-            <h4 id="e-mail" class="g_tag-mail">e-mail</h4>
-            <ul>
-              <li><a href="mailto:hello@victory.net.ua" class="g_contact">hello@victory.net.ua</a></li>
+
+
+
+    <footer class="wrapper page_footer">
+
+
+      <section aria-label="контакты" class="contacts">
+
+          <h3 class="g-h3 contacts__h3">Давайте работать вместе, чтобы создать лучший цифровой продукт</h3>
+
+          <section aria-labelledby="e-mail" class="contacts_mail">
+
+            <h4 id="e-mail" class="g-tag-link contacts__link-title">e-mail</h4>
+
+            <ul class="contacts__link">
+              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail">hello@victory.net.ua</a></li>
             </ul>
+
           </section>
-          <section aria-labelledby="messenger">
-            <h4 id="messenger" class="g_tag-mail">messenger</h4>
-            <ul>
-              <li><a aria-label="Написать в Viber" class="g_contact" href="viber://chat?number=+380965779328">viber</a></li>
-              <li><a aria-label="Написать в Telegram" class="g_contact" href="tg://resolve?domain=victory_web_dev">telegram</a></li>
-              <li><a aria-label="Написать в What's App" class="g_contact" href="whatsapp://send?phone=+380965779328">what's app</a></li>
+
+          <section aria-labelledby="messenger" class="contacts_messenger">
+
+            <h4 id="messenger" class="g-tag-link contacts__link-title">messenger</h4>
+
+            <ul class="contacts__link">
+              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail">viber</a></li>
+              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail">telegram</a></li>
+              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail">what's app</a></li>
             </ul>
+
           </section>
-          <section aria-labelledby="social">
-            <h4 id="social" class="g_tag-mail">social</h4>
-            <ul>
-              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" class="g_contact" target="_blank" rel="noopener noreferrer">instagram</a></li>
-              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" class="g_contact" target="_blank" rel="noopener noreferrer">facebook</a></li>
-              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" class="g_contact" target="_blank" rel="noopener noreferrer" >behance</a></li>
-              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" class="g_contact" target="_blank" rel="noopener noreferrer">medium</a></li>
+
+
+          <section aria-labelledby="social" class="contacts_social">
+
+            <h4 id="social" class="g-tag-link contacts__link-title">social</h4>
+
+            <ul class="contacts__link">
+              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail">instagram</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail">facebook</a></li>
+              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail">behance</a></li>
+              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail">medium</a></li>
             </ul>
+
           </section>
-          <a href="#" class="g_a-w">Оставить заявку</a>
-          <ul>
-            <li><a href="#" class="g_a-small">Условия использования</a></li>
-            <li><a href="#" class="g_a-small">Политика конфиденциальности</a></li>
+
+          <a href="#" class="g-a a a_style contacts_application">Оставить заявку</a>
+
+          <ul class="contacts_terms">
+            <li class="contacts__small"><a href="#" class="g-small">Условия использования</a></li>
+            <li class="contacts__small"><a href="#" class="g-small">Политика конфиденциальности</a></li>
           </ul>
+
         </section>
-        <section>
-          <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g_a-big">Обо мне</a></h2>
+
+
+        <section class="contacts_big-link">
+          <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g-big">Обо мне</a></h2>
         </section>
     </footer>
   </body>
