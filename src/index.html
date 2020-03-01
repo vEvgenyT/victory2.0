@@ -206,10 +206,10 @@
 
 
 
-        <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service">
+        <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service" id="js-scroll">
 
           <p id="service" tabindex="-1" class="g-tag tag heading__tag">услуги</p>
-          <h2 tabindex="0" class="g-h2 h2 service__h2">Что я делаю</h2>
+          <h2 tabindex="0" v-scroll="handleScroll" class="g-h2 h2 service__h2">Что я делаю</h2>
 
           <ul class="service-items">
 
@@ -338,5 +338,7 @@
           <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g-big">Обо мне</a></h2>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

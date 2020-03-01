@@ -143,16 +143,16 @@ gulp.task('/js', async function() {
     "**/*.js"
   ], { base: './' }))
     .pipe(concat('index.js'))
-    .pipe(gcc({
-          compilation_level: 'ADVANCED',
-          warning_level: 'VERBOSE',
-          language_in: 'ECMASCRIPT6_STRICT',
-          language_out: 'ECMASCRIPT5_STRICT',
-          output_wrapper: '(function(){\n%output%\n}).call(this)',
-          js_output_file: 'index.min.js'
-        }, {
-          platform: ['native', 'java', 'javascript']
-        }))
+    // .pipe(gcc({
+    //       compilation_level: 'ADVANCED',
+    //       warning_level: 'VERBOSE',
+    //       language_in: 'ECMASCRIPT6_STRICT',
+    //       language_out: 'ECMASCRIPT5_STRICT',
+    //       output_wrapper: '(function(){\n%output%\n}).call(this)',
+    //       js_output_file: 'index.min.js'
+    //     }, {
+    //       platform: ['native', 'java', 'javascript']
+    //     }))
     .pipe(gulp.dest(path.bundles.js));
 });
 
