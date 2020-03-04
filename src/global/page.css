@@ -141,10 +141,11 @@ color: #2A2928;
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 12px;
+font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.006em;
 color: #100F0F;
+/*text-transform: uppercase;*/
 }
 
 .g-lng {

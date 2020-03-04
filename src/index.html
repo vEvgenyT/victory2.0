@@ -128,14 +128,14 @@
     <header class="header wrapper">
       <a href="https://www.victory.net.ua/" class="header__logo"><img src="img/logo_desktop.svg" alt="Логотип студии victory в виде буквы В латинского алфавита"></a>
 
-      <nav class="header__menu" id="js-nav">
+      <nav class="header__menu" id="js-nav-line">
         <ul class=" header__menu_style header__items">
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Обо мне'">Обо мне</a></li>
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Портфолио'">Портфолио</a></li>
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Услуги'">Услуги</a></li>
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Контакты'">Контакты</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
+          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
         </ul>
-        <span class="header__line header__line_about"></span>
+        <span class="header__line" v-bind:class="isActive"></span>
       </nav>
 
       <fieldset class="g-lng header__field">

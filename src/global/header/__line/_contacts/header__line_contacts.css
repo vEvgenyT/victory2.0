@@ -1,5 +1,5 @@
 .header__line_contacts {
-  width: 54.02px;
-  transform: translateX(374px);
+  width: 72px;
+  transform: translateX(379px);
   transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
 }
