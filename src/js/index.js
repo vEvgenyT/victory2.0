@@ -1,36 +1,5 @@
 "use strict";
 
-// window.addEventListener('scroll', function() {
-//   var a = document.getElementById('js-scroll').pageYOffset;
-//   console.log(a);
-
-// });
-//
-// var elem = document.getElementById('js-scroll');
-
-// window.addEventListener('scroll', function() {
-// if (elem.getBoundingClientRect().top < window.innerHeight && elem.getBoundingClientRect().bottom > 1) {
-//   document.body.style.backgroundColor = "#100F0F";
-
-//   let h1 = document.querySelectorAll('.g-h1'),
-//       h2 = document.querySelectorAll('.g-h2'),
-//       h3 = document.querySelectorAll('.g-h3'),
-//       h4 = document.querySelectorAll('.g-h4'),
-//       h5 = document.querySelectorAll('.g-h5'),
-//       h6 = document.querySelectorAll('.g-h6'),
-//       p = document.querySelectorAll('.g-p'),
-//       a = document.querySelectorAll('.g-a');
-
-//   for (let i = 0; i < h2.length; i++) {
-//     h2[i].style.color = "#DCDBDA"
-//   }
-
-// }
-//   else {
-//   document.body.style.backgroundColor = "#ffffff";
-//   }
-// });
-
 Vue.directive('scroll', {
   inserted: function (el, binding) {
     let f = function (evt) {
@@ -41,10 +10,6 @@ Vue.directive('scroll', {
     window.addEventListener('scroll', f)
   }
 })
-// window.addEventListener('scroll', function(){
-// let pos = document.querySelector('#js-scroll');
-// console.log(pos.getBoundingClientRect().top);
-// })
 
 new Vue({
   el: '#js-scroll',
@@ -80,5 +45,32 @@ new Vue({
     }
   }
 })
+
+
+var navLine = new Vue ({
+  el: '#js-nav',
+  data: {
+    message: 'hello'
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,0 +1,5 @@
+.header__line_portfolio {
+  width: 65.7px;
+  transform: translateX(121px);
+  transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
+}

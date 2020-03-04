@@ -1,0 +1,4 @@
+.header__line_about {
+  width: 48.11px;
+  transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
+}

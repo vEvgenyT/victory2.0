@@ -1,0 +1,5 @@
+.header__line_service {
+  width: 39.06px;
+  transform: translateX(262px);
+  transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
+}
