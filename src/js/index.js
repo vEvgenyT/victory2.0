@@ -78,8 +78,37 @@ var navLine = new Vue ({
       };
     }
   }
-})
+});
 
+
+// **********************
+//
+
+// получили элемент
+function splitter() {
+  var el = document.querySelector('.g-a-mail').innerText.split("");
+  var tmp = document.createElement('span');
+  tmp.className = 'name-of-class';
+
+  for (let i = 0; i < el.length; i++) {
+    tmp.innerText = el[i];
+    el[i] = tmp;
+  };
+
+  return el;
+};
+
+var x = document.querySelector('.g-a-mail');
+
+function paste(arr=splitter()) {
+  // splitter();
+console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    let tag = document.querySelector('.g-a-mail').append(arr);
+  };
+
+  return;
+}
 
 
 
