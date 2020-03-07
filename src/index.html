@@ -158,7 +158,7 @@
 
         <p class="g-p p heading__p">Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный дизайн и&nbsp;удобную структуру.</p>
 
-        <a href="#" class="g-a a a_style" aria-label="ссылка на раздел 'Обо мне'">Давайте познакомимся</a>
+        <a href="#" class="g-a a a_style block__link" id="link" aria-label="ссылка на раздел 'Обо мне'" onmouseenter="splitter('#link')">Давайте познакомимся</a>
 
 
 
@@ -284,7 +284,7 @@
     <footer class=" page_footer">
 
 
-      <section aria-label="контакты" class="contacts">
+      <section aria-label="контакты" class="contacts" id="mail">
 
           <h3 class="g-h3 contacts__h3">Давайте работать вместе, чтобы создать лучший цифровой продукт</h3>
 
@@ -293,7 +293,7 @@
             <h4 id="e-mail" class="g-tag-link contacts__link-title">e-mail</h4>
 
             <ul class="contacts__link">
-              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail">hello@victory.net.ua</a></li>
+              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail contacts_link" id="email">hello@victory.net.ua</a></li>
             </ul>
 
           </section>
@@ -303,9 +303,9 @@
             <h4 id="messenger" class="g-tag-link contacts__link-title">messenger</h4>
 
             <ul class="contacts__link">
-              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail">viber</a></li>
-              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail">telegram</a></li>
-              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail">what's app</a></li>
+              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail contacts_link" id="viber">viber</a></li>
+              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail contacts_link" id="telegram">telegram</a></li>
+              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail contacts_link" id="whatsapp">what's app</a></li>
             </ul>
 
           </section>
@@ -316,10 +316,10 @@
             <h4 id="social" class="g-tag-link contacts__link-title">social</h4>
 
             <ul class="contacts__link">
-              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail">instagram</a></li>
-              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail">facebook</a></li>
-              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail">behance</a></li>
-              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail">medium</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="instagram">instagram</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="facebook">facebook</a></li>
+              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="behance">behance</a></li>
+              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="medium">medium</a></li>
             </ul>
 
           </section>
@@ -339,6 +339,7 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

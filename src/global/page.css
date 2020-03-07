@@ -110,7 +110,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 19px;
 line-height: 32px;
-text-decoration-line: underline;
+text-decoration-line: none;
 color: #100F0F;
 }
 
@@ -271,7 +271,15 @@ text-transform: uppercase;
 }
 
 
+/********************************/
 
+
+
+.char-class {
+  display: inline-block;
+  white-space: pre;
+  text-decoration: none;
+}
 
 
 
