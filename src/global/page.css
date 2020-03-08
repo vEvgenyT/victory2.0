@@ -212,7 +212,9 @@ text-transform: uppercase;
 
 .a_style {
   border-bottom: 1px solid #2A2928;
+  position: relative;
 }
+
 
 .a_style-grey20 {
   border-bottom: 1px solid #C4C2C0;

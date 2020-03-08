@@ -44,119 +44,118 @@ new Vue({
       }
     }
   }
-})
-
-
-var navLine = new Vue ({
-  el: '#js-nav-line',
-  data: {
-    isActive: {
-      'header__line_about': false,
-      'header__line_portfolio': false,
-      'header__line_service': false,
-      'header__line_contacts': false
-    },
-    lineConst: ''
-  },
-  methods: {
-    click: function(el) {
-      this.lineConst = el;
-      this.clear();
-      this.isActive[this.lineConst] = true;
-    },
-    hover: function(el) {
-      this.clear();
-      this.isActive[el] = true;
-    },
-    leave: function(){
-      this.clear();
-      this.isActive[this.lineConst] = true;
-    },
-    clear: function() {
-      for (var key in this.isActive) {
-        this.isActive[key] = false;
-      };
-    }
-  }
 });
 
-
-// **********************
+// ***************************************
 //
 
-// получили элемент
-var el;
+// const $$ = s =>
+//   Array.prototype.slice.call(
+//     document.querySelectorAll(s)
+//   )
+// const isEl = obj => obj instanceof HTMLElement
+// const isStr = obj => Object.prototype.toString.call(obj) === '[object String]'
 
-var currentElem = null;
-var parent = document.querySelector('#mail');
-parent.onmouseover = function(event) {
-  if (currentElem) return;
-  let target = event.target.closest('a.g-a-mail');
-  if (!target) return;
-  currentElem = target;
-  splitter(currentElem.id);
-};
+// const cursorDot = ({
+//   diameter = 80,
+//   borderWidth = 1,
+//   borderColor = '#fff',
+//   easing = 4,
+//   background = 'transparent'
+// } = {}) => {
+//   let inited = false
+//   const alt = { x: 0, y: 0, o: 1, d: diameter }
+//   const cur = { x: 0, y: 0, o: 0, d: diameter }
+//   const dot = document.createElement('div')
+//   const tim = easing / 15
+//   dot.style = `position:fixed;top:0;left:0;border-radius:100%;pointer-events:none;opacity:0;height:${diameter}px;width:${diameter}px;background:${background};border:${borderWidth}px solid ${borderColor};mix-blend-mode:exclusion;transition:background ${tim}s,border ${tim}s`
 
-parent.onmouseout = function(event) {
-  if (!currentElem) return;
-  let relatedTarget = event.relatedTarget;
-  while (relatedTarget) {
+//   document.addEventListener('mousemove', e => {
+//     alt.x = e.clientX
+//     alt.y = e.clientY
+//     dot.style.opacity = 1
+//     if (!inited) {
+//       document.body.append(dot)
+//       cur.x = alt.x
+//       cur.y = alt.y
+//       inited = true
+//       draw()
+//     }
+//   })
 
-    if (relatedTarget == currentElem) return;
+//   const draw = () => {
+//     const dX = alt.x - cur.x
+//     const dY = alt.y - cur.y
+//     cur.x += (dX / easing)
+//     cur.y += (dY / easing)
+//     const t3d = `translate3d(${cur.x - cur.d / 2}px,${cur.y - cur.d / 2}px,0)`
+//     dot.style.webkitTransform = t3d
+//     dot.style.transform = t3d
 
-    relatedTarget = relatedTarget.parentNode;
+//     const dO = alt.o - cur.o
+//     cur.o += dO / easing
+//     dot.style.opacity = cur.o
 
-  }
-      merger(currentElem.id);
-  currentElem = null;
-};
+//     const dD = alt.d - cur.d
+//     cur.d += dD / easing
+//     dot.style.height = cur.d + 'px'
+//     dot.style.width = cur.d + 'px'
 
-function splitter(id) {
+//     try {
+//       requestAnimationFrame(draw)
+//     } catch(_) {
+//       setImmediate(draw)
+//     }
+//   }
 
-  id = '#' + id;
-  el = document.querySelector(id).innerText.split("")
-  document.querySelector(id).innerText = '';
+//   dot.over = (any, style) => {
+//     const fn = el => {
+//       el.addEventListener('mouseover', _ => {
+//         if (style.background) dot.style.backgroundColor = style.background
+//         if (style.borderColor) dot.style.borderColor = style.borderColor
+//         if (style.scale) alt.d = diameter * style.scale
+//       })
+//       el.addEventListener('mouseout', _ => {
+//         if (style.background) dot.style.backgroundColor = background
+//         if (style.borderColor) dot.style.borderColor = borderColor
+//         if (style.scale) alt.d = diameter
+//       })
+//     }
+//     if (isEl(any)) fn(any)
+//     else if (isStr(any)) $$(any).forEach(fn)
+//   }
 
-  let span = new DocumentFragment();
-
-  for (let i = 0; i < el.length; i++) {
-    let tmp = document.createElement('span');
-    tmp.innerText = el[i];
-    tmp.className = 'g-a-mail char-class';
-    span.append(tmp);
-  };
-
-  document.querySelector(id).append(span);
-  animation(id);
-};
-
-
-function merger(id) {
-  id = '#' + id;
-  let span = document.querySelectorAll('.char-class');
-  for (let i = 0; i < span.length; i++) {
-    span[i].remove();
-  }
-
-  document.querySelector(id).innerText = el.join('')
-
-  return;
-}
-
-function animation(id) {
-  let dom = {el: document.querySelector(id)};
-  dom.letters = [dom.el.querySelectorAll('span')];
+//   return dot
+// }
 
 
-            TweenMax.killTweensOf(dom.letters);
-            TweenMax.set(dom.letters, {opacity: 0});
-            TweenMax.staggerTo(dom.letters, 0.8, {
-                ease: Elastic.easeOut.config(1,0.6),
-                startAt: {y: '-70%'},
-                y: '0%',
-                opacity: 1
-            }, 0.025);
-}
+// const $ = s => document.querySelector(s)
+
+// const cursor = cursorDot({
+//   easing: 16,
+//   background: '#DCDBDA',
+//   diameter: 12,
+//   borderWidth: 0 ,
+//   borderColor: 'transparent'
+// })
+
+// cursor.over('.g-h1', {
+//   scale: 6,
+//   background: '#fff'
+//   // borderColor: 'transparent'
+// })
+
+// cursor.over('.react2', {
+//   scale: .5,
+//   background: '#fff'
+// })
+
+// cursor.over($('.g-a'), {
+//   scale: 3,
+//   background: '#fff',
+//   borderColor: 'transparent'
+// })
+
 
 
 

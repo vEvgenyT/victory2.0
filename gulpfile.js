@@ -36,7 +36,11 @@ var folder = [
 var path = {
     src: {
         html: 'src/**/*.html',
-        js: 'src/**/*.js',
+        js:  ['src/**/index.js',
+              'src/**/header/**/*.js',
+              'src/**/contacts/**/*.js'
+
+        ],
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         css: ['src/**/normalize.css',
