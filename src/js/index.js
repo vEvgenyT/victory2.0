@@ -16,23 +16,26 @@ new Vue({
   methods: {
     position: function (evt, el) {
       if (el.getBoundingClientRect().top < window.innerHeight  && el.getBoundingClientRect().bottom > 1) {
-        // document.body.style.backgroundColor = '#100F0F';
-        let color = {
-          a: window.innerHeight,
-          b: el.getBoundingClientRect().top,
-          c: window.innerHeight / 2,
-          d: 94 / (window.innerHeight / 2),
-          e: (el.getBoundingClientRect().top / (el.getBoundingClientRect().top / 100)) - 94 / (window.innerHeight / 2),
-          f: 100 - ((window.innerHeight - el.getBoundingClientRect().top) / 2)
-        };
-        console.log(
-          Math.round(color.f)
-          // 100 - (el.getBoundingClientRect().top  * color)
-          // el.getBoundingClientRect().top
 
-          );
-        const [h,s,l] = [31, 3, color.f].map(Math.round)
-        document.body.style.backgroundColor = `rgb(${h}, ${s}, ${l})`;
+
+
+
+let x = window.innerHeight / 2.5,
+    v = 94 / x,
+    d = window.innerHeight - el.getBoundingClientRect().top,
+    e = 100 - (d * v);
+
+        var [h,s,l] = [31, 3, e].map(Math.round);
+
+        if (l < 6 || (100 - l) > 86) {
+          document.body.style.backgroundColor = `hsl(${h}, ${s+'%'}, ${'6%'}`;
+        } else {
+            document.body.style.backgroundColor = `hsl(${h}, ${s+'%'}, ${l+'%'})`;
+            // document.querySelectorAll('.g-h2').forEach(function(i){i.style.color = `hsl(${h}, ${s+'%'}, ${100-l+'%'})`});
+        }
+
+var content = window.getComputedStyle(document.querySelector('.g-tag'),':after').borderBottom;
+// console.log(content);
 
         document.querySelectorAll('.g-h1').forEach(function(i){i.classList.add('g_grey10')});
         document.querySelectorAll('.g-h2').forEach(function(i){i.classList.add('g_grey10')});
@@ -47,6 +50,7 @@ new Vue({
         document.querySelectorAll('.a_style').forEach(function(i){i.classList.add('a_style-grey20')});
       } else {
           document.body.style.backgroundColor = 'white';
+
           document.querySelectorAll('.g-h1').forEach(function(i){i.classList.remove('g_grey10')});
           document.querySelectorAll('.g-h2').forEach(function(i){i.classList.remove('g_grey10')});
           document.querySelectorAll('.g-h3').forEach(function(i){i.classList.remove('g_grey10')});
