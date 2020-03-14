@@ -125,7 +125,7 @@
 
 
 
-    <header class="header wrapper">
+    <header class="header wrapper header_grey90">
       <a href="https://www.victory.net.ua/" class="header__logo"><img src="img/logo_desktop.svg" alt="Логотип студии victory в виде буквы В латинского алфавита"></a>
 
       <nav class="header__menu" id="js-nav-line">
@@ -162,47 +162,47 @@
 
 
 
-        <section aria-labelledby="portfolio" class="page_margin">
+        <section aria-labelledby="portfolio" class="page_margin portfolio">
 
           <h2 class="visually-hidden" aria-hidden="true" tabindex="-1" id="portfolio">Портфолио</h2>
 
-          <div>
+          <div class="portfolio__block">
 
-          <figure>
+          <figure class="portfolio__item">
             <picture>
-              <source srcset="img/griffin.png">
-              <img src="#" alt="Работа Wild">
+              <source srcset="img/wild.jpg">
+              <img src="#" alt="Работа Wild" class="portfolio__item-img">
             </picture>
             <figcaption>
-            <h3>Wild Nature</h3>
-            <p>Работа посвящена вымирающим видам животных</p>
+            <h3 class="g-h5 portfolio__item-title">Wild Nature</h3>
+            <p class="figcaption portfolio__item-text">Работа посвящена вымирающим видам животных</p>
             </figcaption>
           </figure>
 
-          <figure>
+          <figure class="portfolio__item">
             <picture>
-              <source srcset="img/griffin.png">
-              <img src="#" alt="Работа Beard humor">
+              <source srcset="img/beard.jpg">
+              <img src="#" alt="Работа Beard humor" class="portfolio__item-img">
             </picture>
             <figcaption>
-            <h3>Beard Humor</h3>
-            <p>Только юмор, анекдоты и хорошее настроение</p>
+            <h3 class="g-h5 portfolio__item-title">Beard Humor</h3>
+            <p class="figcaption portfolio__item-text">Только юмор, анекдоты и хорошее настроение</p>
             </figcaption>
           </figure>
 
-          <figure>
+          <figure class="portfolio__item">
             <picture>
-              <source srcset="img/griffin.png">
-              <img src="#" alt="Работа Leica">
+              <source srcset="img/leica.jpg">
+              <img src="#" alt="Работа Leica" class="portfolio__item-img">
             </picture>
             <figcaption>
-            <h3>Leica</h3>
-            <p>История первой компактной фотокамеры</p>
+            <h3 class="g-h5 portfolio__item-title">Leica</h3>
+            <p class="figcaption portfolio__item-text">История первой компактной фотокамеры</p>
             </figcaption>
           </figure>
         </div>
 
-          <a href="#" class="g-a" id="js-a-portfolio">Смотреть все работы</a>
+          <a href="#" class="g-a a a_style portfolio__link" id="js-a-portfolio">Смотреть все работы</a>
         </section>
 
 
@@ -281,7 +281,7 @@
 
 
 
-    <footer class=" page_footer">
+    <footer class="page_footer">
 
 
       <section aria-label="контакты" class="contacts" id="contacts">
@@ -290,22 +290,22 @@
 
           <section aria-labelledby="e-mail" class="contacts_mail">
 
-            <h4 id="e-mail" class="g-tag-link contacts__link-title">e-mail</h4>
+            <h4 id="e-mail" class="g-tag-link contacts__link-title g_grey30">e-mail</h4>
 
             <ul class="contacts__link">
-              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail contacts_link" id="email">hello@victory.net.ua</a></li>
+              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail g_grey10" id="email">hello@victory.net.ua</a></li>
             </ul>
 
           </section>
 
           <section aria-labelledby="messenger" class="contacts_messenger">
 
-            <h4 id="messenger" class="g-tag-link contacts__link-title">messenger</h4>
+            <h4 id="messenger" class="g-tag-link contacts__link-title g_grey30">messenger</h4>
 
             <ul class="contacts__link">
-              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail contacts_link" id="viber">viber</a></li>
-              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail contacts_link" id="telegram">telegram</a></li>
-              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail contacts_link" id="whatsapp">what's app</a></li>
+              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail g_grey10" id="viber">viber</a></li>
+              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail g_grey10" id="telegram">telegram</a></li>
+              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail g_grey10" id="whatsapp">what's app</a></li>
             </ul>
 
           </section>
@@ -313,13 +313,13 @@
 
           <section aria-labelledby="social" class="contacts_social">
 
-            <h4 id="social" class="g-tag-link contacts__link-title">social</h4>
+            <h4 id="social" class="g-tag-link contacts__link-title g_grey30">social</h4>
 
             <ul class="contacts__link">
-              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="instagram">instagram</a></li>
-              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="facebook">facebook</a></li>
-              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="behance">behance</a></li>
-              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link" id="medium">medium</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="instagram">instagram</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="facebook">facebook</a></li>
+              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="behance">behance</a></li>
+              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link g_grey10" id="medium">medium</a></li>
             </ul>
 
           </section>
@@ -334,9 +334,9 @@
         </section>
 
 
-        <section class="contacts_big-link">
+        <!-- <section class="contacts_big-link">
           <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g-big">Обо мне</a></h2>
-        </section>
+        </section> -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>

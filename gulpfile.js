@@ -49,7 +49,8 @@ var path = {
               'src/**/service/**/*.css',
               'src/**/advantages/**/*.css',
               'src/**/contacts/**/*.css',
-              'src/**/header/**/*.css'
+              'src/**/header/**/*.css',
+              'src/**/portfolio/**/*.css'
 
         ]
     },

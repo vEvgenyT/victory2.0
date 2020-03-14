@@ -1,0 +1,16 @@
+.portfolio__item {
+  border-bottom: 1px solid #5F5C59;
+  margin: 0 0 128px;
+}
+
+.portfolio__item:nth-child(1) {
+  grid-area: item;
+}
+
+.portfolio__item:nth-child(2) {
+  grid-area: beard;
+}
+
+.portfolio__item:nth-child(3) {
+  grid-area: leica;
+}

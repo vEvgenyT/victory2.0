@@ -20,7 +20,7 @@ parent.onmouseout = function(event) {
     relatedTarget = relatedTarget.parentNode;
 
   }
-      merger(currentElem.id);
+      // merger(currentElem.id);
   currentElem = null;
 };
 
@@ -35,7 +35,7 @@ function splitter(id) {
   for (let i = 0; i < el.length; i++) {
     let tmp = document.createElement('span');
     tmp.innerText = el[i];
-    tmp.className = 'g-a-mail char-class';
+    tmp.className = 'g-a-mail char-class g_grey10';
     span.append(tmp);
   };
 
@@ -44,17 +44,17 @@ function splitter(id) {
 };
 
 
-function merger(id) {
-  id = '#' + id;
-  let span = document.querySelectorAll('.char-class');
-  for (let i = 0; i < span.length; i++) {
-    span[i].remove();
-  }
+// function merger(id) {
+//   id = '#' + id;
+//   let span = document.querySelectorAll('.char-class');
+//   for (let i = 0; i < span.length; i++) {
+//     span[i].remove();
+//   }
 
-  document.querySelector(id).innerText = el.join('')
+//   document.querySelector(id).innerText = el.join('')
 
-  return;
-}
+//   return;
+// }
 
 function animation(id) {
   let dom = {el: document.querySelector(id)};

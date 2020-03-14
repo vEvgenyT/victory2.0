@@ -25,7 +25,7 @@ font-weight: 500;
 font-size: 32px;
 line-height: 44px;
 letter-spacing: -0.006em;
-color: #100F0F;
+color: #DCDBDA;
 }
 
 .g-h5 {
@@ -45,7 +45,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 24px;
 line-height: 32px;
-letter-spacing: 0.05em;
+letter-spacing: 0.09em;
 text-transform: uppercase;
 color: #100F0F;
 }
@@ -72,7 +72,8 @@ font-size: 19px;
 line-height: 32px;
 letter-spacing: -0.006em;
 text-decoration-line: none;
-color: #2A2928;
+color: #F6416C;
+/*color: #2A2928;*/
 }
 
 .g-span {
@@ -144,8 +145,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.006em;
-color: #100F0F;
-/*text-transform: uppercase;*/
+color: #DCDBDA;
 }
 
 .g-lng {
@@ -154,8 +154,18 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 24px;
-color: #100F0F;
+color: #DCDBDA;
 text-transform: uppercase;
+}
+
+.figcaption {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.006em;
+color: #444340;
 }
 
 .g_grey10 {
@@ -186,11 +196,25 @@ text-transform: uppercase;
   margin: 336px 0;
 }
 
+.g-body {
+  background-color: #100F0F;
+}
+
+.fade-out {
+  transition: .6s cubic-bezier(.785,.135,.15,.86);
+}
+
+.fade-in {
+  transition: .6s cubic-bezier(.785,.135,.15,.86);
+}
+
 .page_footer {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-end;
   position: relative;
+  padding: 336px 56px 24px;
+  background-color: #100F0F;
 }
 
 .visually-hidden {
@@ -211,7 +235,8 @@ text-transform: uppercase;
 }
 
 .a_style {
-  border-bottom: 1px solid #2A2928;
+  border-bottom: 1px solid #F6416C;
+  /*border-bottom: 1px solid #2A2928;*/
 }
 
 .a_style-grey20 {
@@ -225,6 +250,7 @@ text-transform: uppercase;
 
 .heading__p {
   margin: 0 0 96px;
+  display: flex;
 }
 
 
@@ -238,18 +264,18 @@ text-transform: uppercase;
   width: 244px;
 }
 
-.tag::before {
+.heading__p::before {
   content: "";
-  border-bottom: 1px solid #5F5C59;
-  width: 60px;
+  height: 1px;
+  width: 128px;
+  margin: 0 32px 0 0;
+  background-color: #100F0F;
   position: relative;
-  display: inline-block;
-  margin: 0 32px 2px 0;
-  vertical-align: middle;
+  top: 16px;
 }
 
 .heading__tag {
-  margin: 0 0 168px;
+  margin: 0 0 48px;
 }
 
 .h2 {
@@ -284,6 +310,14 @@ text-transform: uppercase;
 html {
   background-color: #fff;
 }
+
+
+/********************************/
+
+
+
+
+
 
 
 

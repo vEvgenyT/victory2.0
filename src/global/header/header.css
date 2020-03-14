@@ -3,4 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 56px 72px;
+  position: sticky;
+  top: 0px;
+  padding: 0 24px 0;
+  z-index: 1000;
 }

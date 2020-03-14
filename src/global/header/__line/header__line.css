@@ -1,7 +1,7 @@
 .header__line {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #DCDBDA;
   position: absolute;
-  top: 60px;
+  top: 40px;
   width: 0px;
   transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
   transform: translateX(-8px);

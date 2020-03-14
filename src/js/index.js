@@ -11,61 +11,41 @@ Vue.directive('scroll', {
   }
 })
 
-new Vue({
+var scroll = new Vue({
   el: '#js-scroll',
   methods: {
     position: function (evt, el) {
-      if (el.getBoundingClientRect().top < window.innerHeight  && el.getBoundingClientRect().bottom > 1) {
 
+      if (el.getBoundingClientRect().top < window.innerHeight/2  && el.getBoundingClientRect().bottom > 0) {
+        document.querySelectorAll('body, .g-h1, .g-h2, .g-h3, .g-h4, .g-h5, .g-h6, .g-tag, .g-p_grey70, .service-items__type_style, .g-a, .a_style').forEach(function(i){i.classList.remove('fade-out')});
 
-
-
-let x = window.innerHeight / 2.5,
-    v = 94 / x,
-    d = window.innerHeight - el.getBoundingClientRect().top,
-    e = 100 - (d * v);
-
-        var [h,s,l] = [31, 3, e].map(Math.round);
-
-        if (l < 6 || (100 - l) > 86) {
-          document.body.style.backgroundColor = `hsl(${h}, ${s+'%'}, ${'6%'}`;
-        } else {
-            document.body.style.backgroundColor = `hsl(${h}, ${s+'%'}, ${l+'%'})`;
-            // document.querySelectorAll('.g-h2').forEach(function(i){i.style.color = `hsl(${h}, ${s+'%'}, ${100-l+'%'})`});
-        }
-
-var content = window.getComputedStyle(document.querySelector('.g-tag'),':after').borderBottom;
-// console.log(content);
-
-        document.querySelectorAll('.g-h1').forEach(function(i){i.classList.add('g_grey10')});
-        document.querySelectorAll('.g-h2').forEach(function(i){i.classList.add('g_grey10')});
-        document.querySelectorAll('.g-h3').forEach(function(i){i.classList.add('g_grey10')});
-        document.querySelectorAll('.g-h4').forEach(function(i){i.classList.add('g_grey10')});
-        document.querySelectorAll('.g-h5').forEach(function(i){i.classList.add('g_grey10')});
-        document.querySelectorAll('.g-h6').forEach(function(i){i.classList.add('g_grey10')});
+        document.querySelector('body').classList.add('g-body');
+        document.querySelectorAll('body, .g-h1, .g-h2, .g-h3, .g-h4, .g-h5, .g-h6, .g-tag, .g-p_grey70, .service-items__type_style, .g-a, .a_style').forEach(function(i){i.classList.add('fade-in')});
+        document.querySelectorAll('.g-h1, .g-h2, .g-h3, .g-h4, .g-h5, .g-h6').forEach(function(i){i.classList.add('g_grey10')});
         document.querySelectorAll('.g-tag').forEach(function(i){i.classList.add('g_grey40')});
         document.querySelectorAll('.g-p_grey70').forEach(function(i){i.classList.add('g_grey30')});
         document.querySelectorAll('.service-items__type_style').forEach(function(i){i.classList.add('g_hr40')});
-        document.querySelectorAll('.g-a').forEach(function(i){i.classList.add('g_grey20')});
-        document.querySelectorAll('.a_style').forEach(function(i){i.classList.add('a_style-grey20')});
-      } else {
-          document.body.style.backgroundColor = 'white';
+        // document.querySelectorAll('.g-a').forEach(function(i){i.classList.add('g_grey20')});
+        // document.querySelectorAll('.a_style').forEach(function(i){i.classList.add('a_style-grey20')});
 
-          document.querySelectorAll('.g-h1').forEach(function(i){i.classList.remove('g_grey10')});
-          document.querySelectorAll('.g-h2').forEach(function(i){i.classList.remove('g_grey10')});
-          document.querySelectorAll('.g-h3').forEach(function(i){i.classList.remove('g_grey10')});
-          document.querySelectorAll('.g-h4').forEach(function(i){i.classList.remove('g_grey10')});
-          document.querySelectorAll('.g-h5').forEach(function(i){i.classList.remove('g_grey10')});
-          document.querySelectorAll('.g-h6').forEach(function(i){i.classList.remove('g_grey10')});
+      } else  {
+          document.querySelectorAll('body, .g-h1, .g-h2, .g-h3, .g-h4, .g-h5, .g-h6, .g-tag, .g-p_grey70, .service-items__type_style, .g-a, .a_style').forEach(function(i){i.classList.remove('fade-in')});
+          document.querySelector('body').classList.remove('g-body');
+          document.querySelectorAll('.g-h1, .g-h2, .g-h3, .g-h4, .g-h5, .g-h6').forEach(function(i){i.classList.remove('g_grey10')});
           document.querySelectorAll('.g-tag').forEach(function(i){i.classList.remove('g_grey40')});
           document.querySelectorAll('.g-p_grey70').forEach(function(i){i.classList.remove('g_grey30')});
           document.querySelectorAll('.service-items__type_style').forEach(function(i){i.classList.remove('g_hr40')});
-          document.querySelectorAll('.g-a').forEach(function(i){i.classList.remove('g_grey20')});
-          document.querySelectorAll('.a_style').forEach(function(i){i.classList.remove('a_style-grey20')});
+          // document.querySelectorAll('.g-a').forEach(function(i){i.classList.remove('g_grey20')});
+          // document.querySelectorAll('.a_style').forEach(function(i){i.classList.remove('a_style-grey20')});
+
+
+          document.querySelectorAll('body, .g-h1, .g-h2, .g-h3, .g-h4, .g-h5, .g-h6, .g-tag, .g-p_grey70, .service-items__type_style, .g-a, .a_style').forEach(function(i){i.classList.add('fade-out')});
       }
     }
   }
 });
+
+
 
 // ***************************************
 // Курсор
