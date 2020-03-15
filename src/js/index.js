@@ -137,7 +137,7 @@ const $ = s => document.querySelector(s)
 
 const cursor = cursorDot({
   easing: 16,
-  background: '#fff',
+  background: '#DCDBDA',
   diameter: 5,
   borderWidth: 0 ,
   borderColor: 'transparent'
@@ -157,13 +157,13 @@ cursor.over($('#js-a-portfolio'), {
 
 cursor.over($('#js-a-service'), {
   scale: 12,
-  background: '#2A2928',
+  background: '#DCDBDA',
   borderColor: 'transparent'
 })
 
 cursor.over($('#js-a-contacts'), {
   scale: 12,
-  background: '#2A2928',
+  background: '#DCDBDA',
   borderColor: 'transparent'
 })
 
@@ -187,15 +187,32 @@ function removeDot() {
 }
 
 
+// *************************** Скролл портфолио ***************************
+//
 
 
+var textPath = document.querySelector('#text-path');
 
+var textContainer = document.querySelector('#text-container');
 
+var path = document.querySelector( textPath.getAttribute('href') );
 
+var pathLength = path.getTotalLength();
 
+function updateTextPathOffset(offset){
+  textPath.setAttribute('startOffset', offset);
+}
 
+updateTextPathOffset(pathLength);
 
+function onScroll(){
+  requestAnimationFrame(function(){
+    var rect = textContainer.getBoundingClientRect();
+    var scrollPercent = rect.y / window.innerHeight;
+    updateTextPathOffset( scrollPercent * 2 * pathLength );
+  });
+}
 
-
+window.addEventListener('scroll',onScroll);
 
 
