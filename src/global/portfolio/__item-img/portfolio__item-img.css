@@ -3,3 +3,7 @@
   width: 336px;
   height: auto;
 }
+
+.portfolio__item-img:hover {
+  filter: url(#link);
+}

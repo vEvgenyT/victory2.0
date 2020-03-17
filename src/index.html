@@ -123,6 +123,15 @@
       <strong>Для полной работы сайта необходимо включить JavaScript.</strong>
     </noscript>
 
+    <svg class="visually-hidden" width="0" height="0">
+      <defs>
+        <filter id="link">
+            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.0189" numOctaves="1"
+                result="turbulence_3" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_3" scale="40" />
+        </filter>
+      </defs>
+    </svg>
 
 
     <header class="header wrapper header_grey90">
@@ -166,7 +175,7 @@
 
           <h2 class="visually-hidden" aria-hidden="true" tabindex="-1" id="portfolio">Портфолио</h2>
 
-          <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg id="text-container" viewBox="0 0 1000 200" aria-hidden="true">
             <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
             <text y="40" font-size="54">
               <textPath id="text-path" href="#text-curve" startOffset="200">Портфолио</textPath>
@@ -178,7 +187,7 @@
           <figure class="portfolio__item">
             <picture>
               <source srcset="img/wild-2.jpg">
-              <img src="#" alt="Работа Wild" class="portfolio__item-img">
+              <img src="#" alt="Работа Wild" class="portfolio__item-img" onmouseenter="linkDistored()">
             </picture>
             <figcaption>
             <h3 class="g-h5 portfolio__item-title">Wild Nature</h3>
