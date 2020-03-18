@@ -221,32 +221,66 @@ window.addEventListener('scroll',onScroll);
 
 
 function linkDistored() {
-TweenMax.to("#turbwave", 8, {
-  attr:{"baseFrequency":0.0112},
-  // repeat:-1,
-  yoyo:true
-});
+
+  // document.querySelectorAll('.portfolio__item-img').forEach(function(i){i.style.filter="url(#link)"});
+
+// var tl = gsap.timeline({repeat:0, yoyo:true, repeatDelay: 0});
+//     tl.to('#turbwave', {
+//   ease: 'none',
+//   attr: {"baseFrequency":0.0112}
+// })
+// .to('#turbwave', {
+//   ease: 'none',
+//   attr: {"baseFrequency":0.0149}
+// })
+// .to('#turbwave', {
+//   ease: 'none',
+//   duration: 3,
+//   attr: {"baseFrequency":0.0},
+// });
+
+ // tl.onUpdate;
+  // tl.onComplete = removeLinkDistored();;
+
 }
 
 
 
-// class LinkFx1 extends LinkFx {
-//     constructor(el) {
-//         super(el);
-//         this.filterId = '#filter-1';
-//         this.DOM.feTurbulence = document.querySelector(`${this.filterId} > feTurbulence`);
-//         this.primitiveValues = {turbulence: 0};
 
-//         this.createTimeline();
-//         this.tl.eventCallback('onUpdate', () => this.DOM.feTurbulence.setAttribute('baseFrequency', this.primitiveValues.turbulence));
-//         this.tl.to(this.primitiveValues, {
-//             duration: 0.4,
-//             //ease: "Quint.easeOut",
-//             startAt: {turbulence: 0.09},
-//             turbulence: 0
-//         });
-//     }
-// }
+
+  var tl = gsap.timeline({repeat:0, yoyo:true,
+    onComplete: () => {
+      removeLinkDistored();
+    }
+  });
+
+
+
+
+function removeLinkDistored () {
+  document.querySelectorAll('.portfolio__item-img').forEach(function(i){i.style.filter="none"});
+}
+
+window.onscroll = function() {
+  document.querySelectorAll('.portfolio__item-img').forEach(function(i){i.style.filter="url(#link)"});
+
+
+    tl.to('#turbwave', {
+    ease: 'none',
+    attr: {"baseFrequency":0.0112}
+  })
+.to('#turbwave', {
+  ease: 'none',
+  attr: {"baseFrequency":0.0149}
+})
+.to('#turbwave', {
+  ease: 'none',
+  // duration: 3,
+  attr: {"baseFrequency":0.0},
+});
+
+  // linkDistored();
+};
 
 
 

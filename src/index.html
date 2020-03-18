@@ -126,9 +126,9 @@
     <svg class="visually-hidden" width="0" height="0">
       <defs>
         <filter id="link">
-            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.0189" numOctaves="1"
+            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.0" numOctaves="1"
                 result="turbulence_3" data-filterId="3" />
-            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_3" scale="40" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_3" scale="30" />
         </filter>
       </defs>
     </svg>
@@ -187,7 +187,7 @@
           <figure class="portfolio__item">
             <picture>
               <source srcset="img/wild-2.jpg">
-              <img src="#" alt="Работа Wild" class="portfolio__item-img" onmouseenter="linkDistored()">
+              <img src="#" alt="Работа Wild" class="portfolio__item-img">
             </picture>
             <figcaption>
             <h3 class="g-h5 portfolio__item-title">Wild Nature</h3>
