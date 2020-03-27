@@ -73,7 +73,6 @@ line-height: 32px;
 letter-spacing: -0.006em;
 text-decoration-line: none;
 color: #F6416C;
-/*color: #2A2928;*/
 }
 
 .g-span {
@@ -240,12 +239,27 @@ color: #444340;
 
 .a_style {
   border-bottom: 1px solid #F6416C;
+  background: linear-gradient(-30deg, #861657, #5F0A87, #7EE8FA, #F9C5D1);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 3s ease-in-out infinite;
+  -webkit-background-clip: text;
 }
 
-.a_style-grey20 {
-  border-bottom: 1px solid #C4C2C0;
-}
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
 
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .heading__h1 {
   margin: 0 0 64px;

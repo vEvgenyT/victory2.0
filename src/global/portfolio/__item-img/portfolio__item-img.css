@@ -4,6 +4,6 @@
   height: auto;
 }
 
-.portfolio__item-img {
-  /*filter: url(#link);*/
+.portfolio__item-img:hover {
+  filter: url(#link);
 }

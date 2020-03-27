@@ -137,15 +137,15 @@ const $ = s => document.querySelector(s)
 
 const cursor = cursorDot({
   easing: 16,
-  background: '#DCDBDA',
+  background: '#0652C5',
   diameter: 5,
-  borderWidth: 0 ,
+  borderWidth: 1 ,
   borderColor: 'transparent'
 })
 
 cursor.over($('#js-a-about'), {
   scale: 12,
-  background: '#2A2928',
+  background: '#0652C5',
   borderColor: 'transparent'
 })
 
@@ -222,65 +222,21 @@ window.addEventListener('scroll',onScroll);
 
 function linkDistored() {
 
-  // document.querySelectorAll('.portfolio__item-img').forEach(function(i){i.style.filter="url(#link)"});
-
-// var tl = gsap.timeline({repeat:0, yoyo:true, repeatDelay: 0});
-//     tl.to('#turbwave', {
-//   ease: 'none',
-//   attr: {"baseFrequency":0.0112}
-// })
-// .to('#turbwave', {
-//   ease: 'none',
-//   attr: {"baseFrequency":0.0149}
-// })
-// .to('#turbwave', {
-//   ease: 'none',
-//   duration: 3,
-//   attr: {"baseFrequency":0.0},
-// });
-
- // tl.onUpdate;
-  // tl.onComplete = removeLinkDistored();;
-
-}
-
-
-
-
-
-  var tl = gsap.timeline({repeat:0, yoyo:true,
-    onComplete: () => {
-      removeLinkDistored();
-    }
-  });
-
-
-
-
-function removeLinkDistored () {
-  document.querySelectorAll('.portfolio__item-img').forEach(function(i){i.style.filter="none"});
-}
-
-window.onscroll = function() {
-  document.querySelectorAll('.portfolio__item-img').forEach(function(i){i.style.filter="url(#link)"});
-
-
-    tl.to('#turbwave', {
+  var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
+  tl.to('#turbwave', {
     ease: 'none',
     attr: {"baseFrequency":0.0112}
   })
-.to('#turbwave', {
-  ease: 'none',
-  attr: {"baseFrequency":0.0149}
-})
-.to('#turbwave', {
-  ease: 'none',
-  // duration: 3,
-  attr: {"baseFrequency":0.0},
-});
-
-  // linkDistored();
-};
+  .to('#turbwave', {
+    ease: 'none',
+    attr: {"baseFrequency":0.0149}
+  })
+. to('#turbwave', {
+    ease: 'none',
+    duration: 3,
+    attr: {"baseFrequency":0.0},
+  });
+}
 
 
 
