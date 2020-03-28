@@ -220,8 +220,6 @@ color: #444340;
   visibility: hidden;
   margin: 0;
   padding: 0;
-  /*width: 0px;*/
-  /*height: 0px;*/
 }
 
 /* ************************************************************** */
@@ -239,12 +237,17 @@ color: #444340;
 
 .a_style {
   border-bottom: 1px solid #F6416C;
-  background: linear-gradient(-30deg, #861657, #5F0A87, #7EE8FA, #F9C5D1);
+}
+
+.a_style:hover {
+  background: linear-gradient(-60deg, #F6416C, #09C6F9, #7F53AC, #F6416C);
+}
+
+.a_style:hover {
   background-size: 300%;
+  animation: flow 6s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: flow 3s ease-in-out infinite;
-  -webkit-background-clip: text;
 }
 
 @keyframes flow {
