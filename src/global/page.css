@@ -310,6 +310,10 @@ color: #444340;
   margin: 0 0 128px;
 }
 
+.page-img:hover {
+  filter: url(#link);
+}
+
 .picture {
   display: flex;
   flex-direction: column;

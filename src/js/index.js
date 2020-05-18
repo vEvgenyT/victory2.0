@@ -238,6 +238,25 @@ function linkDistored() {
   });
 }
 
+function linkDistoredMain() {
+
+  var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
+  tl.to('#turbwave', {
+    ease: 'none',
+    duration: 4,
+    attr: {"baseFrequency":0.03333}
+  })
+  .to('#turbwave', {
+    ease: 'none',
+    duration: 2,
+    attr: {"baseFrequency":0.02222}
+  });
+}
+
+function rndnum() {
+  return Math.random() * (0.0119 - 0.001) + 0.001;
+}
+
 
 
 
