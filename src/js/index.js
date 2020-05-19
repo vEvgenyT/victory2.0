@@ -243,19 +243,24 @@ function linkDistoredMain() {
   var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
   tl.to('#turbwave', {
     ease: 'none',
-    duration: 4,
-    attr: {"baseFrequency":0.03333}
+    duration: 2,
+    attr: {"baseFrequency":0.01400}
   })
   .to('#turbwave', {
     ease: 'none',
-    duration: 2,
-    attr: {"baseFrequency":0.02222}
+    duration: 1,
+    attr: {"baseFrequency":0.01000}
+  })
+  .to('#turbwave', {
+    ease: 'none',
+    duration: 0,
+    attr: {"baseFrequency":0.0600}
   });
 }
 
-function rndnum() {
-  return Math.random() * (0.0119 - 0.001) + 0.001;
-}
+// function rndnum() {
+//   return Math.random() * (0.0119 - 0.001) + 0.001;
+// }
 
 
 
