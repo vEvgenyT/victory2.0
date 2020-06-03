@@ -191,33 +191,34 @@ function removeDot() {
 //
 
 
-var textPath = document.querySelector('#text-path');
+// var textPath = document.querySelector('#text-path');
 
-var textContainer = document.querySelector('#text-container');
+// var textContainer = document.querySelector('#text-container');
 
-var path = document.querySelector( textPath.getAttribute('href') );
+// var path = document.querySelector( textPath.getAttribute('href') );
 
-var pathLength = path.getTotalLength();
+// var pathLength = path.getTotalLength();
 
-function updateTextPathOffset(offset){
-  textPath.setAttribute('startOffset', offset);
-}
+// function updateTextPathOffset(offset){
+//   textPath.setAttribute('startOffset', offset);
+// }
 
-updateTextPathOffset(pathLength);
+// updateTextPathOffset(pathLength);
 
-function onScroll(){
-  requestAnimationFrame(function(){
-    var rect = textContainer.getBoundingClientRect();
-    var scrollPercent = rect.y / window.innerHeight;
-    updateTextPathOffset( scrollPercent * 2 * pathLength );
-  });
-}
+// function onScroll(){
+//   requestAnimationFrame(function(){
+//     var rect = textContainer.getBoundingClientRect();
+//     var scrollPercent = rect.y / window.innerHeight;
+//     updateTextPathOffset( scrollPercent * 2 * pathLength );
+//   });
+// }
 
-window.addEventListener('scroll',onScroll);
-
-
+// window.addEventListener('scroll',onScroll);
 
 
+
+// *************************** Волновой эффект ***************************
+//
 
 
 function linkDistored() {
@@ -261,16 +262,6 @@ function linkDistoredMain() {
 // function rndnum() {
 //   return Math.random() * (0.0119 - 0.001) + 0.001;
 // }
-
-
-
-
-
-
-
-
-
-
 
 
 
