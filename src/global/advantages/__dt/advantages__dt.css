@@ -39,3 +39,37 @@
 .advantages__dt:nth-of-type(9) {
   grid-area: dt-9;
 }
+
+@media only screen and (min-width: 768px) {
+  .advantages__dt {
+  width: 228px;
+  margin: 0 0 16px 0;
+}
+
+.advantages__dt::after {
+  content: "";
+  border-bottom: 3px solid #5F5C59;
+  width: 228px;
+  position: relative;
+  display: inline-block;
+  bottom: -8px;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .advantages__dt {
+  width: 336px;
+  margin: 0 0 20px 0;
+}
+
+.advantages__dt::after {
+  content: "";
+  border-bottom: 1px solid #5F5C59;
+  width: 336px;
+  position: relative;
+  display: inline-block;
+  bottom: -8px;
+}
+}
+
+
+

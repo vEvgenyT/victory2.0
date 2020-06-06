@@ -1,4 +1,115 @@
+(function(){
+'use strict';
+}).call(this)
 "use strict";
+
+var el;
+
+var currentElem = null;
+var parent = document.querySelector('#contacts');
+parent.onmouseover = function(event) {
+  if (currentElem) return;
+  let target = event.target.closest('a.g-a-mail');
+  if (!target) return;
+  currentElem = target;
+  splitter(currentElem.id);
+};
+
+parent.onmouseout = function(event) {
+  if (!currentElem) return;
+  let relatedTarget = event.relatedTarget;
+  while (relatedTarget) {
+
+    if (relatedTarget == currentElem) return;
+
+    relatedTarget = relatedTarget.parentNode;
+
+  }
+      // merger(currentElem.id);
+  currentElem = null;
+};
+
+function splitter(id) {
+
+  id = '#' + id;
+  el = document.querySelector(id).innerText.split("")
+  document.querySelector(id).innerText = '';
+
+  let span = new DocumentFragment();
+
+  for (let i = 0; i < el.length; i++) {
+    let tmp = document.createElement('span');
+    tmp.innerText = el[i];
+    tmp.className = 'g-a-mail char-class g_grey10';
+    span.append(tmp);
+  };
+
+  document.querySelector(id).append(span);
+  animation(id);
+};
+
+
+// function merger(id) {
+//   id = '#' + id;
+//   let span = document.querySelectorAll('.char-class');
+//   for (let i = 0; i < span.length; i++) {
+//     span[i].remove();
+//   }
+
+//   document.querySelector(id).innerText = el.join('')
+
+//   return;
+// }
+
+function animation(id) {
+  let dom = {el: document.querySelector(id)};
+  dom.letters = [dom.el.querySelectorAll('span')];
+
+
+            TweenMax.killTweensOf(dom.letters);
+            TweenMax.set(dom.letters, {opacity: 0});
+            TweenMax.staggerTo(dom.letters, 0.8, {
+                ease: Elastic.easeOut.config(1,0.6),
+                startAt: {y: '-70%'},
+                y: '0%',
+                opacity: 1
+            }, 0.025);
+}
+
+var navLine = new Vue ({
+  el: '#js-nav-line',
+  data: {
+    isActive: {
+      'header__line_about': false,
+      'header__line_portfolio': false,
+      'header__line_service': false,
+      'header__line_contacts': false
+    },
+    lineConst: ''
+  },
+  methods: {
+    click: function(el) {
+      this.lineConst = el;
+      this.clear();
+      this.isActive[this.lineConst] = true;
+    },
+    hover: function(el) {
+      this.clear();
+      this.isActive[el] = true;
+    },
+    leave: function(){
+      this.clear();
+      this.isActive[this.lineConst] = true;
+    },
+    clear: function() {
+      for (var key in this.isActive) {
+        this.isActive[key] = false;
+      };
+    }
+  }
+});
+
+
 
 Vue.directive('scroll', {
   inserted: function (el, binding) {
@@ -221,54 +332,84 @@ function removeDot() {
 //
 
 
-function linkDistored() {
+// function linkDistored() {
 
-  var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
-  tl.to('#turbwave', {
-    ease: 'none',
-    attr: {"baseFrequency":0.0112}
-  })
-  .to('#turbwave', {
-    ease: 'none',
-    attr: {"baseFrequency":0.0149}
-  })
-. to('#turbwave', {
-    ease: 'none',
-    duration: 3,
-    attr: {"baseFrequency":0.0},
-  });
-}
+//   var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
+//   tl.to('#turbwave', {
+//     ease: 'none',
+//     attr: {"baseFrequency":0.0112}
+//   })
+//   .to('#turbwave', {
+//     ease: 'none',
+//     attr: {"baseFrequency":0.0149}
+//   })
+// . to('#turbwave', {
+//     ease: 'none',
+//     duration: 3,
+//     attr: {"baseFrequency":0.0},
+//   });
+// }
 
-function linkDistoredMain() {
+// function linkDistoredMain() {
 
-  var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
-  tl.to('#turbwave', {
-    ease: 'none',
-    duration: 2,
-    attr: {"baseFrequency":0.01400}
-  })
-  .to('#turbwave', {
-    ease: 'none',
-    duration: 1,
-    attr: {"baseFrequency":0.01000}
-  })
-  .to('#turbwave', {
-    ease: 'none',
-    duration: 0,
-    attr: {"baseFrequency":0.0600}
-  });
-}
+//   var tl = gsap.timeline({repeat:-1, yoyo:true, repeatDelay: 0});
+//   tl.to('#turbwave', {
+//     ease: 'none',
+//     duration: 2,
+//     attr: {"baseFrequency":0.01400}
+//   })
+//   .to('#turbwave', {
+//     ease: 'none',
+//     duration: 1,
+//     attr: {"baseFrequency":0.01000}
+//   })
+//   .to('#turbwave', {
+//     ease: 'none',
+//     duration: 0,
+//     attr: {"baseFrequency":0.0600}
+//   });
+// }
 
 // function rndnum() {
 //   return Math.random() * (0.0119 - 0.001) + 0.001;
 // }
 
 
+/* *********************** Анимация появления текста при скролле *************************************** */
+
+var title = document.querySelectorAll('#js-title_animation');
+var paragraph = document.querySelectorAll('#js-paragraphg_animation');
+var moveIn = document.querySelectorAll('.service-items__type');
+var picture = document.querySelectorAll('.portfolio__item-img');
 
 
 
+window.addEventListener('scroll', function() {
+
+  title.forEach(function(i) {
+    if (i.getBoundingClientRect().top < window.innerHeight && i.getBoundingClientRect().top > 0) {i.classList.add('g-title_animation')}
+  })
+
+  paragraph.forEach(function(i) {
+    if (i.getBoundingClientRect().top < window.innerHeight && i.getBoundingClientRect().top > 0) {i.classList.add('g-paragraph_animation')}
+  })
+
+    // desc.forEach(function(i) {
+    // if (i.getBoundingClientRect().top < window.innerHeight && i.getBoundingClientRect().top > 0) {i.classList.add('animation-desc')}
+    // })
+
+    // picture.forEach(function(i) {
+    // if (i.getBoundingClientRect().top < window.innerHeight && i.getBoundingClientRect().top > 0) {
+    //     i.classList.add('animation-picture');
+    //     // i.style.transform = `scale(${1+(30/i.getBoundingClientRect().top)})`;
+
+    //     console.log(i.getBoundingClientRect().top);
+    //   }
+    // })
 
 
+
+})
 
 
 

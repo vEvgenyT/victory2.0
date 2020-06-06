@@ -50,7 +50,8 @@ var path = {
               'src/**/advantages/**/*.css',
               'src/**/contacts/**/*.css',
               'src/**/header/**/*.css',
-              'src/**/portfolio/**/*.css'
+              'src/**/portfolio/**/*.css',
+              'src/**/color.css'
 
         ]
     },

@@ -123,7 +123,7 @@
       <strong>Для полной работы сайта необходимо включить JavaScript.</strong>
     </noscript>
 
-    <svg class="visually-hidden" width="0" height="0">
+<!--     <svg class="visually-hidden" width="0" height="0">
       <defs>
         <filter id="link">
             <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.0" numOctaves="1"
@@ -132,7 +132,7 @@
         </filter>
       </defs>
     </svg>
-
+ -->
 
     <header class="header wrapper header_grey90">
       <a href="https://www.victory.net.ua/" class="header__logo"><img src="img/logo_desktop.svg" alt="Логотип студии victory в виде буквы В латинского алфавита"></a>
@@ -159,13 +159,28 @@
 
       <article class="wrapper">
 
-<!--         <picture class="picture">
-            <img src="img/griffin@x3.png" class="page-img" alt="иллюстрация грифона развивающегося на ветру" onmouseenter="linkDistoredMain()">
-        </picture> -->
+        <picture class="picture">
+            <img src="img/griffin@x3.png" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
+        </picture>
+        <span class="sign g-p" id="sign">
+          <span>s</span>
+          <span>c</span>
+          <span>r</span>
+          <span>o</span>
+          <span>l</span>
+          <span>l</span>
+          <span>&nbsp;</span>
+          <span>d</span>
+          <span>o</span>
+          <span>w</span>
+          <span>n</span>
+        </span>
 
-        <h1 tabindex="0" class="g-h1 h1 heading__h1">Веб дизайн и&nbsp;разработка сайтов</h1>
+        <!-- <canvas class="object"></canvas> -->
 
-        <p class="g-p p heading__p">Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный дизайн и&nbsp;удобную структуру.</p>
+        <h1 tabindex="0" class="g-h1 h1 heading__h1"><span id="js-title_animation" class="em">Веб дизайн и&nbsp;разработка&nbsp;сайтов</span></h1>
+
+        <p class="g-p p heading__p" id="js-paragraphg_animation">Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный дизайн и&nbsp;удобную структуру.</p>
 
         <a href="#" class="g-a a a_style" aria-label="ссылка на раздел 'Обо мне'" id="js-a-about">Давайте познакомимся</a>
 
@@ -185,8 +200,8 @@
 
           <figure class="portfolio__item">
             <picture>
-              <source srcset="img/wild-2.jpg">
-              <img src="#" alt="Работа Wild" class="portfolio__item-img" onmouseenter="linkDistored()">
+              <source srcset="img/wild.svg">
+              <img src="#" alt="Работа Wild" class="portfolio__item-img">
             </picture>
             <figcaption>
             <h3 class="g-h5 portfolio__item-title">Wild Nature</h3>
@@ -196,8 +211,8 @@
 
           <figure class="portfolio__item">
             <picture>
-              <source srcset="img/beard.jpg">
-              <img src="#" alt="Работа Beard humor" class="portfolio__item-img" onmouseenter="linkDistored()">
+              <source srcset="img/beard.svg">
+              <img src="#" alt="Работа Beard humor" class="portfolio__item-img">
             </picture>
             <figcaption>
             <h3 class="g-h5 portfolio__item-title">Beard Humor</h3>
@@ -208,7 +223,7 @@
           <figure class="portfolio__item">
             <picture>
               <source srcset="img/leica.jpg">
-              <img src="#" alt="Работа Leica" class="portfolio__item-img" onmouseenter="linkDistored()">
+              <img src="#" alt="Работа Leica" class="portfolio__item-img">
             </picture>
             <figcaption>
             <h3 class="g-h5 portfolio__item-title">Leica</h3>
@@ -224,12 +239,12 @@
 
         <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service" id="js-scroll" v-scroll="position">
 
-          <p id="service" tabindex="-1" class="g-tag tag heading__tag">услуги</p>
-          <h2 tabindex="0" class="g-h2 h2 service__h2">Что я делаю</h2>
+          <p id="service" tabindex="-1" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">услуги</span></p>
+          <h2 tabindex="0" class="g-h2 h2 service__h2 heading-h2"><span id="js-title_animation" class="em">Что я делаю</span></h2>
 
           <ul class="service-items">
 
-            <li aria-labelledby="all-in-1-solution" class="service-items__type service-items__type_style">
+            <li aria-labelledby="all-in-1-solution" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
               <h3 id="all-in-1-solution" class="g-h6 service-items__type-title" itemprop="serviceType">Комплексные решения</h3>
               <ul class="service-items__item-group">
                 <li itemprop="name" class="g-p g-p_grey70 service-items__item">лендинг</li>
@@ -239,7 +254,7 @@
               </ul>
             </li>
 
-            <li aria-labelledby="web-design" class="service-items__type service-items__type_style">
+            <li aria-labelledby="web-design" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
               <h3 id="web-design" class="g-h6 service-items__type-title" itemprop="serviceType">Веб дизайн</h3>
               <ul class="service-items__item-group">
                 <li itemprop="name"class="g-p g-p_grey70 service-items__item">UI/UX</li>
@@ -249,7 +264,7 @@
               </ul>
             </li>
 
-            <li aria-labelledby="development" class="service-items__type service-items__type_style">
+            <li aria-labelledby="development" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
               <h3 id="development" class="g-h6 service-items__type-title" itemprop="serviceType">Разработка</h3>
               <ul class="service-items__item-group">
                 <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка html, css, js</li>
@@ -265,30 +280,30 @@
 
 
 
-        <section aria-labelledby="advantages" class="page_margin wrapper">
+        <section aria-labelledby="advantages" class="page_margin ">
 
-          <p id="advantages" class="g-tag tag heading__tag">преимущества</p>
-          <h2 tabindex="0" class="g-h2 h2 advantages__h2">Лучшие практики и&nbsp;подходы в&nbsp;создании сайтов</h2>
+          <p id="advantages" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">преимущества</span></p>
+          <h2 tabindex="0" class="g-h2 h2 advantages__h2 heading-h2"><span id="js-title_animation" class="em">Лучшие практики и&nbsp;подходы в создании сайтов</span></h2>
 
           <dl class="advantages">
-            <dt class="g-h6 advantages__dt">Доступность</dt>
-            <dd class="g-span advantages__inner-margin">Люди с ограниченными возможностями будут взаимодействовать с контентом на сайте, благодаря разработке в соответствии со стандартами WCAG.</dd>
-            <dt class="g-h6 advantages__dt">Сначала смартфоны</dt>
-            <dd class="g-span advantages__inner-margin">Разработка ведется от телефонов к десктопу.  Это благоприятно сказывается на SEO и комфорте от использования сайта с мобильных устройств.</dd>
-            <dt class="g-h6 advantages__dt">Кроссбраузерность</dt>
-            <dd class="g-span advantages__inner-margin">Верстка выглядит превосходно на современных устройствах и веб-браузерах.</dd>
-            <dt class="g-h6 advantages__dt">SPA</dt>
-            <dd class="g-span advantages__inner-margin">Максимальная интерактивность и безупречный UX для пользователей.</dd>
-            <dt class="g-h6 advantages__dt">Интеграция с CMS</dt>
-            <dd class="g-span advantages__inner-margin">Интегрирую статическую верстку на: Wordpress, Tilda, Readymag.</dd>
-            <dt class="g-h6 advantages__dt">Веб дизайн</dt>
-            <dd class="g-span advantages__inner-margin">Эффективный и актуальный визуальный язык для бизнеса в сети интернет.</dd>
-            <dt class="g-h6 advantages__dt">Анимация</dt>
-            <dd class="g-span advantages__inner-margin">Создаю анимацию: от перехода при наведении курсора до анимации основанной на webGL и взаимодействии с пользователем.</dd>
-            <dt class="g-h6 advantages__dt">Оптимизация графики</dt>
-            <dd class="g-span advantages__inner-margin">Графические файлы оптимизированы под дисплеи с высоким разрешением (Retina) и современные форматы (WebP).</dd>
-            <dt class="g-h6 advantages__dt">Стандартизация</dt>
-            <dd class="g-span advantages__inner-margin">Придерживаюсь передовых практик написания кода, отраслевых стандартов, использую собственную систему контроля, метрик и чек-листов.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Доступность</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Люди с ограниченными возможностями будут взаимодействовать с контентом на сайте, благодаря разработке в соответствии со стандартами WCAG.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Сначала смартфоны</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Разработка ведется от телефонов к десктопу.  Это благоприятно сказывается на SEO и комфорте от использования сайта с мобильных устройств.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Кроссбраузерность</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Верстка выглядит превосходно на современных устройствах и веб-браузерах.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">SPA</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Максимальная интерактивность и безупречный UX для пользователей.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Интеграция с CMS</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Интегрирую статическую верстку на: Wordpress, Tilda, Readymag.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Веб дизайн</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Эффективный и актуальный визуальный язык для бизнеса в сети интернет.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Анимация</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Создаю анимацию: от перехода при наведении курсора до анимации основанной на webGL и взаимодействии с пользователем.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Оптимизация графики</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Графические файлы оптимизированы под дисплеи с высоким разрешением (Retina) и современные форматы (WebP).</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Стандартизация</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Придерживаюсь передовых практик написания кода, отраслевых стандартов, использую собственную систему контроля, метрик и чек-листов.</dd>
           </dl>
         </section>
       </article>
@@ -355,6 +370,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>

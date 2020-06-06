@@ -1,6 +1,7 @@
 .portfolio__item {
   border-bottom: 1px solid #5F5C59;
   margin: 0 0 128px;
+  overflow: hidden;
 }
 
 .portfolio__item:nth-child(1) {

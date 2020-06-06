@@ -2,3 +2,15 @@
   width: 244px;
   list-style-type: none;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .service-items__item {
+  width: 156px;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .service-items__item {
+  width: 244px;
+}
+}

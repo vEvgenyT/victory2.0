@@ -1,7 +1,7 @@
 .advantages {
   display: grid;
-  grid-template-columns: minmax(152px, 1fr) 336px 336px;
-  grid-column-gap: 124px;
+  grid-template-columns: minmax(32px, 1fr) 336px 336px;
+  grid-column-gap: 64px;
   grid-template-areas:  ". dt dt-2"
                         ". dd dd-2"
                         ". dt-3 dt-4"
@@ -12,4 +12,36 @@
                         ". dd-7 dd-8"
                         ". dt-9 ."
                         ". dd-9 .";
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages {
+  display: grid;
+  grid-template-columns: minmax(32px, 1fr) 228px 228px;
+  grid-column-gap: 64px;
+  grid-template-areas:  ". dt dt-2"
+                        ". dd dd-2"
+                        ". dt-3 dt-4"
+                        ". dd-3 dd-4"
+                        ". dt-5 dt-6"
+                        ". dd-5 dd-6"
+                        ". dt-7 dt-8"
+                        ". dd-7 dd-8"
+                        ". dt-9 ."
+                        ". dd-9 .";
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  .advantages {
+    grid-template-columns: minmax(32px, 1fr) 336px 336px;
+    grid-column-gap: 64px;
+  }
+}
+
+@media only screen and (min-width: 1185px) {
+  .advantages {
+    grid-template-columns: minmax(152px, 1fr) 336px 336px;
+    grid-column-gap: 124px;
+  }
 }

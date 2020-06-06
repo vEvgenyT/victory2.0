@@ -1,3 +1,15 @@
 .service__h2 {
   margin: 0 0 128px;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .service__h2 {
+  margin: 0 0 96px;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .service__h2 {
+  margin: 0 0 128px;
+}
+}
