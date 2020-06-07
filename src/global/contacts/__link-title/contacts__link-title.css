@@ -3,3 +3,18 @@
   height: 44px;
   margin: 0 0 24px;
 }
+
+@media only screen and (min-width: 768px) {
+  .contacts__link-title {
+  border-bottom: 1px solid #928F8B;
+  height: 32px;
+  margin: 0 0 16px;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .contacts__link-title {
+  border-bottom: 1px solid #928F8B;
+  height: 44px;
+  margin: 0 0 24px;
+}
+}

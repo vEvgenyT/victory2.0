@@ -3,3 +3,18 @@
   transform: translateX(138px);
   transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
 }
+
+@media only screen and (min-width: 768px) {
+  .header__line_portfolio {
+
+  transform: translateX(139px);
+
+}
+}
+@media only screen and (min-width: 1024px) {
+  .header__line_portfolio {
+  width: 89px;
+  transform: translateX(138px);
+  transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
+}
+}

@@ -13,3 +13,26 @@
   bottom: -336px;
   left: 40%;
 }
+
+@media only screen and (min-width: 768px) {
+  .contacts {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(36px, 60px));
+  grid-gap: 32px;
+  grid-template-areas:  "title title title title title title title title ."
+                        "mail mail mail messenger messenger messenger social social social"
+                        "application application . . . . . . ."
+                        "terms terms terms terms terms terms terms . .";
+}
+}
+@media only screen and (min-width: 1024px) {
+  .contacts {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(36px, 60px));
+  grid-gap: 32px;
+  grid-template-areas:  "title title title title title title title title ."
+                        "mail mail mail messenger messenger messenger social social social"
+                        "application application . . . . . . ."
+                        "terms terms terms terms terms terms . . .";
+}
+}

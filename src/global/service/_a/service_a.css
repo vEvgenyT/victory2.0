@@ -1,3 +1,15 @@
 .service_a {
   width: 136px;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .service_a {
+  width: 100px;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .service_a {
+  width: 136px;
+}
+}
