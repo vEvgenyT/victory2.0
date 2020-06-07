@@ -8,10 +8,24 @@
                         "terms terms terms terms terms terms . . .";
 }
 
-.contacts_big-link {
+/*.contacts_big-link {
   position: absolute;
   bottom: -336px;
   left: 40%;
+}*/
+
+@media only screen and (min-width: 320px) {
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(52px, 1fr));
+  grid-gap: 24px;
+  grid-template-areas:  "title title title title"
+                        "mail mail mail mail"
+                        "messenger messenger messenger messenger"
+                        "social social social social"
+                        "application application application application"
+                        "terms terms terms terms";
+}
 }
 
 @media only screen and (min-width: 768px) {

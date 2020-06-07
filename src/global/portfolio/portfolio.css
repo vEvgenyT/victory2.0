@@ -4,3 +4,22 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+
+@media only screen and (min-width: 320px) {
+  .portfolio {
+
+  align-items: normal;
+}
+}
+@media only screen and (min-width: 768px) {
+  .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+}
+@media only screen and (min-width: 1024px) {
+
+}

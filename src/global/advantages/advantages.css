@@ -14,6 +14,32 @@
                         ". dd-9 .";
 }
 
+@media only screen and (min-width: 320px) {
+  .advantages {
+  display: grid;
+  grid-template-columns: minmax(52px, 1fr);
+  grid-column-gap: 24px;
+  grid-template-areas:  "dt"
+                        "dd"
+                        "dt-2"
+                        "dd-2"
+                        "dt-3"
+                        "dd-3"
+                        "dt-4"
+                        "dd-4"
+                        "dt-5"
+                        "dd-5"
+                        "dt-6"
+                        "dd-6"
+                        "dt-7"
+                        "dd-7"
+                        "dt-8"
+                        "dd-8"
+                        "dt-9"
+                        "dd-9";
+}
+}
+
 @media only screen and (min-width: 768px) {
   .advantages {
   display: grid;

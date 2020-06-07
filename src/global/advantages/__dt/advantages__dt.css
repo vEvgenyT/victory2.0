@@ -40,6 +40,17 @@
   grid-area: dt-9;
 }
 
+@media only screen and (min-width: 320px) {
+.advantages__dt::after {
+  border-bottom: 3px solid #5F5C59;
+}
+
+.advantages__dt {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+}
+
 @media only screen and (min-width: 768px) {
   .advantages__dt {
   width: 228px;

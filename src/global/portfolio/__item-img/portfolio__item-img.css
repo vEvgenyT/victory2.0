@@ -7,6 +7,13 @@
 /*.portfolio__item-img:hover {
   filter: url(#link);
 }*/
+@media only screen and (min-width: 320px) {
+  .portfolio__item-img {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
   .portfolio__item-img {
