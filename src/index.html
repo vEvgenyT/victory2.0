@@ -135,7 +135,19 @@
  -->
 
     <header class="header wrapper header_grey90">
-      <a href="https://www.victory.net.ua/" class="header__logo"><img src="img/logo_desktop.svg" alt="Логотип студии victory в виде буквы В латинского алфавита"></a>
+      <div class="header-main">
+      <a href="https://www.victory.net.ua/" class="header__logo">
+        <picture>
+          <source srcset="img/logo-mobile.svg" media="(min-width: 320px) and (max-width:767px)">
+          <img src="img/logo_desktop.svg" class="header__logo_img-position" alt="Логотип студии victory в виде буквы В латинского алфавита">
+        </picture>
+      </a>
+      <button>
+        <span class="header-main_line"></span>
+        <span class="header-main_line"></span>
+        <span class="header-main_line"></span>
+      </button>
+    </div>
 
       <nav class="header__menu" id="js-nav-line">
         <ul class=" header__menu_style header__items">
@@ -147,7 +159,7 @@
         <span class="header__line" v-bind:class="isActive"></span>
       </nav>
 
-      <fieldset class="g-lng header__field">
+      <fieldset class="g-lng header__field header_style">
         <label class=""><input type="radio" name="language" value="ua" aria-label="переключение на Украинский язык" class="visually-hidden">ua</label>
         <label class=""><input type="radio" name="language" value="en" aria-label="переключение на Английский язык" class="visually-hidden">ru</label>
       </fieldset>
@@ -163,18 +175,17 @@
             <img src="img/griffin@x3.png" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
         </picture>
         <span class="sign g-p" id="sign">
-          <span>d</span>
-          <span>e</span>
           <span>s</span>
-          <span>i</span>
-          <span>g</span>
-          <span>n</span>
-          <span>&nbsp;</span>
-          <span>&</span>
+          <span>c</span>
+          <span>r</span>
+          <span>o</span>
+          <span>l</span>
+          <span>l</span>
           <span>&nbsp;</span>
           <span>d</span>
-          <span>e</span>
-          <span>v</span>
+          <span>o</span>
+          <span>w</span>
+          <span>n</span>
         </span>
 
         <!-- <canvas class="object"></canvas> -->
@@ -201,7 +212,7 @@
 
           <figure class="portfolio__item">
             <picture>
-              <source srcset="img/wild-phone.svg" media="(min-width: 320px) and (max-width:768px)">
+              <source srcset="img/wild-phone.svg" media="(min-width: 320px) and (max-width:767px)">
               <img src="img/wild.svg" alt="Работа Wild" class="portfolio__item-img">
             </picture>
             <figcaption>
@@ -212,7 +223,7 @@
 
           <figure class="portfolio__item">
             <picture>
-              <source srcset="img/beard-phone.svg" media="(min-width: 320px) and (max-width:768px)">
+              <source srcset="img/beard-phone.svg" media="(min-width: 320px) and (max-width:767px)">
               <img src="img/beard.svg" alt="Работа Beard humor" class="portfolio__item-img">
             </picture>
             <figcaption>
@@ -223,9 +234,9 @@
 
           <figure class="portfolio__item">
             <picture>
-              <source srcset="img/leica@x1.jpg" media="(min-width: 320px) and (max-width:768px)">
-              <source srcset="img/griffin.png" media="(min-width: 320px) and (max-width:768px)">
-              <source srcset="img/beard.svg" media="(min-width: 320px) and (max-width:768px)">
+              <source srcset="img/leica@x1.jpg" media="(min-width: 320px) and (max-width:767px)">
+              <source srcset="img/griffin.png" media="(min-width: 320px) and (max-width:767px)">
+              <source srcset="img/beard.svg" media="(min-width: 320px) and (max-width:767px)">
               <img src="img/leica.jpg" alt="Работа Leica" class="portfolio__item-img">
             </picture>
             <figcaption>

@@ -1,0 +1,9 @@
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.header_style {
+  background-color: #100f0f;
+  width: 12vh;
+  height: 12vw;
+}
+}

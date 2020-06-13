@@ -1,3 +1,22 @@
 .header__logo {
+  /*height: 23px;*/
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+/*  .header__logo {
+  height: 64px;
+  width: 32px;
+  background-color: #100f0f;
+  display: flex;
+  justify-content: center;
+}
+*/}
+
+@media only screen and (min-width: 768px) {
+  .header__logo {
   height: 23px;
 }
+}
+
+@media only screen and (min-width: 1024px) {}

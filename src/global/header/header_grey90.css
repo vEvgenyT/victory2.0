@@ -1,3 +1,16 @@
 .header_grey90 {
   background-color: #100F0F;
 }
+
+
+@media only screen and (min-width: 320px) {
+  .header_grey90 {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header_grey90 {
+  background-color: #100F0F;
+}
+}
