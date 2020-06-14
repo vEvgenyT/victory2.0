@@ -3,3 +3,17 @@
   justify-content: space-between;
   padding: 0;
 }
+
+
+@media only screen and (min-width: 320px) {
+  .header__items {
+  flex-direction: column;
+  transform: translateY(30vh);
+}
+}
+@media only screen and (min-width: 768px) {
+  .header__items {
+    flex-direction: row;
+    transform: translateY(0);
+}
+}

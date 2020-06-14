@@ -152,6 +152,7 @@ font-size: 12px;
 line-height: 24px;
 color: #DCDBDA;
 text-transform: uppercase;
+text-decoration: none;
 }
 
 .figcaption {
@@ -545,6 +546,7 @@ font-size: 8px;
 line-height: 16px;
 color: #DCDBDA;
 text-transform: uppercase;
+text-decoration: none;
 }
 
 .figcaption {

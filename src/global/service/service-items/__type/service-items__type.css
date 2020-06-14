@@ -15,7 +15,7 @@
   .service-items__type {
   display: flex;
   justify-content: space-between;
-  min-width: 280px;
+  width: 90vw;
   margin: 0 0 32px 0;
   flex-direction: column;
 }

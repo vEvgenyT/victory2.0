@@ -134,35 +134,40 @@
     </svg>
  -->
 
-    <header class="header wrapper header_grey90">
-      <div class="header-main">
+    <header class="header wrapper">
+      <div class="header-main header_grey90 fade-in">
       <a href="https://www.victory.net.ua/" class="header__logo">
         <picture>
           <source srcset="img/logo-mobile.svg" media="(min-width: 320px) and (max-width:767px)">
           <img src="img/logo_desktop.svg" class="header__logo_img-position" alt="Логотип студии victory в виде буквы В латинского алфавита">
         </picture>
       </a>
-      <button>
+      <button id="js-mobile-menu" class="header_btn">
         <span class="header-main_line"></span>
         <span class="header-main_line"></span>
-        <span class="header-main_line"></span>
+        <!-- <span class="header-main_line"></span> -->
       </button>
     </div>
 
       <nav class="header__menu" id="js-nav-line">
         <ul class=" header__menu_style header__items">
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
-          <li><a href="#" class="g-nav header__items_line" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
+          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
+          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
+          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
+          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
         </ul>
         <span class="header__line" v-bind:class="isActive"></span>
       </nav>
 
-      <fieldset class="g-lng header__field header_style">
+      <!-- <fieldset class="g-lng header__field header_style">
         <label class=""><input type="radio" name="language" value="ua" aria-label="переключение на Украинский язык" class="visually-hidden">ua</label>
         <label class=""><input type="radio" name="language" value="en" aria-label="переключение на Английский язык" class="visually-hidden">ru</label>
-      </fieldset>
+      </fieldset> -->
+
+      <div class="header_style header_grey90 fade-in">
+        <a href="#" class="g-lng header__items-lng" aria-label="ссылка на Украинскую версию сайта">ua</a>
+        <a href="#" class="g-lng header__items-lng" aria-label="ссылка на Русскую версию сайта">ru</a>
+      </div>
     </header>
 
 
