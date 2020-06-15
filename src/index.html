@@ -133,8 +133,9 @@
       </defs>
     </svg>
  -->
-
     <header class="header wrapper">
+
+
       <div class="header-main header_grey90 fade-in">
       <a href="https://www.victory.net.ua/" class="header__logo">
         <picture>
@@ -142,11 +143,16 @@
           <img src="img/logo_desktop.svg" class="header__logo_img-position" alt="Логотип студии victory в виде буквы В латинского алфавита">
         </picture>
       </a>
-      <button id="js-mobile-menu" class="header_btn">
+ <!--      <button id="js-mobile-menu" class="header_btn">
         <span class="header-main_line"></span>
         <span class="header-main_line"></span>
-        <!-- <span class="header-main_line"></span> -->
-      </button>
+      </button> -->
+
+      <input type="checkbox" id="checkbox" aria-hidden="true">
+      <label for="checkbox" class="menu__icon_position header_btn" aria-hidden="true">
+        <span class="menu__icon_style menu__icon_top-position"></span>
+        <span class="menu__icon_style menu__icon_bottom-position"></span>
+      </label>
     </div>
 
       <nav class="header__menu" id="js-nav-line">
@@ -173,7 +179,7 @@
 
 
     <main>
-
+          <div aria-hidden="true" class="g-menu_bkg"></div>
       <article class="wrapper">
 
         <picture class="picture">

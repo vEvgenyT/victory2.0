@@ -1,4 +1,15 @@
-.header__items_line {
+
+
+
+@media only screen and (min-width: 320px) {
+  .header__items_line {
+  text-decoration: none;
+  /*padding: 15px 0;*/
+}
+}
+@media only screen and (min-width: 768px) {
+  .header__items_line {
   text-decoration: none;
   padding: 0 25px;
+}
 }

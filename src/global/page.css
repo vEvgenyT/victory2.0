@@ -391,6 +391,18 @@ color: #444340;
 }
 }*/
 
+@media only screen and (min-width: 600px) {
+.g-nav {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.006em;
+color: #DCDBDA;
+text-transform: none;
+}
+}
 
 @media only screen and (min-width: 320px) {
 .g-h1 {
@@ -529,13 +541,13 @@ color: #2A2928;
 }
 
 .g-nav {
-/*font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
-font-weight: normal;
-font-size: 8px;
-line-height: 16px;
-letter-spacing: 0.006em;*/
 color: #DCDBDA;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.006em;
+text-transform: uppercase;
 }
 
 .g-lng {
@@ -583,10 +595,28 @@ color: #444340;
   color: #787571;
 }
 
-
 .g-body {
   background-color: #100F0F;
 }
+
+.g-menu_bkg {
+  background-color: #100F0F;
+  width: 100vw;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition:  .6s cubic-bezier(.785,.135,.15,.86);
+}
+
+.g-menu_bkg-open {
+  height: 100vh;
+  /*width: 100vw;*/
+}
+
+
+
 }
 
 
