@@ -4,5 +4,6 @@
   .header__items-item {
   overflow: hidden;
   /*height: 20px;*/
+  margin-top: 24px;
 }
 }

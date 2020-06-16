@@ -603,18 +603,21 @@ color: #444340;
   background-color: #100F0F;
   width: 100vw;
   height: 0;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  z-index: -1;
+  /*z-index: 1;*/
   transition:  .6s cubic-bezier(.785,.135,.15,.86);
 }
 
 .g-menu_bkg-open {
   height: 100vh;
-  /*width: 100vw;*/
 }
 
+.g-scroll_no {
+  overflow: hidden;
+  height: 100%;
+}
 
 
 }
@@ -878,6 +881,9 @@ html {
   padding: 192px 20px 24px;
   background-color: #100F0F;
 }
+.g-link_width {
+  width: 112px;
+}
 }
 
 
@@ -942,6 +948,9 @@ html {
   position: relative;
   padding: 336px 56px 24px;
   background-color: #100F0F;
+}
+.g-menu_bkg {
+  display: none;
 }
 }
 
