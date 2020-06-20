@@ -1,13 +1,13 @@
-.service__h2 {
+/*.service__h2 {
   margin: 0 0 128px;
-}
+}*/
 
 
-@media only screen and (min-width: 320px) {
+
   .service__h2 {
   margin: 0 0 80px;
 }
-}
+
 
 @media only screen and (min-width: 768px) {
   .service__h2 {

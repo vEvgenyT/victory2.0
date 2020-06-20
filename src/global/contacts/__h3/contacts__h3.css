@@ -1,22 +1,20 @@
-.contacts__h3 {
+/*.contacts__h3 {
   width: 704px;
   margin: 0 0 128px;
   grid-area: title;
-}
+}*/
 
-@media only screen and (min-width: 320px) {
   .contacts__h3 {
   width: 280px;
   margin: 0 0 80px;
   grid-area: title;
-}
 }
 
 @media only screen and (min-width: 768px) {
   .contacts__h3 {
   width: 516px;
   margin: 0 0 96px;
-  grid-area: title;
+  /*grid-area: title;*/
 }
 }
 
@@ -24,6 +22,6 @@
   .contacts__h3 {
   width: 704px;
   margin: 0 0 128px;
-  grid-area: title;
+  /*grid-area: title;*/
 }
 }

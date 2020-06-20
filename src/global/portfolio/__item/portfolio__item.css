@@ -1,6 +1,12 @@
-.portfolio__item {
+/*.portfolio__item {
   border-bottom: 1px solid #5F5C59;
   margin: 0 0 128px;
+  overflow: hidden;
+}*/
+
+.portfolio__item {
+  margin: 0 0 80px;
+  border-bottom: 1px solid #5F5C59;
   overflow: hidden;
 }
 
@@ -17,23 +23,19 @@
 }
 
 
-@media only screen and (min-width: 320px) {
-.portfolio__item {
-
-  margin: 0 0 80px;
-
-}
-}
 
 
-@media only screen and (min-width: 768px) {
 
-}
+
+
+/*@media only screen and (min-width: 768px) {
+
+}*/
 
 @media only screen and (min-width: 1024px) {
 .portfolio__item {
-  border-bottom: 1px solid #5F5C59;
+  /*border-bottom: 1px solid #5F5C59;*/
   margin: 0 0 128px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 }

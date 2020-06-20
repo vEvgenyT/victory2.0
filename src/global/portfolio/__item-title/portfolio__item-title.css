@@ -1,20 +1,20 @@
-.portfolio__item-title {
+/*.portfolio__item-title {
   margin: 0 0 16px;
-}
+}*/
 
 
-@media only screen and (min-width: 320px) {
-  .portfolio__item-title {
-  margin: 0 0 12px;
-}
-}
 
-@media only screen and (min-width: 768px) {
   .portfolio__item-title {
   margin: 0 0 12px;
 }
 
+
+/*@media only screen and (min-width: 768px) {
+  .portfolio__item-title {
+  margin: 0 0 12px;
 }
+
+}*/
 
 
 @media only screen and (min-width: 1024px) {

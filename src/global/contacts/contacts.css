@@ -1,4 +1,4 @@
-.contacts {
+/*.contacts {
   display: grid;
   grid-template-columns: repeat(9, minmax(36px, 60px));
   grid-gap: 32px;
@@ -6,7 +6,7 @@
                         "mail mail mail messenger messenger messenger social social social"
                         "application application . . . . . . ."
                         "terms terms terms terms terms terms . . .";
-}
+}*/
 
 /*.contacts_big-link {
   position: absolute;
@@ -14,7 +14,6 @@
   left: 40%;
 }*/
 
-@media only screen and (min-width: 320px) {
 .contacts {
   display: grid;
   grid-template-columns: repeat(4, minmax(52px, 1fr));
@@ -26,9 +25,9 @@
                         "application application . ."
                         "terms terms terms terms";
 }
-}
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 660px) {
   .contacts {
   display: grid;
   grid-template-columns: repeat(9, minmax(36px, 60px));

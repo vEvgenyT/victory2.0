@@ -1,9 +1,9 @@
 .advantages__h2 {
-  margin: 0 0 128px;
+  margin: 0 0 80px;
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 660px) {
   .advantages__h2 {
   margin: 0 0 96px;
 }

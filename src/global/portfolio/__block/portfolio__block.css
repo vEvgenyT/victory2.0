@@ -1,4 +1,4 @@
-.portfolio__block {
+/*.portfolio__block {
   display: grid;
   grid-template-columns: repeat(9, minmax(36px, 60px));
   grid-gap: 32px;
@@ -6,10 +6,9 @@
                         "item item item item . . . . ."
                         ". . . . . beard beard beard beard"
                         "leica leica leica leica . . . . .";
-}
+}*/
 
 
-@media only screen and (min-width: 320px) {
   .portfolio__block {
   display: grid;
   grid-template-columns: repeat(4, minmax(52px, 1fr));
@@ -19,13 +18,13 @@
                         "beard beard beard beard"
                         "leica leica leica leica";
 }
-}
+
 
 @media only screen and (min-width: 768px) {
   .portfolio__block {
-  display: grid;
+  /*display: grid;*/
   grid-template-columns: repeat(9, minmax(36px, 36px));
-  grid-gap: 24px;
+  /*grid-gap: 24px;*/
   grid-template-areas:
                         "item item item item . . . . ."
                         ". . . . . beard beard beard beard"
@@ -36,7 +35,7 @@
 
 @media only screen and (min-width: 1024px) {
   .portfolio__block {
-  display: grid;
+  /*display: grid;*/
   grid-template-columns: repeat(9, minmax(36px, 60px));
   grid-gap: 32px;
   grid-template-areas:
