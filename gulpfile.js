@@ -19,6 +19,10 @@ var gulp = require('gulp'),
     svgo = require('gulp-svgo'), //минификация svg
     gcmq = require('gulp-group-css-media-queries'), //сортировка медиа запросов
     clear = require('del'), // очистка папок
+    htmlmin = require('gulp-htmlmin'),
+    imagemin = require('gulp-imagemin'),
+    imageminWebp = require('imagemin-webp'),
+    extReplace = require("gulp-ext-replace"),
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
 
@@ -105,6 +109,8 @@ gulp.task('/deploy', async function() {
 
 gulp.task('/html', async function() {
     return gulp.src(['!src/**/_*.html', path.src.html])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ removeComments: true }))
     .pipe(gulp.dest(path.bundles.html));
 });
 
@@ -182,6 +188,15 @@ gulp.task('/fonts', async function() {
 gulp.task('/img', async function() {
     return gulp.src(path.src.img)
     .pipe(svgo())
+    // .pipe(webp())
+    .pipe(imagemin())
+    .pipe(imagemin([
+      imageminWebp({
+        quality: 75
+      })
+    ]))
+    .pipe(extReplace(".webp"))
+
     .pipe(gulp.dest(path.bundles.img));
 });
 

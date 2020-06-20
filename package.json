@@ -24,10 +24,12 @@
     "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.0.8",
     "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-order": "^1.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-shorthand": "^1.1.0",
-    "gulp-svgo": "^2.1.1"
+    "gulp-svgo": "^2.1.1",
+    "gulp-webp": "^4.0.1"
   },
   "browserslist": [
     "> 0.3%",
@@ -41,5 +43,10 @@
     "company's",
     "web",
     "site"
-  ]
+  ],
+  "dependencies": {
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "imagemin-webp": "^6.0.0"
+  }
 }
