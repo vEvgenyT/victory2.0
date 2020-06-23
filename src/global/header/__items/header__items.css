@@ -5,14 +5,13 @@
 }*/
 
 
-  .header__items {
+/*  .header__items {
     display: flex;
   justify-content: space-between;
   padding: 0;
   flex-direction: column;
   transform: translateY(31vh);
-  /*justify-content: flex-end;*/
-}
+}*/
 
 @media only screen and (min-width: 768px) {
   .header__items {

@@ -1,4 +1,4 @@
-.menu__icon_style {
+/*.menu__icon_style {
   background-color: #DCDBDA;
   width: 18px;
   height: 1px;
@@ -30,4 +30,4 @@
 #checkbox:checked ~ .menu__icon_position {
   transform: rotate(90deg);
   transition: all 0.350s cubic-bezier(0.86, 0, 0.07, 1);
-}
+}*/

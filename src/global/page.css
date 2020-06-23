@@ -540,7 +540,7 @@ text-decoration-line: underline;
 color: #2A2928;
 }
 
-.g-nav {
+/*.g-nav {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 color: #DCDBDA;
@@ -548,7 +548,7 @@ font-size: 18px;
 line-height: 24px;
 letter-spacing: 0.006em;
 text-transform: uppercase;
-}
+}*/
 
 .g-lng {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
@@ -599,16 +599,16 @@ color: #444340;
   background-color: #100F0F;
 }
 
-.g-menu_bkg {
+/*.g-menu_bkg {
   background-color: #100F0F;
   width: 100vw;
   height: 0;
   position: fixed;
   left: 0;
   top: 0;
-  /*z-index: 1;*/
+  z-index: 1;
   transition:  .6s cubic-bezier(.785,.135,.15,.86);
-}
+}*/
 
 .g-menu_bkg-open {
   height: 100vh;
@@ -641,9 +641,9 @@ color: #444340;
   transition: .6s cubic-bezier(.785,.135,.15,.86);
 }*/
 
-.fade-in {
+/*.fade-in {
   transition: 1.3s cubic-bezier(.22,.61,.36,1);
-}
+}*/
 
 .fade-out {
   transition: 1.3s cubic-bezier(.22,.61,.36,1);
@@ -861,9 +861,9 @@ html {
 
 
 /*@media only screen and (min-width: 320px) {*/
-  .wrapper {
+/*  .wrapper {
     margin: 20px 20px 64px;
-  }
+  }*/
   .picture {
   display: none;
 }

@@ -22,6 +22,116 @@
       <!-- General -->
 
     <title>VICTORY | Веб дизайн и разработка</title>
+    <!-- Style -->
+    <style type="text/css">
+  .header {
+  background: transparent;
+  display: -webkit-box;
+  display: flex;
+  height: 60px;
+  margin: 20px 20px 72px;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: flex-start;
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+  .wrapper {
+    margin: 20px 20px 64px;
+  }
+  .g-menu_bkg {
+  /*z-index: 1;*/
+  -webkit-transition: .6s cubic-bezier(.785,.135,.15,.86);
+  background: #100f0f;
+  height: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: .6s cubic-bezier(.785,.135,.15,.86);
+  width: 100vw;
+}
+  .header_grey90 {
+    background-color: #100F0F;
+  }
+  .fade-in {
+  transition: 1.3s cubic-bezier(.22,.61,.36,1);
+}
+  .header__logo_img-position {
+  width: 5.6vw;
+}
+.menu__icon_position {
+  height: 10px;
+}
+.menu__icon_style {
+  background-color: #DCDBDA;
+  width: 18px;
+  height: 1px;
+  display: block;
+  margin: 0 0 8px 0;
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .menu__icon_position > .menu__icon_top-position {
+  -webkit-transform: translateY(4px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
+  transition: 0.550s cubic-bezier(0.86, 0, 0.07, 1);
+  transition-delay: 0.150s;
+}
+
+#checkbox:checked ~ .menu__icon_position > .menu__icon_bottom-position {
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-5px) rotate(-45deg);
+  transition: 0.550s cubic-bezier(0.86, 0, 0.07, 1);
+  transition-delay: 0.150s;
+}
+
+#checkbox:checked ~ .menu__icon_position {
+  transform: rotate(90deg);
+  transition: all 0.350s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.header__menu_style {
+  list-style-type: none;
+}
+  .header__items {
+    display: flex;
+  justify-content: space-between;
+  padding: 0;
+  flex-direction: column;
+  transform: translateY(31vh);
+}
+.g-nav {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+color: #DCDBDA;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.006em;
+text-transform: uppercase;
+}
+  .header__items_line {
+  text-decoration: none;
+}
+.header__line {
+  border-bottom: 1px solid #DCDBDA;
+  position: absolute;
+  top: 40px;
+  width: 0px;
+  transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
+  transform: translateX(-8px);
+}
+</style>
+
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="canonical" href="https://victory.net.ua">
     <!-- <base href="https://www.victory.net.ua"> -->

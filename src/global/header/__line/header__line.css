@@ -1,11 +1,11 @@
-.header__line {
+/*.header__line {
   border-bottom: 1px solid #DCDBDA;
   position: absolute;
   top: 40px;
   width: 0px;
   transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
   transform: translateX(-8px);
-}
+}*/
 
 
 @media only screen (max-width: 767px) {
