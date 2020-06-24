@@ -13,14 +13,14 @@
   font-weight: 800;
   font-display: optional;
 }
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: url("/fonts/web/Manrope-Bold.woff2") format("woff2"),
   url("/fonts/ttf/Manrope-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
   font-display: optional;
-}
+} */
 @font-face {
   font-family: "Manrope";
   src: url("/fonts/web/Manrope-SemiBold.woff2") format("woff2"),
@@ -37,14 +37,14 @@
   font-weight: 500;
   font-display: optional;
 }
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: url("/fonts/web/Manrope-Regular.woff2") format("woff2"),
   url("/fonts/ttf/Manrope-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: optional;
-}
+} */
 @font-face {
   font-family: "Manrope";
   src: url("/fonts/web/Manrope-Light.woff2") format("woff2"),
