@@ -405,7 +405,7 @@ text-transform: none;
 }
 
 /*@media only screen and (min-width: 320px) {*/
-.g-h1 {
+/* .g-h1 {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 font-weight: bold;
@@ -413,7 +413,7 @@ font-size: 50px;
 line-height: 52px;
 letter-spacing: -0.018em;
 color: #100F0F;
-}
+} */
 
 .g-h2 {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
@@ -457,7 +457,7 @@ text-transform: uppercase;
 color: #100F0F;
 }
 
-.g-p {
+/* .g-p {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -466,8 +466,8 @@ line-height: 24px;
 letter-spacing: -0.003em;
 color: #100F0F;
 }
-
-.g-a {
+ */
+/* .g-a {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -476,7 +476,7 @@ line-height: 24px;
 letter-spacing: -0.006em;
 text-decoration-line: none;
 color: #F6416C;
-}
+} */
 
 .g-span {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
@@ -550,7 +550,7 @@ letter-spacing: 0.006em;
 text-transform: uppercase;
 }*/
 
-.g-lng {
+/* .g-lng {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -559,7 +559,7 @@ line-height: 16px;
 color: #DCDBDA;
 text-transform: uppercase;
 text-decoration: none;
-}
+} */
 
 .figcaption {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
@@ -677,10 +677,10 @@ color: #444340;
   /*max-width: 244px;*/
 }
 
-.a_style {
+/* .a_style {
   border-bottom: 1px solid #F6416C;
   opacity: 0;
-}
+} */
 
 .a_style:hover {
   background: linear-gradient(-60deg, #F6416C, #09C6F9, #7F53AC, #F6416C);
@@ -707,17 +707,17 @@ color: #444340;
   }
 }
 
-.heading__h1 {
+/* .heading__h1 {
   margin: 32vh 0 64px;
   overflow: hidden;
-}
+} */
 
-.heading__p {
+/* .heading__p {
   margin: 0 0 96px;
   display: flex;
   opacity: 0;
 }
-
+ */
 
 
 /* ************************************************************** */
@@ -757,11 +757,11 @@ color: #444340;
   /*margin: 0 0 96px;*/
 }
 
-.sign {
+/* .sign {
   display: flex;
   justify-content: center;
   margin: 64px 0 0 0;
-}
+} */
 
 /*.page-img:hover {
   filter: url(#link);
@@ -801,12 +801,12 @@ html {
 
 
 /* *********************** Анимация появления текста при скролле *************************************** */
-.em { /*в основную ветку*/
-    /*position: relative;*/
+/* .em { 
+
     transform: translateY(150px);
-    /*transition: .3s;*/
+
     display: inline-block;
-}
+} */
 
 .g-title_animation {
   transform: translateY(0px);
@@ -864,9 +864,9 @@ html {
 /*  .wrapper {
     margin: 20px 20px 64px;
   }*/
-  .picture {
+/*   .picture {
   display: none;
-}
+} */
 .page_margin {
   margin: 192px 0;
 }
