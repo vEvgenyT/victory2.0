@@ -1,8 +1,8 @@
 
 
-  .header__items-lng {
+/*   .header__items-lng {
   padding: 2vh 3vw;
-}
+} */
 @media only screen and (min-width: 768px) {
   .header__items-lng {
   padding: 0;
