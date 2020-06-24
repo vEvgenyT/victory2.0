@@ -140,6 +140,27 @@ gulp.task('/css', async function() {
     .pipe(gulp.dest(path.bundles.css));
 });
 
+
+gulp.task('/media', async function() {
+    var processors = [
+    cssnano(),
+  ];
+  return gulp.src(path.src.css)
+  //   .pipe(order([
+  //   "**/*reset*.css",
+  //   "**/*normalize*.css",
+  //   "**/*style*.css",
+  //   "**/*media*.css"
+  // ], { base: './' }))
+    .pipe(concat('media.css'))
+    .pipe(shorthand())
+    .pipe(prefixer())
+    .pipe(csscomb())
+    .pipe(gcmq())
+    // .pipe(postcss(processors))
+    .pipe(gulp.dest(path.bundles.css));
+});
+
 // -= ******************************************************** =- \\
 
 

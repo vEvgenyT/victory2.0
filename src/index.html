@@ -22,10 +22,13 @@
       <!-- General -->
 
     <title>VICTORY | Веб дизайн и разработка</title>
-    
-    <link rel="preload" href="" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="" as="font" type="font/woff2" crossorigin>
-    
+
+    <link rel="preload" href="/fonts/web/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/web/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/vue"/>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"/>
+
     <!-- Style -->
     <style type="text/css">
   @font-face {
@@ -196,7 +199,7 @@ color: #100F0F;
   margin: 32vh 0 64px;
   overflow: hidden;
 }
-.em { 
+.em {
 
     transform: translateY(150px);
 
@@ -223,7 +226,7 @@ color: #F6416C;
 }
 </style>
 
-
+    <!-- <link rel="preload" href="css/style.css" as="style"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="canonical" href="https://victory.net.ua">
     <!-- <base href="https://www.victory.net.ua"> -->
@@ -600,9 +603,9 @@ color: #F6416C;
           <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g-big">Обо мне</a></h2>
         </section> -->
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
-    <script src="js/index.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->
+    <script defer src="js/index.min.js"></script>
   </body>
 </html>
