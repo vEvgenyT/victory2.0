@@ -354,7 +354,7 @@ color: #F6416C;
           <div aria-hidden="true" class="g-menu_bkg"></div>
 
       <div class="header-main header_grey90 fade-in">
-      <a href="https://www.victory.net.ua/" class="header__logo">
+      <a href="http://localhost:3000" class="header__logo">
         <picture>
           <source srcset="img/logo-mobile.svg" media="(min-width: 320px) and (max-width:767px)">
           <img src="img/logo_desktop.svg" class="header__logo_img-position" alt="Логотип студии victory в виде буквы В латинского алфавита">
@@ -374,7 +374,7 @@ color: #F6416C;
 
       <nav class="header__menu" id="js-nav-line">
         <ul class=" header__menu_style header__items">
-          <li class="header__items-item"><a href="/ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
+          <li class="header__items-item"><a href="ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
           <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
           <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
           <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
@@ -393,165 +393,69 @@ color: #F6416C;
       </div>
     </header>
 
-
-
     <main>
-
       <article class="wrapper">
 
         <picture class="picture">
             <img src="img/griffin@x3.webp" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
         </picture>
-        <span class="sign g-p" id="sign">
-          <span>s</span>
-          <span>c</span>
-          <span>r</span>
-          <span>o</span>
-          <span>l</span>
-          <span>l</span>
-          <span>&nbsp;</span>
-          <span>d</span>
-          <span>o</span>
-          <span>w</span>
-          <span>n</span>
-        </span>
+
+        <!-- <h1>Фанат современных технологий</h1> -->
+        <h1 tabindex="0" class="g-h1 h1 heading__h1"><span id="js-title_animation" class="em">Фанат современных технологий</span></h1>
 
 
-        <!-- <canvas class="object"></canvas> -->
+        <p class="g-p p heading__p" id="js-paragraphg_animation">Я веб дизайнер с инженерным мышлением. Я помогаю бизнесу и брендам адаптироваться и развиваться в сети интернет.</p>
 
-        <h1 tabindex="0" class="g-h1 h1 heading__h1"><span id="js-title_animation" class="em">Веб дизайн и&nbsp;разработка сайтов</span></h1>
-
-        <p class="g-p p heading__p" id="js-paragraphg_animation">Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный дизайн и&nbsp;удобную структуру.</p>
-
-        <a href="#" class="g-a a a_style" aria-label="ссылка на раздел 'Обо мне'" id="js-a-about">Давайте познакомимся</a>
-
-
-        <section aria-labelledby="portfolio" class="page_margin portfolio">
-
-          <h2 class="visually-hidden" aria-hidden="true" tabindex="-1" id="portfolio">Портфолио</h2>
-
-          <!-- <svg id="text-container" viewBox="0 0 1000 200" aria-hidden="true">
-            <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-            <text y="40" font-size="54">
-              <textPath id="text-path" href="#text-curve" startOffset="200">Портфолио</textPath>
-            </text>
-          </svg> -->
-
-          <div class="portfolio__block">
-
-          <figure class="portfolio__item">
-            <picture>
-              <source srcset="img/wild-phone.svg" media="(min-width: 320px) and (max-width:767px)">
-              <img src="img/wild.svg" alt="Работа Wild" class="portfolio__item-img">
-            </picture>
-            <figcaption>
-            <h3 class="g-h5 portfolio__item-title">Wild Nature</h3>
-            <p class="figcaption portfolio__item-text">Работа посвящена вымирающим видам животных</p>
-            </figcaption>
-          </figure>
-
-          <figure class="portfolio__item">
-            <picture>
-              <source srcset="img/beard-phone.svg" media="(min-width: 320px) and (max-width:767px)">
-              <img src="img/beard.svg" alt="Работа Beard humor" class="portfolio__item-img">
-            </picture>
-            <figcaption>
-            <h3 class="g-h5 portfolio__item-title">Beard Humor</h3>
-            <p class="figcaption portfolio__item-text">Только юмор, анекдоты и хорошее настроение</p>
-            </figcaption>
-          </figure>
-
-          <figure class="portfolio__item">
-            <picture>
-              <source srcset="img/leica@x1.jpg" media="(min-width: 320px) and (max-width:767px)">
-              <source srcset="img/griffin.png" media="(min-width: 320px) and (max-width:767px)">
-              <source srcset="img/beard.svg" media="(min-width: 320px) and (max-width:767px)">
-              <img src="img/leica.jpg" alt="Работа Leica" class="portfolio__item-img">
-            </picture>
-            <figcaption>
-            <h3 class="g-h5 portfolio__item-title">Leica</h3>
-            <p class="figcaption portfolio__item-text">История первой компактной фотокамеры</p>
-            </figcaption>
-          </figure>
-        </div>
-
-          <a href="#" class="g-a a a_style portfolio__link" id="js-a-portfolio">Смотреть все работы</a>
-        </section>
-
+        <p class="g-p p" id="js-paragraphg_animation">С удовольствием создаю «крафтовый» дизайн, объединяю актуальные тенденции и лучшие практики, чтобы создавать веб-сайты, которые стимулируют трафик, вовлекают посетителей и увеличивают конверсию.</p>
 
 
         <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service" id="js-scroll" v-scroll="position">
 
-          <p id="service" tabindex="-1" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">услуги</span></p>
-          <h2 tabindex="0" class="g-h2 h2 service__h2 heading-h2"><span id="js-title_animation" class="em">Что я делаю</span></h2>
+        <p id="service" tabindex="-1" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">услуги</span></p>
 
-          <ul class="service-items">
 
-            <li aria-labelledby="all-in-1-solution" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
-              <h3 id="all-in-1-solution" class="g-h6 service-items__type-title" itemprop="serviceType">Комплексные решения</h3>
-              <ul class="service-items__item-group">
-                <li itemprop="name" class="g-p g-p_grey70 service-items__item">лендинг</li>
-                <li itemprop="name" class="g-p g-p_grey70 service-items__item">портфолио</li>
-                <li itemprop="name" class="g-p g-p_grey70 service-items__item">промо</li>
-                <li itemprop="name" class="g-p g-p_grey70 service-items__item">корпоративный</li>
-              </ul>
-            </li>
+        <h2 tabindex="0" class="g-h2 h2 service__h2 heading-h2"><span id="js-title_animation" class="em">Разрабатываю сайты под цели и задачи бизнеса</span></h2>
 
-            <li aria-labelledby="web-design" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
-              <h3 id="web-design" class="g-h6 service-items__type-title" itemprop="serviceType">Веб дизайн</h3>
-              <ul class="service-items__item-group">
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">UI/UX</li>
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">прототипирование</li>
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">дизайн сайтов</li>
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">анимация</li>
-              </ul>
-            </li>
+        <p class="g-p p" id="js-paragraphg_animation">Для своих клиентов подбираю оптимальный баланс между технологиями завтрашнего дня и сегодняшними буднями, чтобы обеспечить как можно больший охват аудитории.</p>
 
-            <li aria-labelledby="development" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
-              <h3 id="development" class="g-h6 service-items__type-title" itemprop="serviceType">Разработка</h3>
-              <ul class="service-items__item-group">
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка html, css, js</li>
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка на Tilda</li>
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка на Readymag</li>
-                <li itemprop="name"class="g-p g-p_grey70 service-items__item">интеграция с CMS</li>
-              </ul>
-            </li>
-          </ul>
+        <p class="g-p p" id="js-paragraphg_animation">К проектам подхожу системно, четко следуя этапам разработки, обеспечивая контролируемый процесс и великолепный результат финального продукта.</p>
 
-          <a href="#" class="g-a a a_style service_a" id="js-a-service">Узнать больше</a>
+          <section>
+            <div>
+              <p>этап первый</p>
+              <h5>Подготовительный</h5>
+              <p>Интервью с заказчиком, определение целей и задач будущего проекта, анализ сайтов конкурентов, проработка применяемых в отрасли решений и технологий. Определяем тип сайта и необходимый функционал. Формирую техническое задание с четкими требованиями и целями.</p>
+              <a href="#">Узнать больше</a>
+            </div>
+            <div>
+              <p>этап второй</p>
+              <h5>Графический</h5>
+              <p>Создаю концепцию, структуру и иерархию будущего сайта. Прорабатываю композицию элементов на страницах, помогаю создать и подготовить контент. Проектирую прототипы и макеты, подбираю шрифтовые гарнитуры, цветовую палитру, графическую сетку.</p>
+              <a href="#">Узнать больше</a>
+            </div>
+            <div>
+              <p>этап третий</p>
+              <h5>Разработка</h5>
+              <p>Верстка проекта по макетам, интеграция с выбранной системой управления контентом (CMS), тестирование и отладка.</p>
+              <a href="#">Узнать больше</a>
+            </div>
+          </section>
         </section>
-
-
-
-        <section aria-labelledby="advantages" class="page_margin ">
-
-          <p id="advantages" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">преимущества</span></p>
-          <h2 tabindex="0" class="g-h2 h2 advantages__h2 heading-h2"><span id="js-title_animation" class="em">Лучшие практики и&nbsp;подходы в создании сайтов</span></h2>
-
-          <dl class="advantages">
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Доступность</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Люди с ограниченными возможностями будут взаимодействовать с контентом на сайте, благодаря разработке в соответствии со стандартами WCAG.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Сначала смартфоны</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Разработка ведется от телефонов к десктопу.  Это благоприятно сказывается на SEO и комфорте от использования сайта с мобильных устройств.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Кроссбраузерность</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Верстка выглядит превосходно на современных устройствах и веб-браузерах.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">SPA</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Максимальная интерактивность и безупречный UX для пользователей.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Интеграция с CMS</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Интегрирую статическую верстку на: Wordpress, Tilda, Readymag.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Веб дизайн</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Эффективный и актуальный визуальный язык для бизнеса в сети интернет.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Анимация</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Создаю анимацию: от перехода при наведении курсора до анимации основанной на webGL и взаимодействии с пользователем.</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Оптимизация графики</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Графические файлы оптимизированы под дисплеи с высоким разрешением (Retina) и современные форматы (WebP).</dd>
-            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Стандартизация</dt>
-            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Придерживаюсь передовых практик написания кода, отраслевых стандартов, использую собственную систему контроля, метрик и чек-листов.</dd>
+        <section>
+          <p>принципы</p>
+          <h2>Три причины для сотрудничества</h2>
+          <dl>
+            <dt>Результат</dt>
+            <dd>В каждой работе ориентируюсь только на результа</dd>
+            <dt>Мы важнее я</dt>
+            <dd>Всегда нацелен на решение задач клиента, а не своих собственных</dd>
+            <dt>Клиент всегда прав</dt>
+            <dd>Ставлю себя на место клиента и стараюсь понять почему это для него важно</dd>
           </dl>
+          <a href="#">Смотреть работы</a>
         </section>
       </article>
     </main>
-
 
 
     <footer class="page_footer">
@@ -559,7 +463,7 @@ color: #F6416C;
 
       <section aria-label="контакты" class="contacts" id="contacts">
 
-          <h3 class="g-h3 contacts__h3">Давайте работать вместе, чтобы создать лучший цифровой продукт</h3>
+          <h3 class="g-h3 contacts__h3">Создаю превосходные сайты, которые доступны по всему миру</h3>
 
           <section aria-labelledby="e-mail" class="contacts_mail">
 
@@ -611,6 +515,7 @@ color: #F6416C;
           <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g-big">Обо мне</a></h2>
         </section> -->
     </footer>
+
     <script defer src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->

@@ -34,12 +34,16 @@ var folder = [
   './bundles/css',
   './bundles/js',
   './bundles/img',
-  './bundles/fonts'
+  './bundles/fonts',
+  './bundles/ru',
+  './bundles/ua'
 ];
 
 var path = {
     src: {
         html: 'src/**/*.html',
+        ru: 'src/**/ru/*.html',
+        ua: 'src/**/ua/*.html',
         js:  ['src/**/index.js',
               'src/**/header/**/*.js',
               'src/**/contacts/**/*.js'
@@ -55,12 +59,15 @@ var path = {
               'src/**/contacts/**/*.css',
               'src/**/header/**/*.css',
               'src/**/portfolio/**/*.css',
-              'src/**/color.css'
+              'src/**/color.css',
+              'src/**/html_style.css'
 
         ]
     },
     bundles: {
         html: 'bundles/',
+        ru: 'bundles/',
+        ua: 'bundles/',
         css: 'bundles/css/',
         js: 'bundles/js/',
         img: 'bundles/img/',
@@ -114,6 +121,20 @@ gulp.task('/html', async function() {
     .pipe(gulp.dest(path.bundles.html));
 });
 
+gulp.task('/ruHtml', async function() {
+    return gulp.src([path.src.ru])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ removeComments: true }))
+    .pipe(gulp.dest(path.bundles.ru));
+});
+
+gulp.task('/uaHtml', async function() {
+    return gulp.src([path.src.ua])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ removeComments: true }))
+    .pipe(gulp.dest(path.bundles.ua));
+});
+
 // -= ******************************************************** =- \\
 
 
@@ -141,25 +162,27 @@ gulp.task('/css', async function() {
 });
 
 
-gulp.task('/media', async function() {
+gulp.task('/htmlCss', async function() {
     var processors = [
     cssnano(),
   ];
-  return gulp.src(path.src.css)
+  return gulp.src('src/css/html_style.css')
   //   .pipe(order([
   //   "**/*reset*.css",
   //   "**/*normalize*.css",
   //   "**/*style*.css",
   //   "**/*media*.css"
   // ], { base: './' }))
-    .pipe(concat('media.css'))
+    .pipe(concat('html_css.css'))
     .pipe(shorthand())
     .pipe(prefixer())
     .pipe(csscomb())
     .pipe(gcmq())
-    // .pipe(postcss(processors))
+    .pipe(postcss(processors))
     .pipe(gulp.dest(path.bundles.css));
 });
+
+
 
 // -= ******************************************************** =- \\
 
@@ -260,8 +283,8 @@ gulp.task('/run', ['/browser-sync'], function() {
 // -= ******************************************************** =- \\
 
 
-gulp.task('/compile', ['/html', '/css', '/js', '/img', '/fonts']);
-gulp.task('/interpret', ['/html', '/css', '/js', '/img', '/fonts', '/run']);
+gulp.task('/compile', ['/html', '/ruHtml', '/uaHtml',  '/css', '/js', '/img', '/fonts']);
+gulp.task('/interpret', ['/html', '/ruHtml', '/uaHtml', '/css', '/js', '/img', '/fonts', '/run']);
 
 
 // HELP ///////////////////////////////////////////////////////////
