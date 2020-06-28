@@ -1,0 +1,4 @@
+.stage-block__item-link {
+  grid-area: link;
+  margin: 0 0 48px;
+}

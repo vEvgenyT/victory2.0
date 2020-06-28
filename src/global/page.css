@@ -98,7 +98,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 28px;
-color: #444340;
+color: #2A2928;
 }
 
 .g-a-mail {
@@ -641,9 +641,9 @@ color: #444340;
   transition: .6s cubic-bezier(.785,.135,.15,.86);
 }*/
 
-/*.fade-in {
+.fade-in {
   transition: 1.3s cubic-bezier(.22,.61,.36,1);
-}*/
+}
 
 .fade-out {
   transition: 1.3s cubic-bezier(.22,.61,.36,1);
@@ -671,6 +671,7 @@ color: #444340;
 
 .p {
   max-width: 612px;
+  margin: 0 0 20px;
 }
 
 .a {
@@ -801,7 +802,7 @@ html {
 
 
 /* *********************** Анимация появления текста при скролле *************************************** */
-/* .em { 
+/* .em {
 
     transform: translateY(150px);
 
@@ -903,6 +904,7 @@ html {
 
   .p {
     max-width: 456px;
+    margin: 0 0 20px;
   }
   .wrapper {
     margin: 20px 36px 64px;
@@ -921,7 +923,7 @@ html {
   width: 116px;
 }
 
-.heading__p::before {
+/*.heading__p::before {
   content: "";
   height: 1px;
   width: 128px;
@@ -930,7 +932,7 @@ html {
   position: relative;
   top: 16px;
 }
-.picture {
+*/.picture {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -962,6 +964,7 @@ html {
 
   .p {
     max-width: 612px;
+    margin: 0 0 20px;
   }
 
   .wrapper {

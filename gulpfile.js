@@ -59,6 +59,8 @@ var path = {
               'src/**/contacts/**/*.css',
               'src/**/header/**/*.css',
               'src/**/portfolio/**/*.css',
+              'src/**/stage/**/*.css',
+              'src/**/reasons/**/*.css',
               'src/**/color.css',
               'src/**/html_style.css'
 

@@ -1,0 +1,4 @@
+.stage-block__item-title {
+  grid-area: title;
+  margin: 0 0 32px;
+}

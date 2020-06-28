@@ -1,0 +1,45 @@
+  .reasons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 32px;
+  margin: 0 0 96px;
+  grid-template-areas:  "dt"
+                        "dd"
+                        "dt-2"
+                        "dd-2"
+                        "dt-3"
+                        "dd-3";
+}
+
+
+
+@media only screen and (min-width: 660px) {
+  .reasons {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:  ". dt dt-2"
+                        ". dd dd-2"
+                        ". dt-3 ."
+                        ". dd-3 .";
+}
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .reasons {
+  grid-template-columns: 1fr 336px 336px;
+  grid-template-areas:  ". dt dt-2"
+                        ". dd dd-2"
+                        ". dt-3 ."
+                        ". dd-3 .";
+}
+}
+
+@media only screen and (min-width: 1185px) {
+  .reasons {
+    grid-template-columns: repeat(3, 1fr);
+/*    grid-column-gap: 1fr;*/
+      grid-template-areas:  "dt dt-2 dt-3"
+                            "dd dd-2 dd-3";
+}
+  }
+

@@ -1,0 +1,4 @@
+.stage-block__item-tag {
+  grid-area: tag;
+  margin: 0 0 32px;
+}

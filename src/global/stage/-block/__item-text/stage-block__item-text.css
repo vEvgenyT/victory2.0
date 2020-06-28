@@ -1,0 +1,4 @@
+.stage-block__item-text {
+  grid-area: text;
+  margin: 0 0 48px;
+}

@@ -347,3 +347,7 @@ template {
 [hidden] {
   display: none;
 }
+
+dd {
+  margin : 0;
+}
