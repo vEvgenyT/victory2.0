@@ -350,57 +350,88 @@ color: #F6416C;
       </defs>
     </svg>
  -->
+    
+    
+    
     <header class="header wrapper">
+      
+      
           <div aria-hidden="true" class="g-menu_bkg"></div>
 
       <div class="header-main header_grey90 fade-in">
+        
+        
       <a href="http://localhost:3000" class="header__logo">
+        
         <picture>
           <source srcset="img/logo-mobile.svg" media="(min-width: 320px) and (max-width:767px)">
           <img src="img/logo_desktop.svg" class="header__logo_img-position" alt="Логотип студии victory в виде буквы В латинского алфавита">
         </picture>
+        
       </a>
+        
+        
  <!--      <button id="js-mobile-menu" class="header_btn">
         <span class="header-main_line"></span>
         <span class="header-main_line"></span>
       </button> -->
 
+        
       <input type="checkbox" id="checkbox" aria-hidden="true">
       <label for="checkbox" class="menu__icon_position header_btn" aria-hidden="true">
+        
         <span class="menu__icon_style menu__icon_top-position"></span>
         <span class="menu__icon_style menu__icon_bottom-position"></span>
+        
       </label>
+        
+        
     </div>
 
+      
+      
       <nav class="header__menu" id="js-nav-line">
+        
         <ul class=" header__menu_style header__items">
           <li class="header__items-item"><a href="ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
           <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
           <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
           <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
         </ul>
+        
         <span class="header__line" v-bind:class="isActive"></span>
+        
       </nav>
 
+      
+      
       <!-- <fieldset class="g-lng header__field header_style">
         <label class=""><input type="radio" name="language" value="ua" aria-label="переключение на Украинский язык" class="visually-hidden">ua</label>
         <label class=""><input type="radio" name="language" value="en" aria-label="переключение на Английский язык" class="visually-hidden">ru</label>
       </fieldset> -->
 
+      
+      
       <div class="header_style header_grey90 fade-in">
+        
         <a href="#" class="g-lng header__items-lng" aria-label="ссылка на Украинскую версию сайта">ua</a>
         <a href="#" class="g-lng header__items-lng" aria-label="ссылка на Русскую версию сайта">ru</a>
+        
       </div>
     </header>
 
+    
+    
     <main>
 
+      
       <article class="wrapper">
 
         <picture class="picture">
             <img src="img/griffin@x3.webp" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
         </picture>
 
+        
         <span class="sign g-p" id="sign">
           <span>s</span>
           <span>c</span>
@@ -415,64 +446,65 @@ color: #F6416C;
           <span>n</span>
         </span>
 
-        <!-- <h1>Фанат современных технологий</h1> -->
+        
         <h1 tabindex="0" class="g-h1 h1 heading__h1"><span id="js-title_animation" class="em">Фанат современных технологий</span></h1>
 
         <p class="g-p p heading__p" id="js-paragraphg_animation">Я веб дизайнер с инженерным мышлением. Я помогаю бизнесу и брендам адаптироваться и развиваться в сети интернет.
         </p>
-
         <p class="g-p p heading__p" id="js-paragraphg_animation">С удовольствием создаю «крафтовый» дизайн, объединяю актуальные тенденции и лучшие практики, чтобы создавать веб-сайты, которые стимулируют трафик, вовлекают посетителей и увеличивают конверсию.</p>
 
 
         <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service" id="js-scroll" v-scroll="position">
 
-        <p id="service" tabindex="-1" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">услуги</span></p>
+          
+          <p id="service" tabindex="-1" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">услуги</span></p>
+          <h2 tabindex="0" class="g-h2 h2 service__h2_text heading-h2"><span id="js-title_animation" class="em">Разрабатываю сайты под цели и задачи бизнеса</span></h2>
 
+          <p class="g-p p heading__p" id="js-paragraphg_animation">Для своих клиентов подбираю оптимальный баланс между технологиями завтрашнего дня и сегодняшними буднями, чтобы обеспечить как можно больший охват аудитории.</p>
+          <p class="g-p p heading__p" id="js-paragraphg_animation">К проектам подхожу системно, четко следуя этапам разработки, обеспечивая контролируемый процесс и великолепный результат финального продукта.</p>
 
-
-        <h2 tabindex="0" class="g-h2 h2 service__h2_text heading-h2"><span id="js-title_animation" class="em">Разрабатываю сайты под цели и задачи бизнеса</span></h2>
-
-        <p class="g-p p heading__p" id="js-paragraphg_animation">Для своих клиентов подбираю оптимальный баланс между технологиями завтрашнего дня и сегодняшними буднями, чтобы обеспечить как можно больший охват аудитории.</p>
-
-        <p class="g-p p heading__p" id="js-paragraphg_animation">К проектам подхожу системно, четко следуя этапам разработки, обеспечивая контролируемый процесс и великолепный результат финального продукта.</p>
-
+          
           <section class="stage-block">
+            
             <div class="stage-block__item g-hidden" id="js-move-in">
               <p class="g-tag-link stage-block__item-tag">этап первый</p>
               <h5 class="g-h6 stage-block__item-title">Подготовительный</h5>
               <p class="g-span stage-block__item-text">Интервью с заказчиком, определение целей и задач будущего проекта, анализ сайтов конкурентов, проработка применяемых в отрасли решений и технологий. Определяем тип сайта и необходимый функционал. Формирую техническое задание с четкими требованиями и целями.</p>
               <a aria-label="ссылка на раздел 'Услуги'" href="#" class="g-a a a_style service_a stage-block__item-link" id="js-a-stage_1">Узнать больше</a>
             </div>
+            
             <div class="stage-block__item g-hidden" id="js-move-in">
               <p class="g-tag-link stage-block__item-tag">этап второй</p>
               <h5 class="g-h6 stage-block__item-title">Графический</h5>
               <p class="g-span stage-block__item-text">Создаю концепцию, структуру и иерархию будущего сайта. Прорабатываю композицию элементов на страницах, помогаю создать и подготовить контент. Проектирую прототипы и макеты, подбираю шрифтовые гарнитуры, цветовую палитру, графическую сетку.</p>
               <a aria-label="ссылка на раздел 'Услуги'" href="#" class="g-a a a_style service_a stage-block__item-link" id="js-a-stage_2">Узнать больше</a>
             </div>
+            
             <div class="stage-block__item g-hidden" id="js-move-in">
               <p class="g-tag-link stage-block__item-tag">этап третий</p>
               <h5 class="g-h6 stage-block__item-title">Разработка</h5>
               <p class="g-span stage-block__item-text">Верстка проекта по макетам, интеграция с выбранной системой управления контентом (CMS), тестирование и отладка.</p>
               <a aria-label="ссылка на раздел 'Услуги'" href="#" class="g-a a a_style service_a stage-block__item-link" id="js-a-stage_3">Узнать больше</a>
             </div>
+            
           </section>
 
 
         </section>
 
 
+        
         </section>
 
 
 
         <section aria-labelledby="reasons" class="page_margin reasons__inner-margin">
 
-          <!-- <p>принципы</p> -->
+          
           <p id="reasons" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">принципы</span></p>
-
-          <!-- <h2>Три причины для сотрудничества</h2> -->
           <h2 tabindex="0" class="g-h2 h2 advantages__h2 heading-h2"><span id="js-title_animation" class="em">Три причины для&nbsp;сотрудничества</span></h2>
 
+          
           <dl class="reasons">
             <dt class="g-h6 reasons__dt g-hidden" id="js-move-in">Результат</dt>
             <dd class="g-span reasons__inner-margin g-hidden" id="js-move-in">В каждой работе ориентируюсь только на результа</dd>
@@ -484,12 +516,17 @@ color: #F6416C;
 
           <a aria-label="ссылка на раздел 'Портфолио'" href="#" class="g-a a a_style service_a" id="js-a-portfolio">Смотреть работы</a>
 
+          
         </section>
 
+      
       </article>
+    
+    
     </main>
 
 
+  
     <footer class="page_footer">
 
 
