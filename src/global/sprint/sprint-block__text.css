@@ -1,0 +1,40 @@
+.sprint-block__text {
+  grid-area: text;
+  margin: 0 0 96px;
+}
+
+.sprint-block__text:nth-of-type(4) {
+  grid-area: text1;
+}
+
+.sprint-block__text:nth-of-type(6) {
+  grid-area: text2;
+}
+
+.sprint-block__text:nth-of-type(8) {
+  grid-area: text3;
+}
+
+.sprint-block__text:nth-of-type(10) {
+  grid-area: text4;
+}
+
+.sprint-block__text:nth-of-type(12) {
+  grid-area: text5;
+}
+
+.sprint-block__text:nth-of-type(14) {
+  grid-area: text6;
+}
+
+.sprint-block__text:nth-of-type(16) {
+  grid-area: text7;
+}
+
+.sprint-block__text:nth-of-type(18) {
+  grid-area: text8;
+}
+
+.sprint-block__text:nth-of-type(20) {
+  grid-area: text9;
+}
