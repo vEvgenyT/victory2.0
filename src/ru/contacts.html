@@ -318,9 +318,9 @@ color: #F6416C;
     <!-- Microdata -->
 
     <script type="application/ld+json">
-      {"@context": "http://schema.org","@type": "LocalBusiness","address":{"@type": "PostalAddress","addressLocality": "Ukraine","url": "https://www.victory.net.ua/"},"description": "Я веб дизайнер и разработчик. Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный веб дизайн и удобную структуру.","image": "#","priceRange":"100$ - 2000$","email": "hello@victory.net.ua","name": "Victory | Веб дизайн и разработка","telephone": "+380 (96) 577 93 28","openingHours": "Пн-Вс 09:00-19:00","geo": {"@type": "GeoCoordinates","latitude": "47.7686988","longitude": "26.8142039"},"hasMap": "https://goo.gl/maps/9TzEYNat5WEo24E4A", "foundingDate": "2019-09-01", "foundingLocation": "Mariupol", "isicv4": "6202"}
+      {"@context": "http://schema.org","@type": "LocalBusiness","address":{"@type": "PostalAddress","addressLocality": "Мариуполь","url": "https://www.victory.net.ua/"},"description": "Я веб дизайнер и разработчик. Создаю элегантные и оптимальные решения, предоставляя высококлассную html/css разметку, js код, великолепный веб дизайн и удобную структуру.","image": "#","priceRange":"100$ - 2000$","email": "hello@victory.net.ua","name": "Victory | Веб дизайн и разработка","telephone": "+380 (96) 577 93 28","openingHours": "Пн-Вс 09:00-19:00","geo": {"@type": "GeoCoordinates","latitude": "47.7686988","longitude": "26.8142039"},"hasMap": "https://goo.gl/maps/9TzEYNat5WEo24E4A", "foundingDate": "2019-09-01", "foundingLocation": "Mariupol", "isicv4": "6202"}
     </script>
-    <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Victory | Веб дизайн и разработка","url": "https://www.victory.net.ua/","logo": "#", "sameAs" : [ "https://www.facebook.com/victory.wdd/","https://www.behance.net/victory_web_dev/","https://medium.com/victory-blog", "https://www.instagram.com/victoryweb/"], "contactPoint": {"@type": "ContactPoint","telephone": "+380 (96) 577 93 28","contactType": "customer service"}}
+    <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","brand": "Victory","name": "Victory | Веб дизайн и разработка","url": "https://www.victory.net.ua/","logo": "#", "sameAs" : [ "https://www.facebook.com/victory.wdd/","https://www.behance.net/victory_web_dev/","https://medium.com/victory-blog", "https://www.instagram.com/victoryweb/"], "contactPoint": {"@type": "ContactPoint","telephone": "+380 (96) 577 93 28","contactType": "customer service"}}
     </script>
   </head>
   <body>
@@ -365,12 +365,12 @@ color: #F6416C;
       </label>
     </div>
 
-      <nav class="header__menu" id="js-nav-line">
-        <ul class=" header__menu_style header__items">
-          <li class="header__items-item"><a href="/ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
-          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
-          <li class="header__items-item"><a href="/ru/services.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
-          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
+     <nav class="header__menu" id="js-nav-line">
+        <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu" class=" header__menu_style header__items">
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="/ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="/ru/services.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
         </ul>
         <span class="header__line" v-bind:class="isActive"></span>
       </nav>
