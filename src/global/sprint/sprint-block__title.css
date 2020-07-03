@@ -1,0 +1,4 @@
+.sprint-block__title {
+  grid-area: title;
+  margin: 0 0 32px;
+}
