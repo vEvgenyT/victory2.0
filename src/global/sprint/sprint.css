@@ -1,151 +1,54 @@
-.g_grey60 {
-  color: #5F5C59;
-}
 
-.sprint {}
 
-.sprint-block {
-  display: grid;
-  grid-column-gap: 32px;
-  grid-template-columns: repeat(12, minmax(36px, 60px));
-  grid-template-areas:  "tag tag tag tag tag . tag1 tag1 tag1 tag1 tag1 ."
-                        "title title title title title . title1 title1 title1 title1 title1 ."
-                        "text text text text text . text1 text1 text1 text1 text1 ."
-                        "tag2 tag2 tag2 tag2 tag2 . tag3 tag3 tag3 tag3 tag3 ."
-                        "title2 title2 title2 title2 title2 . title3 title3 title3 title3 title3 ."
-                        "text2 text2 text2 text2 text2 . text3 text3 text3 text3 text3 ."
-                        "tag4 tag4 tag4 tag4 tag4 . tag5 tag5 tag5 tag5 tag5 ."
-                        "title4 title4 title4 title4 title4 . title5 title5 title5 title5 title5 ."
-                        "text4 text4 text4 text4 text4 . text5 text5 text5 text5 text5 ."
-                        "tag6 tag6 tag6 tag6 tag6 . tag7 tag7 tag7 tag7 tag7 ."
-                        "title6 title6 title6 title6 title6 . title7 title7 title7 title7 title7 ."
-                        "text6 text6 text6 text6 text6 . text7 text7 text7 text7 text7 ."
-                        "tag8 tag8 tag8 tag8 tag8 . tag9 tag9 tag9 tag9 tag9 ."
-                        "title8 title8 title8 title8 title8 . title9 title9 title9 title9 title9 ."
-                        "text8 text8 text8 text8 text8 . text9 text9 text9 text9 text9 .";
-}
 
-.sprint-block__title {
-  grid-area: title;
-  margin: 0 0 32px;
-}
 
-.sprint-block__tag {
-  grid-area: tag;
-  margin: 0 0 32px;
-  height: 56px;
-  border-bottom: 1px solid #5F5C59;
-}
 
-.sprint-block__text {
-  grid-area: text;
-  margin: 0 0 96px;
-}
 
-.sprint-block__tag:nth-child(5) {
-  grid-area: tag1;
-}
 
-.sprint-block__title:nth-child(4) {
-  grid-area: title1;
-}
 
-.sprint-block__text:nth-of-type(4) {
-  grid-area: text1;
-}
 
-.sprint-block__tag:nth-child(8) {
-  grid-area: tag2;
-}
 
-.sprint-block__title:nth-child(7) {
-  grid-area: title2;
-}
 
-.sprint-block__text:nth-of-type(6) {
-  grid-area: text2;
-}
 
-.sprint-block__tag:nth-child(11) {
-  grid-area: tag3;
-}
 
-.sprint-block__title:nth-child(10) {
-  grid-area: title3;
-}
 
-.sprint-block__text:nth-of-type(8) {
-  grid-area: text3;
-}
 
-.sprint-block__tag:nth-child(14) {
-  grid-area: tag4;
-}
 
-.sprint-block__title:nth-child(13) {
-  grid-area: title4;
-}
 
-.sprint-block__text:nth-of-type(10) {
-  grid-area: text4;
-}
 
-.sprint-block__tag:nth-child(17) {
-  grid-area: tag5;
-}
 
-.sprint-block__title:nth-child(16) {
-  grid-area: title5;
-}
 
-.sprint-block__text:nth-of-type(12) {
-  grid-area: text5;
-}
 
-.sprint-block__tag:nth-child(20) {
-  grid-area: tag6;
-}
 
-.sprint-block__title:nth-child(19) {
-  grid-area: title6;
-}
 
-.sprint-block__text:nth-of-type(14) {
-  grid-area: text6;
-}
 
-.sprint-block__tag:nth-child(23) {
-  grid-area: tag7;
-}
 
-.sprint-block__title:nth-child(22) {
-  grid-area: title7;
-}
 
-.sprint-block__text:nth-of-type(16) {
-  grid-area: text7;
-}
 
-.sprint-block__tag:nth-child(26) {
-  grid-area: tag8;
-}
 
-.sprint-block__title:nth-child(25) {
-  grid-area: title8;
-}
 
-.sprint-block__text:nth-of-type(18) {
-  grid-area: text8;
-}
 
-.sprint-block__tag:nth-child(29) {
-  grid-area: tag9;
-}
 
-.sprint-block__title:nth-child(28) {
-  grid-area: title9;
-}
 
-.sprint-block__text:nth-of-type(20) {
-  grid-area: text9;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
