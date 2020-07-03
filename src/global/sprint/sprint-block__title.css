@@ -2,3 +2,31 @@
   grid-area: title;
   margin: 0 0 32px;
 }
+
+.sprint-block__title:nth-child(4) {
+  grid-area: title1;
+}
+.sprint-block__title:nth-child(7) {
+  grid-area: title2;
+}
+.sprint-block__title:nth-child(10) {
+  grid-area: title3;
+}
+.sprint-block__title:nth-child(13) {
+  grid-area: title4;
+}
+.sprint-block__title:nth-child(16) {
+  grid-area: title5;
+}
+.sprint-block__title:nth-child(19) {
+  grid-area: title6;
+}
+.sprint-block__title:nth-child(22) {
+  grid-area: title7;
+}
+.sprint-block__title:nth-child(25) {
+  grid-area: title8;
+}
+.sprint-block__title:nth-child(28) {
+  grid-area: title9;
+}
