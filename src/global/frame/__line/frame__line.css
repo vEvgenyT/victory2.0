@@ -1,0 +1,9 @@
+.frame__line {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0 0 152px;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}

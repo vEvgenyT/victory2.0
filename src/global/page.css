@@ -61,6 +61,16 @@ letter-spacing: -0.006em;
 color: #100F0F;
 }
 
+.g-tag-sprint {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 32px;
+letter-spacing: -0.006em;
+color: #100F0F;
+}
+
 .g-a {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
@@ -168,11 +178,11 @@ color: #444340;
 .g-p_grey70 {
   color: #444340;
 }
-  
+
 .g_grey60 {
   color: #5F5C59;
 }
-  
+
 .g_grey10 {
   color: #DCDBDA;
 }
@@ -490,6 +500,16 @@ font-weight: normal;
 font-size: 12px;
 line-height: 20px;
 color: #444340;
+}
+
+.g-tag-sprint {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 32px;
+letter-spacing: -0.006em;
+color: #100F0F;
 }
 
 .g-tag {
