@@ -3,7 +3,12 @@
   list-style-type: none;
   padding: 0;
   justify-content: space-between;
-  margin: 0 0 152px;
-  -ms-align-items: baseline;
+  margin: 0 0 96px;
   align-items: baseline;
+}
+
+@media only screen and (min-width: 768px) {
+  .frame__line {
+  margin: 0 0 152px;
+}
 }

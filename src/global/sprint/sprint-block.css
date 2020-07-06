@@ -1,3 +1,4 @@
+@media only screen and (min-width: 768px) {
 .sprint-block {
   display: grid;
   grid-column-gap: 32px;
@@ -17,4 +18,41 @@
                         "tag8 tag8 tag8 tag8 tag8 . tag9 tag9 tag9 tag9 tag9 ."
                         "title8 title8 title8 title8 title8 . title9 title9 title9 title9 title9 ."
                         "text8 text8 text8 text8 text8 . text9 text9 text9 text9 text9 .";
+}
+}
+
+.sprint-block {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-template-columns: repeat(5, minmax(36px, 60px));
+  grid-template-areas:  "tag tag tag tag tag"
+                        "title title title title title"
+                        "text text text text text"
+                        "tag1 tag1 tag1 tag1 tag1"
+                        "title1 title1 title1 title1 title1"
+                        "text1 text1 text1 text1 text1"
+                        "tag2 tag2 tag2 tag2 tag2"
+                        "title2 title2 title2 title2 title2"
+                        "text2 text2 text2 text2 text2"
+                        "tag3 tag3 tag3 tag3 tag3"
+                        "title3 title3 title3 title3 title3"
+                        "text3 text3 text3 text3 text3"
+                        "tag4 tag4 tag4 tag4 tag4"
+                        "title4 title4 title4 title4 title4"
+                        "text4 text4 text4 text4 text4"
+                        "tag5 tag5 tag5 tag5 tag5"
+                        "title5 title5 title5 title5 title5"
+                        "text5 text5 text5 text5 text5"
+                        "tag6 tag6 tag6 tag6 tag6"
+                        "title6 title6 title6 title6 title6"
+                        "text6 text6 text6 text6 text6"
+                        "tag7 tag7 tag7 tag7 tag7"
+                        "title7 title7 title7 title7 title7"
+                        "text7 text7 text7 text7 text7"
+                        "tag8 tag8 tag8 tag8 tag8"
+                        "title8 title8 title8 title8 title8"
+                        "text8 text8 text8 text8 text8"
+                        "tag9 tag9 tag9 tag9 tag9"
+                        "title9 title9 title9 title9 title9"
+                        "text9 text9 text9 text9 text9";
 }

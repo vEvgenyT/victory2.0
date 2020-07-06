@@ -1,4 +1,11 @@
 .frame__line-img {
-  width: 106px;
-  height: 106px;
+  width: 56px;
+  height: 56px;
+}
+
+@media only screen and (min-width: 768px) {
+  .frame__line-img {
+  width: 96px;
+  height: 96px;
+}
 }

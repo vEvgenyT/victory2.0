@@ -63,6 +63,7 @@ var path = {
               'src/**/reasons/**/*.css',
               'src/**/sprint/**/*.css',
               'src/**/frame/**/*.css',
+              'src/**/folio/**/*.css',
               'src/**/color.css',
               'src/**/html_style.css'
 
