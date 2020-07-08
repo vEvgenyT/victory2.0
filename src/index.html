@@ -410,8 +410,24 @@ color: #F6416C;
       <article class="wrapper">
 
         <picture class="picture">
-            <img src="img/griffin@x3.webp" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
+          <source type="image/webp"
+                  media="(min-device-pixel-ratio: 1)"
+                  srcset="img/griffin.webp">
+          
+          <source type="image/webp"
+                  media="(min-device-pixel-ratio: 2)"
+                  srcset="img/griffin@x2.webp">
+          
+          <source type="image/webp"
+                  media="(min-device-pixel-ratio: 3)"
+                  srcset="img/griffin@x3.webp">
+          
+          <img 
+               srcset="img/griffin@x2.png 2x,
+                       img/griffin@x3.png 3x"
+               src="img/griffin.png" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
         </picture>
+        
         <span class="sign g-p" id="sign">
           <span>s</span>
           <span>c</span>
