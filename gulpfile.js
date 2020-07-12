@@ -239,6 +239,14 @@ gulp.task('/img', async function() {
     .pipe(svgo())
     // .pipe(webp())
     .pipe(imagemin())
+    .pipe(gulp.dest(path.bundles.img));
+});
+
+gulp.task('/img-webp', async function() {
+    return gulp.src(path.src.img)
+    .pipe(svgo())
+    // .pipe(webp())
+    // .pipe(imagemin())
     .pipe(imagemin([
       imageminWebp({
         quality: 75

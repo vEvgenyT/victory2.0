@@ -1,0 +1,11 @@
+.folio__link {
+  display: block;
+  margin: 128px auto;
+  width: 110px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .folio__link {
+    width: 150px;
+  }
+}

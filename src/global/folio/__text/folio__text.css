@@ -1,7 +1,15 @@
 .folio__text {
 /*   background-color: red; */
-  width: 500px;
+  width: 300px;
   margin: 0;
-  padding: 0 0 0 16px;
+  padding: 32px 16px;
+  text-align: center;
+}
 
+
+@media only screen and (min-width: 768px) {
+  .folio__text {
+    width: 500px;
+    text-align: start;
+  }
 }
