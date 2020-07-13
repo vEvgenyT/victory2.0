@@ -297,7 +297,7 @@ gulp.task('/run', ['/browser-sync'], function() {
 
 
 gulp.task('/compile', ['/html', '/ruHtml', '/uaHtml',  '/css', '/js', '/img', '/fonts']);
-gulp.task('/interpret', ['/html', '/ruHtml', '/uaHtml', '/css', '/js', '/img', '/fonts', '/run']);
+gulp.task('/interpret', ['/html', '/ruHtml', '/uaHtml', '/css', '/js', '/fonts', '/run']);
 
 
 // HELP ///////////////////////////////////////////////////////////
