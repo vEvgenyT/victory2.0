@@ -399,8 +399,30 @@ color: #F6416C;
 
 
     <main>
+      
+      <figure class="folios">
+  <span class="g-tag">design and develop</span>
+            <picture>
+              
+              <source srcset="../img/wild-phone.svg" media="(min-width: 320px) and (max-width:767px)">
+              <img src="../img/wild-phone.svg" alt="Работа Wild" class="portfolio__item-img">
+            </picture>
+            <figcaption>
+            <h3 class="g-h5 folios__item-title">Wild Nature</h3>
+            <p class="figcaption">Работа посвящена вымирающим видам животных</p>
+            </figcaption>
+</figure>
+picture {
+  display: flex;
+/*   flex-direction: column; */
+}
 
-      <section class="wrapper select" aria-labelledby="portfolio">
+
+.portfolio__item-title {
+  position: relative;
+  bottom: 350px;
+}
+<!--       <section class="wrapper select" aria-labelledby="portfolio">
         <h3 class="visually-hidden" aria-hidden="true" tabindex="-1" id="portfolio">Портфолио</h3>
         <a href="/ru/portfolio/leica.html" class="select__img">
           <picture>
@@ -420,7 +442,7 @@ color: #F6416C;
             <img src="../img/beard.svg" alt="beard" class="">
           </picture>
         </a>
-      </section>
+      </section> -->
 
       <!-- <article class="wrapper">
         <h1 tabindex="0" class="g-h1 h1 heading__h1"><span id="js-title_animation" class="em">LEICA</span></h1>
