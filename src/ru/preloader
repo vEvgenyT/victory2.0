@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>First page</title>
+  <style>.preload {
+/*   display: flex; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  //z-index: 99999;
+}
+
+.preload__top, .preload__bottom {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+  transition: 1s cubic-bezier(.22,.61,.36,1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.g-scroll_no {
+  overflow: hidden;
+  height: 100%;
+}
+
+.preload__text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}</style>
+
+</head>
+<body class="g-scroll_no">
+   <main>
+<div class="preload">
+  <div class="preload__top"></div>
+  <span class="preload__text">100% loaded</span>
+  <div class="preload__bottom"></div>
+</div>
+
+<a href="../shpo/second.html">link to second</a>
+     <img src="https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+<p>Lorem10</p>
+<img src="https://images.unsplash.com/photo-1594671658937-09ac0c285e23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+<p>Lorem10</p>
+<img src="https://images.unsplash.com/photo-1594725224909-0e66d59ed0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+<p>Lorem10</p>
+<img src="https://images.unsplash.com/photo-1594706243394-4523943cabb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+<p>Lorem10</p>
+<img src="https://images.unsplash.com/photo-1594716233209-8a3840e19655?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+<p>Lorem10</p>
+
+   </main>
+  <script>
+	let preload = document.querySelector('.preload'),
+    preloaderTop = document.querySelector('.preload__top'),
+    preloaderBottom = document.querySelector('.preload__bottom');
+
+function delPreload() {
+	
+  preload.remove();
+}
+
+  window.onload = function () {
+      //document.body.classList.add('loaded_hiding');
+      preloaderTop.style.transform='translateY(-1000px)';
+      preloaderBottom.style.transform='translateY(1000px)';
+document.body.classList.remove('g-scroll_no')
+
+
+preload.addEventListener('transitionend', delPreload)
+
+      //document.querySelector('.preload').remove();
+      // window.setTimeout(function () {
+      //   document.body.classList.add('loaded');
+      //   document.body.classList.remove('loaded_hiding');
+      // }, 500);
+    }
+  </script>
+</body>
+</html>
