@@ -17,10 +17,14 @@
 
 .preload__top, .preload__bottom {
   width: 100vw;
-  height: 50vh;
-  background-color: black;
+  height: 100vh;
+  //background-color: black;
   transition: 1s cubic-bezier(.22,.61,.36,1);
+transition-delay: 1s;
 }
+
+.preload__top {  background-color: white;}
+.preload__bottom {  background-color: black;}
 
 body {
   margin: 0;
@@ -33,22 +37,43 @@ body {
 }
 
 .preload__text {
-  color: white;
+  color: grey;
   position: absolute;
   top: 50%;
   left: 50%;
-}</style>
+z-index: 99999;
+}
+.skip-link {
+  background: #319795;
+  color: #fff;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+transition: transform 0.3s;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+</style>
 
 </head>
 <body class="g-scroll_no">
    <main>
 <div class="preload">
   <div class="preload__top"></div>
-  <span class="preload__text">100% loaded</span>
+  <span class="preload__text">victory</span>
   <div class="preload__bottom"></div>
 </div>
 
-<a href="../shpo/second.html">link to second</a>
+<a class="skip-link" href="#main">
+  Skip to content
+</a>
+
+<a href="../shpo/second.html" id="main">link to second</a>
      <img src="https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
 <p>Lorem10</p>
 <img src="https://images.unsplash.com/photo-1594671658937-09ac0c285e23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
@@ -69,22 +94,31 @@ body {
 function delPreload() {
 	
   preload.remove();
+document.body.classList.remove('g-scroll_no')
 }
+
+function moveTop() {
+
+preloaderBottom.style.transform='translateY(-200vh)';
+preloaderTop.style.transform='translateY(-100vh)';
+};
+
+function moveBottom() {
+preloaderBottom.style.transform='translateY(-100vh)';
+};
 
   window.onload = function () {
       //document.body.classList.add('loaded_hiding');
-      preloaderTop.style.transform='translateY(-1000px)';
-      preloaderBottom.style.transform='translateY(1000px)';
-document.body.classList.remove('g-scroll_no')
+      //preloaderTop.style.transform='translateY(-1000px)';
+      //preloaderBottom.style.transform='translateY(-1000px)';
+	moveBottom();
+	preloaderBottom.addEventListener('transitionend', moveTop);
+	
 
 
-preload.addEventListener('transitionend', delPreload)
+preloaderTop.addEventListener('transitionend', delPreload)
 
-      //document.querySelector('.preload').remove();
-      // window.setTimeout(function () {
-      //   document.body.classList.add('loaded');
-      //   document.body.classList.remove('loaded_hiding');
-      // }, 500);
+ 
     }
   </script>
 </body>
