@@ -106,7 +106,24 @@ preloaderTop.addEventListener('transitionend', delPreload)
         <span class="header__line" id="about"></span>
       </nav>
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       var currentPage = document.querySelector('.header__line');
+
+startLine();
 var currentElem = null;
 var parent = document.querySelector('#js-nav-line');
 parent.onmouseover = function(event) {
@@ -127,19 +144,19 @@ parent.onmouseout = function(event) {
     relatedTarget = relatedTarget.parentNode;
 
   }
-      lineClear(currentPage.id);
+      startLine();
   currentElem = null;
 };
 
 function line(id) {
-  // let headerLine = document.querySelector('.header__line');
-  // alert('header__line_'+id);
-  currentPage.className = 'header__line';
-  currentPage.classList.add('header__line_'+id)
+  currentPage.style.width = `${currentElem.getBoundingClientRect().width-50}px`;
+  currentPage.style.transform = `translateX(${currentElem.getBoundingClientRect().x+16}px)`;
+  
 }
 
-function lineClear(id) {
-    // document.querySelector('.header__line').className = currentPage;
-  currentPage.className = 'header__line';
-  currentPage.classList.add('header__line_'+id)
+function startLine() {
+  let current = document.querySelector('#'+currentPage.id);
+  currentPage.style.width = `${current.getBoundingClientRect().width-50}px`;
+  currentPage.style.transform = `translateX(${current.getBoundingClientRect().x+16}px)`;
 }
+
