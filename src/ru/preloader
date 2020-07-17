@@ -87,3 +87,59 @@ preloaderTop.addEventListener('transitionend', delPreload)
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<nav class="header__menu" id="js-nav-line">
+        <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu" class=" header__menu_style header__items">
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" id="about">Обо мне</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" id="portfolio">Портфолио</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" id="service">Услуги</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" id="contacts">Контакты</a></li>
+        </ul>
+  
+        <span class="header__line" id="about"></span>
+      </nav>
+      
+      var currentPage = document.querySelector('.header__line');
+var currentElem = null;
+var parent = document.querySelector('#js-nav-line');
+parent.onmouseover = function(event) {
+  if (currentElem) return;
+  let target = event.target.closest('a.g-nav');
+  if (!target) return;
+  currentElem = target;
+  line(currentElem.id);
+};
+
+parent.onmouseout = function(event) {
+  if (!currentElem) return;
+  let relatedTarget = event.relatedTarget;
+  while (relatedTarget) {
+
+    if (relatedTarget == currentElem) return;
+
+    relatedTarget = relatedTarget.parentNode;
+
+  }
+      lineClear(currentPage.id);
+  currentElem = null;
+};
+
+function line(id) {
+  // let headerLine = document.querySelector('.header__line');
+  // alert('header__line_'+id);
+  currentPage.className = 'header__line';
+  currentPage.classList.add('header__line_'+id)
+}
+
+function lineClear(id) {
+    // document.querySelector('.header__line').className = currentPage;
+  currentPage.className = 'header__line';
+  currentPage.classList.add('header__line_'+id)
+}
