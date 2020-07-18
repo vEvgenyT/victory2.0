@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-UA" dir="ltr">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-UA" dir="ltr" class="g-body">
   <head>
 
     <!-- For browsers -->
@@ -406,30 +406,70 @@ color: #F6416C;
 
 
 
-    <main>
+   <main class="wrapper_con">
+
+    <section aria-label="контакты" class="contacts" id="contacts">
+
+          <h3 class="g-h3 contacts__h3_con">Расскажите о своем проекте удобным для вас способом</h3>
 
 
-<!--       <article>
-        <picture>
-          <source srcset="#">
-          <img src="#" alt="eagle">
-        </picture>
-        <h1>Расскажите о своём проекте</h1>
-        <section>
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <form action="#">
-            <label for="name">Как вас зовут?</label>
-            <input type="text" id="name" placeholder="Имя" required autocomplete>
-            <label for="email">Как с вами связаться?</label>
-            <input type="email" name="email" id="email" placeholder="Почта" required autocomplete>
-            <textarea name="text" id="" cols="30" rows="10"></textarea>
-          </form>
+          <section aria-labelledby="e-mail" class="contacts_mail">
+
+            <h4 id="e-mail" class="g-tag-link contacts__link-title g_grey30">e-mail</h4>
+
+            <ul class="contacts__link_con">
+              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail g_grey10" id="email">hello@victory.net.ua</a></li>
+            </ul>
+
+          </section>
+
+          <section aria-labelledby="messenger" class="contacts_messenger">
+
+            <h4 id="messenger" class="g-tag-link contacts__link-title g_grey30">messenger</h4>
+
+            <ul class="contacts__link_con">
+              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail g_grey10" id="viber">viber</a></li>
+              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail g_grey10" id="telegram">telegram</a></li>
+              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail g_grey10" id="whatsapp">what's app</a></li>
+            </ul>
+
+          </section>
+
+
+          <section aria-labelledby="social" class="contacts_social">
+
+            <h4 id="social" class="g-tag-link contacts__link-title g_grey30">social</h4>
+
+            <ul class="contacts__link_con">
+              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="instagram">instagram</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="facebook">facebook</a></li>
+              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="behance">behance</a></li>
+              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link g_grey10" id="medium">medium</a></li>
+            </ul>
+
+
+          </section>
+            <ul class="contacts_terms">
+            <li class="contacts__small"><a href="/ru/terms.html" class="g-small">Условия использования</a></li>
+            <li class="contacts__small"><a href="/ru/policy.html" class="g-small">Политика конфиденциальности</a></li>
+          </ul>
         </section>
-      </article> -->
 
-        <section aria-label="контакты" class="contacts" id="contacts">
 
-          <h3 class="g-h3 contacts__h3">Расскажите о своем проекте удобным для вас способом</h3>
+
+
+
+
+    </main>
+
+
+
+    <!-- <footer class="page_footer">
+
+
+      <section aria-label="контакты" class="contacts" id="contacts">
+
+          <h3 class="g-h3 contacts__h3">Давайте работать вместе, чтобы создать лучший цифровой продукт</h3>
 
           <section aria-labelledby="e-mail" class="contacts_mail">
 
@@ -467,33 +507,20 @@ color: #F6416C;
 
           </section>
 
-
-        </section>
-
-
-
-    </main>
-
-
-
-    <footer class="page_footer">
-
-
-      <section aria-label="контакты" class="contacts" id="contacts">
+          <a href="/ru/contacts.html" aria-label="Ссылка на раздел 'Контакты'" class="g-a a a_style contacts_application g-link_width" id="js-a-contacts">Оставить заявку</a>
 
           <ul class="contacts_terms">
             <li class="contacts__small"><a href="/ru/terms.html" class="g-small">Условия использования</a></li>
             <li class="contacts__small"><a href="/ru/policy.html" class="g-small">Политика конфиденциальности</a></li>
           </ul>
 
-      </section>
-
+        </section>
 
     </footer>
-
+ -->
     <script>var a=document.querySelector(".preload"),b=document.querySelector(".preload__top"),c=document.querySelector(".preload__bottom");function d(){a.remove();document.body.classList.remove("g-scroll_no")}function e(){c.style.transform="translateY(-200vh)";b.style.transform="translateY(-100vh)"}window.onload=function(){c.style.transform="translateY(-100vh)";c.addEventListener("transitionend",e);b.addEventListener("transitionend",d)};</script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->
     <script defer src="/js/index.min.js"></script>

@@ -203,6 +203,15 @@ color: #444340;
   color: #787571;
 }
 
+.g_grey80 {
+  color: #2A2928;
+}
+
+.g_grey90 {
+  color: #100F0F;
+}
+
+
 
 .g-body {
   background-color: #100F0F;
@@ -624,6 +633,14 @@ color: #444340;
   color: #787571;
 }
 
+.g_grey80 {
+  color: #2A2928;
+}
+
+.g_grey90 {
+  color: #100F0F;
+}
+
 .g-body {
   background-color: #100F0F;
 }
@@ -950,6 +967,9 @@ html {
   .wrapper {
     margin: 20px 36px 64px;
   }
+  .wrapper {
+    margin: 20px 36px 40px;
+  }
 
   .h2 {
   max-width: 516px;
@@ -1010,6 +1030,10 @@ html {
 
   .wrapper {
     margin: 20px 56px 72px;
+  }
+
+  .wrapper_con {
+    margin: 20px 56px 40px;
   }
 
   .page-img {

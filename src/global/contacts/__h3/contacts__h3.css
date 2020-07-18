@@ -10,10 +10,21 @@
   grid-area: title;
 }
 
+  .contacts__h3_con {
+  width: 280px;
+  margin: 0 0 40px;
+  grid-area: title;
+}
+
 @media only screen and (min-width: 768px) {
   .contacts__h3 {
   width: 516px;
   margin: 0 0 96px;
+  /*grid-area: title;*/
+}
+  .contacts__h3_con {
+  width: 516px;
+  margin: 0 0 48px;
   /*grid-area: title;*/
 }
 }
@@ -22,6 +33,11 @@
   .contacts__h3 {
   width: 704px;
   margin: 0 0 128px;
+  /*grid-area: title;*/
+}
+  .contacts__h3_con {
+  width: 704px;
+  margin: 0 0 64px;
   /*grid-area: title;*/
 }
 }
