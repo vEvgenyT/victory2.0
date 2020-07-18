@@ -6,9 +6,9 @@
 
 @media only screen and (min-width: 768px) {
   .header__line_service {
-    width: 52px;
+    /*width: 52px;*/
     transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
-  transform: translateX(278px);
+  /*transform: translateX(278px);*/
 }
 }
 
@@ -16,7 +16,7 @@
 @media only screen and (min-width: 1024px) {
 .header__line_service {
   /*width: 52px;*/
-  transform: translateX(277px);
+  /*transform: translateX(277px);*/
   /*transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);*/
 }
 }

@@ -6,9 +6,9 @@
 
 @media only screen and (min-width: 768px) {
   .header__line_portfolio {
-width: 89px;
+/*width: 89px;*/
 
-  transform: translateX(139px);
+  /*transform: translateX(139px);*/
   transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
 
 }
@@ -16,7 +16,7 @@ width: 89px;
 @media only screen and (min-width: 1024px) {
   .header__line_portfolio {
   /*width: 89px;*/
-  transform: translateX(138px);
+  /*transform: translateX(138px);*/
   /*transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);*/
 }
 }
