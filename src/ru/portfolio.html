@@ -431,7 +431,18 @@ color: #F6416C;
       </section>
 
 
+var folioText = document.querySelectorAll('#js-folio-text');
+console.log(TweenLite.version);
 
+
+var tl = gsap.timeline({repeat: -1, repeatDelay: 0.5});
+
+folioText.forEach(function(i) {
+  tl.staggerTo(i, 1, {top:"+=150", opacity:0, translateX: '300px'}, 0.2);
+})
+
+      
+      
  <!--      <figure class="folios">
   <span class="g-tag">design and develop</span>
             <picture>
