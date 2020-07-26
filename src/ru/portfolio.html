@@ -429,6 +429,86 @@ color: #F6416C;
         <h3 class="g-h5 portfolio__item-title" id="js-folio-text">Beard&nbsp;Humor</h3>
         <h3 class="g-h5 portfolio__item-title" id="js-folio-text">Beard&nbsp;Humor</h3>
       </section>
+      
+      <section class="folios" id="js-folio">
+  <div class="text">
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  </div>
+  <div class="text">
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  <span class="">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
+  </div>
+ </section>
+
+<section class="folios" id="js-folio">
+  <div class="text_rtl">
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  </div>
+  <div class="text_rtl">
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  <span class="">Wild&nbsp;Nature&nbsp;*&nbsp;</span>
+  </div>
+ </section>
+      
+      .folios {
+  display: flex;
+  overflow: hidden;
+  width: 80vw;
+}
+
+.text {
+  display: flex;
+  animation: marquee 5s linear infinite;
+  padding: 0;
+  margin: 0;
+}
+
+.text_rtl {
+  display: flex;
+  animation: rtl 1s linear infinite;
+  padding: 0;
+  margin: 0;
+}
+
+ @keyframes marquee {
+      0% { 
+      transform: translateX(0%) }
+      100% { 
+      transform: translateX(-100%);
+   }
+   
+ @keyframes rtl {
+      0% { 
+      transform: translateX(0%) }
+      100% { 
+      transform: translateX(-100%);
+   }
 
 
 var folioText = document.querySelectorAll('#js-folio-text');
