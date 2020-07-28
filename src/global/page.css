@@ -415,7 +415,7 @@ color: #444340;
 }
 }*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 .g-nav {
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
@@ -722,6 +722,8 @@ color: #444340;
   margin: 0 0 20px;
 }
 
+.h1_margin{margin:0 0 72px;}
+
 .a {
   /*max-width: 244px;*/
 }
@@ -964,6 +966,7 @@ html {
     max-width: 456px;
     margin: 0 0 20px;
   }
+  .h1_margin{margin:0 0 72px;}
   .wrapper {
     margin: 20px 36px 64px;
   }
@@ -1027,6 +1030,8 @@ html {
     max-width: 612px;
     margin: 0 0 20px;
   }
+
+  .h1_margin{margin:0 0 72px;}
 
   .wrapper {
     margin: 20px 56px 72px;

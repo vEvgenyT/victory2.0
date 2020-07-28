@@ -1,0 +1,16 @@
+   .folios__marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  text-decoration: none;
+  /*background-image: repeating-linear-gradient(180deg,#fff,#fff 55px,#e3e3e2 0,#e3e3e2 56px);*/
+}
+
+
+.folios__marquee:hover > .folios__text {
+  animation-play-state: paused;
+}
+
+.folios__marquee:hover > .folios__text_rtl {
+  animation-play-state: paused;
+}

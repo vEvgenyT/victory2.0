@@ -1,0 +1,30 @@
+.folios__text {
+  display: flex;
+  animation: marquee 25s linear infinite;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 8rem;
+
+}
+
+
+
+ @keyframes marquee {
+      0% {
+      transform: translateX(0%) }
+      100% {
+      transform: translateX(-100%);
+   }
+}
+
+
+.folios__text_style {
+  font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: bold;
+/*font-size: 70px;*/
+/*line-height: 72px;*/
+letter-spacing: -0.028em;
+color: #100F0F;
+}
