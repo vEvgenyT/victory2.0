@@ -1,0 +1,698 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ua" dir="ltr">
+  <head>
+
+    <!-- For browsers -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="Cache-Control" content="no-cache"> -->
+    <!-- <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="msthemecompatible" content="no"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+
+
+
+      <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
+      <!-- End Google Tag Manager -->
+
+      <!-- Facebook Pixel Code -->
+        <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
+        <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=561419381401251&ev=PageView&noscript=1"/>
+        </noscript>
+      <!-- End Facebook Pixel Code -->
+
+      <!-- General -->
+
+    <title>VICTORY | Веб дизайн та розробка</title>
+
+    <link rel="preload" href="/fonts/web/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/web/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/vue"/>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"/>
+
+    <!-- Style -->
+  <!--  <style type="text/css">
+  @font-face {
+  font-family: "Manrope";
+  src: url("/fonts/web/Manrope-Bold.woff2") format("woff2"),
+  url("/fonts/ttf/Manrope-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/web/Manrope-Regular.woff2") format("woff2"),
+  url("/fonts/ttf/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+  .header {
+  background: transparent;
+  display: -webkit-box;
+  display: flex;
+  height: 60px;
+  margin: 20px 20px 72px;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: flex-start;
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+  .wrapper {
+    margin: 20px 20px 64px;
+  }
+  .g-menu_bkg {
+  /*z-index: 1;*/
+  -webkit-transition: .6s cubic-bezier(.785,.135,.15,.86);
+  background: #100f0f;
+  height: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: .6s cubic-bezier(.785,.135,.15,.86);
+  width: 100vw;
+}
+  .header_grey90 {
+    background-color: #100F0F;
+  }
+  .fade-in {
+  transition: 1.3s cubic-bezier(.22,.61,.36,1);
+}
+  .header__logo_img-position {
+  width: 5.6vw;
+}
+.menu__icon_position {
+  height: 10px;
+}
+.menu__icon_style {
+  background-color: #DCDBDA;
+  width: 18px;
+  height: 1px;
+  display: block;
+  margin: 0 0 8px 0;
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .menu__icon_position > .menu__icon_top-position {
+  -webkit-transform: translateY(4px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
+  transition: 0.550s cubic-bezier(0.86, 0, 0.07, 1);
+  transition-delay: 0.150s;
+}
+
+#checkbox:checked ~ .menu__icon_position > .menu__icon_bottom-position {
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-5px) rotate(-45deg);
+  transition: 0.550s cubic-bezier(0.86, 0, 0.07, 1);
+  transition-delay: 0.150s;
+}
+
+#checkbox:checked ~ .menu__icon_position {
+  transform: rotate(90deg);
+  transition: all 0.350s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.header__menu_style {
+  list-style-type: none;
+}
+  .header__items {
+    display: flex;
+  justify-content: space-between;
+  padding: 0;
+  flex-direction: column;
+  transform: translateY(31vh);
+}
+.g-nav {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+color: #DCDBDA;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.006em;
+text-transform: uppercase;
+}
+  .header__items_line {
+  text-decoration: none;
+}
+.header__line {
+  border-bottom: 1px solid #DCDBDA;
+  position: absolute;
+  top: 40px;
+  width: 0px;
+  transition: transform .9s cubic-bezier(.785,.135,.15,.86),width .9s cubic-bezier(.785,.135,.15,.86);
+  transform: translateX(-8px);
+}
+.header_style {
+  display: flex;
+  justify-content: space-between ;
+}
+  .header__items-lng {
+  padding: 2vh 3vw;
+}
+.g-lng {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 16px;
+color: #DCDBDA;
+text-transform: uppercase;
+text-decoration: none;
+}
+  .picture {
+  display: none;
+}
+.sign {
+  display: flex;
+  justify-content: center;
+  margin: 64px 0 0 0;
+}
+.g-p {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: -0.003em;
+color: #100F0F;
+}
+.g-h1 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 52px;
+letter-spacing: -0.018em;
+color: #100F0F;
+}
+.heading__h1 {
+  margin: 32vh 0 64px;
+  overflow: hidden;
+}
+.em {
+
+    transform: translateY(150px);
+
+    display: inline-block;
+}
+.heading__p {
+  margin: 0 0 96px;
+  display: flex;
+  opacity: 0;
+}
+.g-a {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: -0.006em;
+text-decoration-line: none;
+color: #F6416C;
+}
+.a_style {
+  border-bottom: 1px solid #F6416C;
+  opacity: 0;
+}
+</style>-->
+
+    <style>@font-face{font-family:Manrope;font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/web/Manrope-Bold.woff2) format("woff2"),url(/fonts/ttf/Manrope-Bold.ttf) format("truetype")}@font-face{font-family:Manrope;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/web/Manrope-Regular.woff2) format("woff2"),url(/fonts/ttf/Manrope-Regular.ttf) format("truetype")}.header{background:transparent;display:-webkit-box;display:flex;height:60px;margin:20px 20px 72px;padding:0;position:-webkit-sticky;position:sticky;top:0;z-index:1000;align-items:flex-start;-webkit-box-align:start;-webkit-box-pack:justify;justify-content:space-between}.wrapper{margin:20px 20px 64px}.g-menu_bkg{-webkit-transition:.6s cubic-bezier(.785,.135,.15,.86);height:0;left:0;position:fixed;top:0;transition:.6s cubic-bezier(.785,.135,.15,.86);width:100vw}.g-menu_bkg,.header_grey90{background:#100f0f}.fade-in{-webkit-transition:1.3s cubic-bezier(.22,.61,.36,1);transition:1.3s cubic-bezier(.22,.61,.36,1)}.header__logo_img-position{width:5.6vw}.menu__icon_position{height:10px}.menu__icon_style{-webkit-transition:all .6s cubic-bezier(.86,0,.07,1);background:#dcdbda;display:block;height:1px;margin:0 0 8px;transition:all .6s cubic-bezier(.86,0,.07,1);width:18px;-webkit-font-smoothing:antialiased}#checkbox{display:none}#checkbox:checked~.menu__icon_position>.menu__icon_top-position{-webkit-transform:translateY(4px) rotate(45deg);transform:translateY(4px) rotate(45deg)}#checkbox:checked~.menu__icon_position>.menu__icon_bottom-position,#checkbox:checked~.menu__icon_position>.menu__icon_top-position{-webkit-transition:.55s cubic-bezier(.86,0,.07,1);-webkit-transition-delay:.15s;transition:.55s cubic-bezier(.86,0,.07,1);transition-delay:.15s}#checkbox:checked~.menu__icon_position>.menu__icon_bottom-position{-webkit-transform:translateY(-5px) rotate(-45deg);transform:translateY(-5px) rotate(-45deg)}#checkbox:checked~.menu__icon_position{-webkit-transform:rotate(90deg);-webkit-transition:all .35s cubic-bezier(.86,0,.07,1);transform:rotate(90deg);transition:all .35s cubic-bezier(.86,0,.07,1)}.header__menu_style{list-style:none}.header__items{-webkit-transform:translateY(31vh);display:-webkit-box;display:flex;flex-direction:column;padding:0;transform:translateY(31vh);-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-pack:justify;justify-content:space-between}.g-nav{color:#dcdbda;font:normal 18px/24px Manrope,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;letter-spacing:.006em;text-transform:uppercase}.header__items_line{text-decoration:none}.header_style{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between}.header__items-lng{padding:2vh 3vw}.g-lng{color:#dcdbda;font:normal normal 8px/16px Manrope,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;text-decoration:none;text-transform:uppercase}.picture{display:none}.sign{display:-webkit-box;display:flex;margin:64px 0 0;-webkit-box-pack:center;justify-content:center}.g-p{font:normal normal 14px/24px Manrope,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;letter-spacing:-.003em}.g-h1,.g-p{color:#100f0f}.g-h1{font:normal 700 50px/52px Manrope,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;letter-spacing:-.018em}.heading__h1{margin:32vh 0 64px;overflow:hidden}.em{-webkit-transform:translateY(150px);display:inline-block;transform:translateY(150px)}.heading__p{display:-webkit-box;display:flex;margin:0 0 96px;opacity:0}.g-a{color:#f6416c;font:normal 500 14px/24px Manrope,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;letter-spacing:-.006em;-webkit-text-decoration-line:none;text-decoration-line:none}.a_style{border-bottom:1px solid #f6416c;opacity:0}.preload{position:fixed;top:0;left:0;bottom:0;right:0; z-index:99999;}.preload__top,.preload__bottom{height:100vh;transition:1s cubic-bezier(.22,.61,.36,1);transition-delay:1s;}.preload__top{background-color:#fff;}.preload__bottom{background-color:#100F0F;}.preload__text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index: 99999;}.skip-link{background-color:#100F0F;left:50%;padding:4px;position:absolute;transform:translateY(-500%);transition:transform 0.3s cubic-bezier(.22,.61,.36,1);z-index:1000;}.skip-link:focus{transform:translateY(50%);}</style>
+    <!-- <link rel="preload" href="css/style.css" as="style"> -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="canonical" href="https://victory.net.ua">
+    <base href="http://localhost:3000">
+    <meta name="robots" content="notranslate">
+    <meta name="keywords" content="">
+    <meta name="subject" content="Веб дизайн та розробка сайтів">
+    <meta name="description" content="Я веб дизайнер і розробник. Створюю елегантні і оптимальні рішення, надаючи висококласну html / css розмітку, js код, чудовий веб дизайн і зручну структуру.">
+    <meta name="author" content="victory.net.ua">
+    <meta name="copyright" content="victory.net.ua">
+    <meta name="rating" content="General">
+
+
+    <!-- Device -->
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Victory">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Victory">
+    <meta name="msapplication-tooltip" content="веб дизайн та верстка">
+
+    <!-- Geo-теги -->
+
+    <meta name="ICBM" content="49.0, 32.0">
+    <meta name="geo.position" content="49.0;32.0">
+    <meta name="geo.region" content="UA-14" />
+    <meta name="geo.placename" content="Mariupol">
+
+    <!-- Facebook -->
+
+    <meta property="og:title" content="Victory | Веб дизайн та розробка">
+    <meta property="og:description" content="Веб дизайн та розробка сайтів">
+    <meta property="og:url" content="https://www.victory.net.ua/">
+    <meta property="og:site_name" content=".victory">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru-UA">
+    <meta property="og:image" content="img/favicon/mstile-310x310.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:site" content="https://www.victory.net.ua/">
+    <meta name="twitter:creator" content="victory.net.ua">
+    <meta name="twitter:title" content="Victory | Веб дизайн та розробка">
+    <meta name="twitter:description" content="Веб дизайн та розробка сайтів">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="img/favicon/mstile-310x310.png">
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="img/favicon/opera-coast-228x228.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="black" viewbox="">
+    <link rel="shortcut icon" href="img/favicon/apple-touch-icon-144x144.png">
+
+    <!-- PWA icon -->
+
+    <link rel="manifest" href="victory.webmanifest">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicon/apple-touch-icon-precomposed-180x180.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="img/favicon/apple-touch-icon-precomposed-167x167.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-precomposed-152x152.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-precomposed-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-precomposed-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-precomposed-114x114.png"/>
+
+    <link rel="apple-touch-startup-image" href="img/favicon/apple-touch-icon-precomposed-180x180.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="img/favicon/apple-touch-icon-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png">
+    <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png">
+    <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Microdata -->
+
+    <script type="application/ld+json">
+      {"@context": "http://schema.org","@type": "LocalBusiness","address":{"@type": "PostalAddress","addressLocality": "Мариуполь","url": "https://www.victory.net.ua/"},"description": "Я веб дизайнер і розробник. Створюю елегантні і оптимальні рішення, надаючи висококласну html / css розмітку, js код, чудовий веб дизайн і зручну структуру.","image": "https://www.victory.net.ua/img/favicon/mstile-310x310.png","priceRange":"100$ - 2000$","email": "hello@victory.net.ua","name": "Victory | Веб дизайн та розробка","telephone": "+380 (96) 577 93 28","openingHours": "Пн-Вс 09:00-19:00","geo": {"@type": "GeoCoordinates","latitude": "47.7686988","longitude": "26.8142039"},"hasMap": "https://goo.gl/maps/9TzEYNat5WEo24E4A", "foundingDate": "2019-09-01", "foundingLocation": "Мариуполь", "isicv4": "6202"}
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Victory | Веб дизайн та розробка","url": "https://www.victory.net.ua/","logo": "https://www.victory.net.ua/img/favicon/mstile-310x310.png", "sameAs" : [ "https://www.facebook.com/victory.wdd/","https://www.behance.net/victory_web_dev/","https://medium.com/victory-blog", "https://www.instagram.com/victoryweb/"], "contactPoint": {"@type": "ContactPoint","telephone": "+380 (96) 577 93 28","contactType": "customer service"}}
+    </script>
+  </head>
+  <body class="g-scroll_no">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53H5CXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <noscript>
+      <strong>Для повної роботи сайту необхідно включити JavaScript.</strong>
+    </noscript>
+
+<!--     <svg class="visually-hidden" width="0" height="0">
+      <defs>
+        <filter id="link">
+            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.0" numOctaves="1"
+                result="turbulence_3" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_3" scale="30" />
+        </filter>
+      </defs>
+    </svg> -->
+
+      <div class="preload">
+        <div class="preload__top"></div>
+        <img src="img/logo_desktop.svg" class="preload__text" alt="логотип victory">
+        <div class="preload__bottom"></div>
+      </div>
+
+
+
+    <header class="header wrapper">
+        <a class="skip-link g-nav" href="#js-title_animation">Skip to content</a>
+
+          <div aria-hidden="true" class="g-menu_bkg"></div>
+
+      <div class="header-main header_grey90 fade-in">
+      <a href="https://www.victory.net.ua/" class="header__logo">
+        <picture>
+          <source srcset="img/logo-mobile.svg" media="(min-width: 320px) and (max-width:767px)">
+          <img src="img/logo_desktop.svg" class="header__logo_img-position" alt="Логотип студії victory у вигляді букви У латинського алфавіту">
+        </picture>
+      </a>
+
+
+ <!--      <button id="js-mobile-menu" class="header_btn">
+        <span class="header-main_line"></span>
+        <span class="header-main_line"></span>
+      </button> -->
+
+      <input type="checkbox" id="checkbox" aria-hidden="true">
+      <label for="checkbox" class="menu__icon_position header_btn" aria-hidden="true">
+        <span class="menu__icon_style menu__icon_top-position"></span>
+        <span class="menu__icon_style menu__icon_bottom-position"></span>
+      </label>
+    </div>
+
+<!--       <nav class="header__menu" id="js-nav-line">
+        <ul class=" header__menu_style header__items">
+          <li class="header__items-item"><a href="/ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Обо мне'" @mouseover="hover('header__line_about')" @mouseleave="leave" @click="click('header__line_about')">Обо мне</a></li>
+          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Портфолио'" @mouseover="hover('header__line_portfolio')" @mouseleave="leave" @click="click('header__line_portfolio')">Портфолио</a></li>
+          <li class="header__items-item"><a href="/ru/services.html" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Услуги'" @mouseover="hover('header__line_service')" @mouseleave="leave" @click="click('header__line_service')">Услуги</a></li>
+          <li class="header__items-item"><a href="#" class="g-nav header__items_line header__items-item_lnk" aria-label="ссылка на раздел 'Контакты'" @mouseover="hover('header__line_contacts')" @mouseleave="leave" @click="click('header__line_contacts')">Контакты</a></li>
+        </ul>
+        <span class="header__line" v-bind:class="isActive"></span>
+      </nav> -->
+
+      <nav class="header__menu" id="js-nav-line">
+        <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu" class=" header__menu_style header__items">
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="/ru/about.html" class="g-nav header__items_line header__items-item_lnk" aria-label="посилання на розділ 'Про мене'" id="m-about">Про мене</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="/ru/portfolio.html" class="g-nav header__items_line header__items-item_lnk" aria-label="посилання на розділ 'Портфоліо'" id="m-folio">Портфоліо</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="/ru/services.html" class="g-nav header__items_line header__items-item_lnk" aria-label="посилання на розділ 'Послуги'" id="m-service">Послуги</a></li>
+          <li itemprop="name" role="none" class="header__items-item"><a itemprop="url" role="menuitem" href="/ru/contacts.html" class="g-nav header__items_line header__items-item_lnk" aria-label="посилання на розділ 'Контакти'" id="m-contacts">Контакти</a></li>
+        </ul>
+        <span class="header__line" id="m-main"></span>
+      </nav>
+
+
+      <!-- <fieldset class="g-lng header__field header_style">
+        <label class=""><input type="radio" name="language" value="ua" aria-label="переключение на Украинский язык" class="visually-hidden">ua</label>
+        <label class=""><input type="radio" name="language" value="en" aria-label="переключение на Английский язык" class="visually-hidden">ru</label>
+      </fieldset> -->
+
+      <div class="header_style header_grey90 fade-in">
+        <a href="/ua/main.html" class="g-lng header__items-lng" aria-label="ссылка на Украинскую версию сайта">ua</a>
+        <a href="https://www.victory.net.ua/" class="g-lng header__items-lng" aria-label="ссылка на Русскую версию сайта">ru</a>
+      </div>
+    </header>
+
+
+
+    <main>
+
+
+      <article class="wrapper">
+
+
+        <picture class="picture">
+
+          <source type="image/webp"
+                  media="(-webkit-min-device-pixel-ratio: 3)"
+                  srcset="img/griffin@x3.webp">
+
+          <source type="image/webp"
+                  media="(-webkit-min-device-pixel-ratio: 2)"
+                  srcset="img/griffin@x2.webp">
+
+          <source type="image/webp"
+                  media="(-webkit-min-device-pixel-ratio: 1)"
+                  srcset="img/griffin.webp">
+
+          <img
+               srcset="img/griffin@x2.png 2x,
+                       img/griffin@x3.png 3x"
+               src="img/griffin.png" class="page-img" alt="иллюстрация грифона развивающегося на ветру">
+
+        </picture>
+
+
+        <span class="sign g-p" id="sign">
+          <span>s</span>
+          <span>c</span>
+          <span>r</span>
+          <span>o</span>
+          <span>l</span>
+          <span>l</span>
+          <span>&nbsp;</span>
+          <span>d</span>
+          <span>o</span>
+          <span>w</span>
+          <span>n</span>
+        </span>
+
+
+        <!-- <canvas class="object"></canvas> -->
+
+        <h1 tabindex="0" class="g-h1 h1 heading__h1"><span id="js-title_animation" class="em">Веб дизайн та&nbsp;розробка сайтів</span></h1>
+        <p class="g-p p heading__p h1_margin" id="js-paragraphg_animation">Створюю елегантні та оптимальні рішення, надаючи висококласну html / css розмітку, js код, чудовий дизайн і&nbsp;зручну структуру.</p>
+        <a href="/ru/about.html" class="g-a a a_style" aria-label="ссылка на раздел 'Обо мне'" id="js-a-about">Давайте познайомимось</a>
+
+
+        <section aria-labelledby="portfolio" class="page_margin portfolio">
+
+          <h2 class="visually-hidden" aria-hidden="true" tabindex="-1" id="portfolio">Портфоліо</h2>
+
+          <!-- <svg id="text-container" viewBox="0 0 1000 200" aria-hidden="true">
+            <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+            <text y="40" font-size="54">
+              <textPath id="text-path" href="#text-curve" startOffset="200">Портфолио</textPath>
+            </text>
+          </svg> -->
+
+          <div class="portfolio__block">
+
+
+          <a href="/ru/portfolio/wild.html" class="portfolio__item">
+            <picture>
+
+              <source srcset="img/wild-phone.svg" media="(min-width: 320px) and (max-width:767px)">
+              <img src="img/wild.svg" alt="Работа Wild" class="portfolio__item-img">
+            </picture>
+
+            <figcaption>
+            <h3 class="g-h5 portfolio__item-title">Wild Nature</h3>
+            <p class="figcaption portfolio__item-text">Робота присвячена вимираючим видам тварин</p>
+            </figcaption>
+          </a>
+
+
+          <a href="/ru/portfolio/beard.html" class="portfolio__item">
+            <picture>
+              <source srcset="img/beard-phone.svg" media="(min-width: 320px) and (max-width:767px)">
+              <img src="img/beard.svg" alt="Работа Beard humor" class="portfolio__item-img">
+            </picture>
+            <figcaption>
+            <h3 class="g-h5 portfolio__item-title">Beard Humor</h3>
+            <p class="figcaption portfolio__item-text">Тільки гумор, анекдоти та гарний настрій</p>
+            </figcaption>
+          </a>
+
+          <a href="/ru/portfolio/leica.html" class="portfolio__item">
+            <picture>
+
+              <source type="image/webp" srcset="img/leica@x3.webp" media="(min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 3)">
+              <source type="image/webp" srcset="img/leica@x2.webp" media="(min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 2)">
+              <source type="image/webp" srcset="img/leica@x1.webp" media="(min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 1)">
+
+              <source srcset="img/leica@x3.jpg" media="(min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 3)">
+              <source srcset="img/leica@x2.jpg" media="(min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 2)">
+              <source srcset="img/leica@x1.jpg" media="(min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 1)">
+
+              <img src="img/leica.jpg" alt="Работа Leica" class="portfolio__item-img">
+            </picture>
+            <figcaption>
+            <h3 class="g-h5 portfolio__item-title">Leica</h3>
+            <p class="figcaption portfolio__item-text">Історія першої компактної фотокамери</p>
+            </figcaption>
+          </a>
+        </div>
+
+          <a href="/ru/portfolio.html" class="g-a a a_style portfolio__link" id="js-a-portfolio">Дивитися всі роботи</a>
+        </section>
+
+
+
+        <section aria-labelledby="service" class="page_margin service" itemscope itemtype="http://schema.org/Service" id="js-scroll" v-scroll="position">
+
+          <p id="service" tabindex="-1" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">послуги</span></p>
+          <h2 tabindex="0" class="g-h2 h2 service__h2 heading-h2"><span id="js-title_animation" class="em">Що я роблю</span></h2>
+
+          <ul class="service-items">
+
+            <li aria-labelledby="all-in-1-solution" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
+              <h3 id="all-in-1-solution" class="g-h6 service-items__type-title" itemprop="serviceType">Комплексные решения</h3>
+              <ul class="service-items__item-group">
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">лендинг</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">портфолио</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">промо</li>
+                <li itemprop="name" class="g-p g-p_grey70 service-items__item">корпоративный</li>
+              </ul>
+            </li>
+
+            <li aria-labelledby="web-design" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
+              <h3 id="web-design" class="g-h6 service-items__type-title" itemprop="serviceType">Веб дизайн</h3>
+              <ul class="service-items__item-group">
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">UI/UX</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">прототипирование</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">дизайн сайтов</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">анимация</li>
+              </ul>
+            </li>
+
+            <li aria-labelledby="development" class="service-items__type service-items__type_style g-hidden" id="js-move-in">
+              <h3 id="development" class="g-h6 service-items__type-title" itemprop="serviceType">Разработка</h3>
+              <ul class="service-items__item-group">
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка html, css, js</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка на Tilda</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">верстка на Readymag</li>
+                <li itemprop="name"class="g-p g-p_grey70 service-items__item">интеграция с CMS</li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="/ru/services.html" class="g-a a a_style service_a" id="js-a-service">Узнать больше</a>
+        </section>
+
+
+
+        <section aria-labelledby="advantages" class="page_margin ">
+
+          <p id="advantages" class="g-tag tag heading__tag heading-h2"><span id="js-title_animation" class="em">преимущества</span></p>
+          <h2 tabindex="0" class="g-h2 h2 advantages__h2 heading-h2"><span id="js-title_animation" class="em">Лучшие практики и&nbsp;подходы в создании сайтов</span></h2>
+
+          <dl class="advantages">
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Доступность</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Люди с ограниченными возможностями будут взаимодействовать с контентом на сайте, благодаря разработке в соответствии со стандартами WCAG.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Сначала смартфоны</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Разработка ведется от телефона к десктопу.  Это благоприятно сказывается на SEO и комфорте от использования сайта с мобильных устройств.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Кроссбраузерность</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Верстка выглядит превосходно на современных устройствах и веб-браузерах.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">SPA</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Максимальная интерактивность и безупречный UX для пользователей.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Интеграция с CMS</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Интегрирую статическую верстку на: Wordpress, Tilda, Readymag.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Веб дизайн</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Эффективный и актуальный визуальный язык для бизнеса в сети интернет.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Анимация</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Создаю анимацию: от перехода при наведении курсора до анимации основанной на webGL и взаимодействии с пользователем.</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Оптимизация графики</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Графические файлы оптимизированы под дисплеи с высоким разрешением (Retina) и современные форматы (WebP).</dd>
+            <dt class="g-h6 advantages__dt g-hidden" id="js-move-in">Стандартизация</dt>
+            <dd class="g-span advantages__inner-margin g-hidden" id="js-move-in">Придерживаюсь передовых практик написания кода, отраслевых стандартов, использую собственную систему контроля, метрик и чек-листов.</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
+
+
+    <footer class="page_footer">
+
+
+      <section aria-label="контакты" class="contacts" id="contacts">
+
+          <h3 class="g-h3 contacts__h3">Давайте работать вместе, чтобы создать лучший цифровой продукт</h3>
+
+          <section aria-labelledby="e-mail" class="contacts_mail">
+
+            <h4 id="e-mail" class="g-tag-link contacts__link-title g_grey30">e-mail</h4>
+
+            <ul class="contacts__link">
+              <li><a href="mailto:hello@victory.net.ua" class="g-a-mail g_grey10" id="email">hello@victory.net.ua</a></li>
+            </ul>
+
+          </section>
+
+          <section aria-labelledby="messenger" class="contacts_messenger">
+
+            <h4 id="messenger" class="g-tag-link contacts__link-title g_grey30">messenger</h4>
+
+            <ul class="contacts__link">
+              <li><a aria-label="Написать в Viber" href="viber://chat?number=+380965779328" class="g-a-mail g_grey10" id="viber">viber</a></li>
+              <li><a aria-label="Написать в Telegram" href="tg://resolve?domain=victory_web_dev" class="g-a-mail g_grey10" id="telegram">telegram</a></li>
+              <li><a aria-label="Написать в What's App" href="whatsapp://send?phone=+380965779328" class="g-a-mail g_grey10" id="whatsapp">what's app</a></li>
+            </ul>
+
+          </section>
+
+
+          <section aria-labelledby="social" class="contacts_social">
+
+            <h4 id="social" class="g-tag-link contacts__link-title g_grey30">social</h4>
+
+            <ul class="contacts__link">
+              <li><a aria-label="Внешняя ссылка на страницу в instagram" href="https://www.instagram.com/victoryweb/" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="instagram">instagram</a></li>
+              <li><a aria-label="Внешняя ссылка на страницу в facebook" href="https://www.facebook.com/victory.wdd" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="facebook">facebook</a></li>
+              <li><a aria-label="Внешняя ссылка на портфолио на behance" href="https://www.behance.net/victory_web_dev/" target="_blank" rel="noopener noreferrer" class="g-a-mail g_grey10" id="behance">behance</a></li>
+              <li><a aria-label="Внешняя ссылка на блог на medium" href="https://medium.com/victory-blog" target="_blank" rel="noopener noreferrer" class="g-a-mail contacts_link g_grey10" id="medium">medium</a></li>
+            </ul>
+
+          </section>
+
+          <a href="/ru/contacts.html" aria-label="Ссылка на раздел 'Контакты'" class="g-a a a_style contacts_application g-link_width" id="js-a-contacts">Оставить заявку</a>
+
+        <!--   <ul class="contacts_terms">
+            <li class="contacts__small"><a href="/ru/terms.html" class="g-small">Условия использования</a></li>
+            <li class="contacts__small"><a href="/ru/policy.html" class="g-small">Политика конфиденциальности</a></li>
+          </ul> -->
+
+        </section>
+
+
+        <!-- <section class="contacts_big-link">
+          <h2><a href="#" aria-label="ссылка на раздел 'Обо мне'" class="g-big">Обо мне</a></h2>
+        </section> -->
+    </footer>
+<!--         <script>var preload = document.querySelector('.preload'),
+    preloaderTop = document.querySelector('.preload__top'),
+    preloaderBottom = document.querySelector('.preload__bottom');
+
+function delPreload() {
+  preload.remove();
+  document.body.classList.remove('g-scroll_no');
+}
+
+function moveTop() {
+  preloaderBottom.style.transform='translateY(-200vh)';
+  preloaderTop.style.transform='translateY(-100vh)';
+};
+
+function moveBottom() {
+  preloaderBottom.style.transform='translateY(-100vh)';
+};
+
+window.onload = function () {
+  moveBottom();
+  preloaderBottom.addEventListener('transitionend', moveTop);
+  preloaderTop.addEventListener('transitionend', delPreload);
+}</script> -->
+<script>function N(){var a=document.querySelector("nav"),b=document.querySelector("#"+M.id);"m-main"==b.id?(M.style.width="0px",M.style.transform="translateX(-8px)"):(M.style.width=b.getBoundingClientRect().width-50+"px",M.style.transform="translateX("+(b.getBoundingClientRect().x-a.getBoundingClientRect().x+25)+"px)")}var Q=document.querySelector(".preload"),R=document.querySelector(".preload__top"),S=document.querySelector(".preload__bottom");function T(){Q.remove();document.body.classList.remove("g-scroll_no")}function U(){S.style.transform="translateY(-200vh)";R.style.transform="translateY(-100vh)"}window.onload=function(){S.style.transform="translateY(-100vh)";S.addEventListener("transitionend",U);R.addEventListener("transitionend",T)};</script>
+
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>
