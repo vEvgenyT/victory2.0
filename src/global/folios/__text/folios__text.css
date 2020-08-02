@@ -1,6 +1,6 @@
 .folios__text {
   display: flex;
-  animation: marquee 25s linear infinite;
+  animation: marquee 45s linear infinite;
   padding: 0;
   margin: 0;
   text-transform: uppercase;

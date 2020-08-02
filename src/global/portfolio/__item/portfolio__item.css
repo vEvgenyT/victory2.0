@@ -8,6 +8,7 @@
   margin: 0 0 80px;
   border-bottom: 1px solid #5F5C59;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .portfolio__item:nth-child(1) {

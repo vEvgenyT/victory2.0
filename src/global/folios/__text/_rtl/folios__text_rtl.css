@@ -1,6 +1,6 @@
    .folios__text_rtl {
   display: flex;
-  animation: rtl 35s linear infinite;
+  animation: rtl 65s linear infinite;
   padding: 0;
   margin: 0;
   text-transform: uppercase;
