@@ -83,7 +83,7 @@ var path = {
         html: 'src/**/*.html',
         css: 'src/**/*.css',
         js: 'src/**/*.js',
-        img: 'src/img/**/*.*',
+        // img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: 'bundles/**/*.*'
@@ -290,8 +290,8 @@ gulp.task('/run', ['/browser-sync'], function() {
     gulp.watch(path.watch.js, browserSync.reload);
     gulp.watch(path.watch.fonts, ['/fonts'])
     gulp.watch(path.watch.fonts, browserSync.reload);
-    gulp.watch(path.watch.img, ['/img'])
-    gulp.watch(path.watch.img, browserSync.reload);
+    // gulp.watch(path.watch.img, ['/img'])
+    // gulp.watch(path.watch.img, browserSync.reload);
 });
 
 // -= ******************************************************** =- \\
