@@ -29,7 +29,9 @@
     "gulp-postcss": "^8.0.0",
     "gulp-shorthand": "^1.1.0",
     "gulp-svgo": "^2.1.1",
-    "gulp-webp": "^4.0.1"
+    "gulp-webp": "^4.0.1",
+    "postcss-uncss": "^0.17.0",
+    "uncss": "^0.17.3"
   },
   "browserslist": [
     "> 0.3%",

@@ -16,6 +16,7 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'), //добавляет вендроные префиксы
     postcss = require('gulp-postcss'),
     cssnano = require('cssnano'), // сжатие css файлов,
+    uncss = require('postcss-uncss'), // удаление неиспользуемых стилей
     svgo = require('gulp-svgo'), //минификация svg
     gcmq = require('gulp-group-css-media-queries'), //сортировка медиа запросов
     clear = require('del'), // очистка папок
@@ -163,23 +164,27 @@ gulp.task('/css', async function() {
     .pipe(prefixer())
     .pipe(csscomb())
     .pipe(gcmq())
-    // .pipe(postcss(processors))
+    .pipe(postcss(processors))
     .pipe(gulp.dest(path.bundles.css));
 });
 
 
-gulp.task('/htmlCss', async function() {
+gulp.task('/unCss', async function() {
     var processors = [
     cssnano(),
+    uncss({
+      html: ['**/bundles/**/index.html'],
+      js: ['**/bundles/**/script.js']
+    }),
   ];
-  return gulp.src('src/css/html_style.css')
+  return gulp.src(path.src.css)
   //   .pipe(order([
   //   "**/*reset*.css",
   //   "**/*normalize*.css",
   //   "**/*style*.css",
   //   "**/*media*.css"
   // ], { base: './' }))
-    .pipe(concat('html_css.css'))
+    .pipe(concat('main.css'))
     .pipe(shorthand())
     .pipe(prefixer())
     .pipe(csscomb())
