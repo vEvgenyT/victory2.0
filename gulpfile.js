@@ -52,7 +52,7 @@ var path = {
         ],
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        css: ['src/**/normalize.css',
+        css: [//'src/**/normalize.css',
               'src/**/fonts.css',
               'src/**/page.css',
               'src/**/service/**/*.css',
@@ -71,31 +71,36 @@ var path = {
 
         ],
       indexcss: [
-                  'src/**/portfolio/*.css',
-                  'src/**/service/*.css',
-                  'src/**/advantages/*.css',
-                  '!src/**/service-items/*.css'
+                  'src/**/service/**/*.css',
+                  'src/**/advantages/**/*.css',
+                  'src/**/portfolio/**/*.css'
+                  // '!src/**/service-items/*.css'
       ],
       aboutcss: [
-                  'src/**/stage/-block/*.css',
-                  'src/**/reasons/*.css'
+                  'src/**/service/**/service_a.css',
+                  'src/**/service/**/service__h2.css',
+                  'src/**/advantages/**/advantages__h2.css',
+                  'src/**/stage/**/*.css',
+                  'src/**/reasons/**/*.css',
       ],
       basecss: [
-                  'src/**/normalize.css',
+                  // 'src/**/normalize.css',
                   'src/**/fonts.css',
                   'src/**/page.css',
-                  'src/**/contacts/*.css'
+                  'src/**/contacts/**/*.css',
+                  'src/**/header/**/*.css'
       ],
       servicecss: [
-                  'src/**/service-items/*.css',
-                  'src/**/sprint/*.css',
-                  'src/**/frame/*.css'
+                  'src/**/service-items/**/*.css',
+                  'src/**/service/**/service__h2.css',
+                  'src/**/sprint/**/*.css',
+                  'src/**/frame/**/*.css'
       ],
       portfoliocss: [
-                  'src/**/folios/*.css'
+                  'src/**/folios/**/*.css'
       ],
       folioworkcss: [
-                  'src/**/folio/*.css'
+                  'src/**/folio/**/*.css'
       ],
     },
     bundles: {
@@ -175,18 +180,28 @@ gulp.task('/uaHtml', async function() {
 
 // CSS /////////////////////////////////////////////////////////////
 
-gulp.task('/css', async function() {
+// gulp.task('/css', async function() {
+//     var processors = [
+//     cssnano(),
+//   ];
+//   return gulp.src(path.src.css)
+
+//     .pipe(concat('style.css'))
+//     .pipe(shorthand())
+//     .pipe(prefixer())
+//     .pipe(csscomb())
+//     .pipe(gcmq())
+//     .pipe(postcss(processors))
+//     .pipe(gulp.dest(path.bundles.css));
+// });
+
+gulp.task('/basecss', async function() {
     var processors = [
     cssnano(),
   ];
-  return gulp.src(path.src.css)
-  //   .pipe(order([
-  //   "**/*reset*.css",
-  //   "**/*normalize*.css",
-  //   "**/*style*.css",
-  //   "**/*media*.css"
-  // ], { base: './' }))
-    .pipe(concat('style.css'))
+  return gulp.src(path.src.basecss)
+
+    .pipe(concat('styles.css'))
     .pipe(shorthand())
     .pipe(prefixer())
     .pipe(csscomb())
@@ -199,14 +214,9 @@ gulp.task('/indexcss', async function() {
     var processors = [
     cssnano(),
   ];
-  return gulp.src(path.src.css)
-  //   .pipe(order([
-  //   "**/*reset*.css",
-  //   "**/*normalize*.css",
-  //   "**/*style*.css",
-  //   "**/*media*.css"
-  // ], { base: './' }))
-    .pipe(concat('style.css'))
+  return gulp.src(path.src.indexcss)
+
+    .pipe(concat('main.css'))
     .pipe(shorthand())
     .pipe(prefixer())
     .pipe(csscomb())
@@ -214,6 +224,72 @@ gulp.task('/indexcss', async function() {
     .pipe(postcss(processors))
     .pipe(gulp.dest(path.bundles.css));
 });
+
+gulp.task('/aboutcss', async function() {
+    var processors = [
+    cssnano(),
+  ];
+  return gulp.src(path.src.aboutcss)
+
+    .pipe(concat('about.css'))
+    .pipe(shorthand())
+    .pipe(prefixer())
+    .pipe(csscomb())
+    .pipe(gcmq())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(path.bundles.css));
+});
+
+gulp.task('/servicecss', async function() {
+    var processors = [
+    cssnano(),
+  ];
+  return gulp.src(path.src.servicecss)
+
+    .pipe(concat('service.css'))
+    .pipe(shorthand())
+    .pipe(prefixer())
+    .pipe(csscomb())
+    .pipe(gcmq())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(path.bundles.css));
+});
+
+gulp.task('/portfoliocss', async function() {
+    var processors = [
+    cssnano(),
+  ];
+  return gulp.src(path.src.portfoliocss)
+
+    .pipe(concat('portfolio.css'))
+    .pipe(shorthand())
+    .pipe(prefixer())
+    .pipe(csscomb())
+    .pipe(gcmq())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(path.bundles.css));
+});
+
+gulp.task('/folioworkcss', async function() {
+    var processors = [
+    cssnano(),
+  ];
+  return gulp.src(path.src.folioworkcss)
+
+    .pipe(concat('foliowork.css'))
+    .pipe(shorthand())
+    .pipe(prefixer())
+    .pipe(csscomb())
+    .pipe(gcmq())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(path.bundles.css));
+});
+
+
+gulp.task('/css', ['/basecss', '/indexcss', '/aboutcss',  '/servicecss', '/portfoliocss', '/folioworkcss']);
+
+
+
 
 
 gulp.task('/unCss', async function() {
