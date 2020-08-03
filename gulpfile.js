@@ -69,7 +69,34 @@ var path = {
               'src/**/color.css',
               'src/**/html_style.css'
 
-        ]
+        ],
+      indexcss: [
+                  'src/**/portfolio/*.css',
+                  'src/**/service/*.css',
+                  'src/**/advantages/*.css',
+                  '!src/**/service-items/*.css'
+      ],
+      aboutcss: [
+                  'src/**/stage/-block/*.css',
+                  'src/**/reasons/*.css'
+      ],
+      basecss: [
+                  'src/**/normalize.css',
+                  'src/**/fonts.css',
+                  'src/**/page.css',
+                  'src/**/contacts/*.css'
+      ],
+      servicecss: [
+                  'src/**/service-items/*.css',
+                  'src/**/sprint/*.css',
+                  'src/**/frame/*.css'
+      ],
+      portfoliocss: [
+                  'src/**/folios/*.css'
+      ],
+      folioworkcss: [
+                  'src/**/folio/*.css'
+      ],
     },
     bundles: {
         html: 'bundles/',
@@ -149,6 +176,26 @@ gulp.task('/uaHtml', async function() {
 // CSS /////////////////////////////////////////////////////////////
 
 gulp.task('/css', async function() {
+    var processors = [
+    cssnano(),
+  ];
+  return gulp.src(path.src.css)
+  //   .pipe(order([
+  //   "**/*reset*.css",
+  //   "**/*normalize*.css",
+  //   "**/*style*.css",
+  //   "**/*media*.css"
+  // ], { base: './' }))
+    .pipe(concat('style.css'))
+    .pipe(shorthand())
+    .pipe(prefixer())
+    .pipe(csscomb())
+    .pipe(gcmq())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(path.bundles.css));
+});
+
+gulp.task('/indexcss', async function() {
     var processors = [
     cssnano(),
   ];
