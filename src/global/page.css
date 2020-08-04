@@ -443,8 +443,8 @@ color: #100F0F;
 font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
 font-style: normal;
 font-weight: 500;
-font-size: 40px;
-line-height: 52px;
+font-size: 28px;
+line-height: 36px;
 letter-spacing: -0.016em;
 color: #100F0F;
 }
@@ -1115,10 +1115,37 @@ html {
   border-bottom: 1px solid #928F8B;
 }
 
+.footer__date {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
 
 
+@media only screen and (min-width: 360px) {
+    .g-h1 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 52px;
+letter-spacing: -0.018em;
+/*color: #100F0F;*/
+}
+}
 
 
+@media only screen and (min-width: 428px) {
+.g-h2 {
+font-family: Manrope, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 52px;
+letter-spacing: -0.016em;
+/*color: #100F0F;*/
+}
+}
 
 
 
