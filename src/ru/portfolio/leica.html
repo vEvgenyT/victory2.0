@@ -12,15 +12,17 @@
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="msthemecompatible" content="no"> -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
-
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="https://www.facebook.com"/>
 
 
       <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
+        <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
       <!-- End Google Tag Manager -->
 
       <!-- Facebook Pixel Code -->
-        <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
+        <script async>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
         <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=561419381401251&ev=PageView&noscript=1"/>
         </noscript>
@@ -360,7 +362,8 @@ color: #F6416C;
 
 
     <header class="header wrapper">
-        <a class="skip-link g-nav" href="#js-title_animation">Skip to content</a>
+      
+        <a class="skip-link g-nav" href="/ru/portfolio/leica.html#skiptoh">Skip to content</a>
 
           <div aria-hidden="true" class="g-menu_bkg"></div>
 
@@ -424,7 +427,7 @@ color: #F6416C;
 
 
        <article class="wrapper">
-        <h1 tabindex="0" class="g-h1 h1 heading__h1">LEICA</h1>
+        <h1 tabindex="0" class="g-h1 h1 heading__h1" id="skiptoh">LEICA</h1>
         <p class="g-p p">Лонгрид посвященный созданию лучшей камеры, которая открыла новый класс устройств. Основной целью данной работы было осветить историю создания компактной фотокамеры.</p>
 
 <section class="folio">
@@ -434,15 +437,15 @@ color: #F6416C;
    <picture class="folio__img">
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="../img/portfolio/leica/main-leica@x2.webp">
+                  data-srcset="../img/portfolio/leica/main-leica@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="../img/portfolio/leica/main-leica@x1.webp">
+                  data-srcset="../img/portfolio/leica/main-leica@x1.webp">
 
           <img
-               srcset="../img/portfolio/leica/main-leica@x2.jpg 2x"
-               src="../img/portfolio/leica/main-leica@x1.jpg" class="folio__img_full" alt="Фотография камеры на черном фоне">
+               data-srcset="../img/portfolio/leica/main-leica@x2.jpg 2x"
+               data-src="../img/portfolio/leica/main-leica@x1.jpg" class="folio__img_full lazyload" alt="Фотография камеры на черном фоне">
         </picture>
 
 </section>
@@ -455,15 +458,15 @@ color: #F6416C;
   <picture class="folio__img">
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="../img/portfolio/leica/fonts@x2.webp">
+                  data-srcset="../img/portfolio/leica/fonts@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="../img/portfolio/leica/fonts@x1.webp">
+                  data-srcset="../img/portfolio/leica/fonts@x1.webp">
 
           <img
-               srcset="../img/portfolio/leica/fonts@x2.png 2x"
-               src="../img/portfolio/leica/fonts@x1.png" class="folio__img_half" alt="Алфавит набран шрифтом Source Sans">
+               data-srcset="../img/portfolio/leica/fonts@x2.png 2x"
+               data-src="../img/portfolio/leica/fonts@x1.png" class="folio__img_half lazyload" alt="Алфавит набран шрифтом Source Sans">
         </picture>
 
 </section>
@@ -475,15 +478,15 @@ color: #F6416C;
   <picture class="folio__img">
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="../img/portfolio/leica/leica-first@x2.webp">
+                  data-srcset="../img/portfolio/leica/leica-first@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="../img/portfolio/leica/leica-first@x1.webp">
+                  data-srcset="../img/portfolio/leica/leica-first@x1.webp">
 
           <img
-               srcset="../img/portfolio/leica/leica-first@x2.png 2x"
-               src="../img/portfolio/leica/leica-first@x1.png" class="folio__img_half" alt="Плакат с первой фотокамерой">
+               data-srcset="../img/portfolio/leica/leica-first@x2.png 2x"
+               data-src="../img/portfolio/leica/leica-first@x1.png" class="folio__img_half lazyload" alt="Плакат с первой фотокамерой">
         </picture>
 
   <p class="folio__text g-p p heading__p" id="js-paragraphg_animation">Цветовая гамма и сетка помогают передать эпоху съемки на 35-мм пленку</p>
@@ -498,15 +501,15 @@ color: #F6416C;
   <picture class="folio__img">
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="../img/portfolio/leica/leica-second@x2.webp">
+                  data-srcset="../img/portfolio/leica/leica-second@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="../img/portfolio/leica/leica-second@x1.webp">
+                  data-srcset="../img/portfolio/leica/leica-second@x1.webp">
 
           <img
-               srcset="../img/portfolio/leica/leica-second@x2.png 2x"
-               src="../img/portfolio/leica/leica-second@x1.png" class="folio__img_half" alt="Ur-leica первый прототип">
+               data-srcset="../img/portfolio/leica/leica-second@x2.png 2x"
+               data-src="../img/portfolio/leica/leica-second@x1.png" class="folio__img_half lazyload" alt="Ur-leica первый прототип">
         </picture>
 
 </section>
@@ -519,29 +522,29 @@ color: #F6416C;
   <picture class="folio__img">
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="../img/portfolio/leica/leica-third@x2.webp">
+                  data-srcset="../img/portfolio/leica/leica-third@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="../img/portfolio/leica/leica-third@x1.webp">
+                  data-srcset="../img/portfolio/leica/leica-third@x1.webp">
 
           <img
-               srcset="../img/portfolio/leica/leica-third@x2.png 2x"
-               src="../img/portfolio/leica/leica-third@x1.png" class="folio__img_half" alt="Первая серийная модель камеры leica">
+               data-srcset="../img/portfolio/leica/leica-third@x2.png 2x"
+               data-src="../img/portfolio/leica/leica-third@x1.png" class="folio__img_half lazyload" alt="Первая серийная модель камеры leica">
         </picture>
 
         <picture class="folio__img">
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="../img/portfolio/leica/leica-fourth@x2.webp">
+                  data-srcset="../img/portfolio/leica/leica-fourth@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="../img/portfolio/leica/leica-fourth@x1.webp">
+                  data-srcset="../img/portfolio/leica/leica-fourth@x1.webp">
 
           <img
-               srcset="../img/portfolio/leica/leica-fourth@x2.png 2x"
-               src="../img/portfolio/leica/leica-fourth@x1.png" class="folio__img_half" alt="Фотография Оскара Барнака">
+               data-srcset="../img/portfolio/leica/leica-fourth@x2.png 2x"
+               data-src="../img/portfolio/leica/leica-fourth@x1.png" class="folio__img_half lazyload" alt="Фотография Оскара Барнака">
         </picture>
 
 </section>
@@ -617,7 +620,7 @@ color: #F6416C;
     <script>function N(){var a=document.querySelector("nav"),b=document.querySelector("#"+M.id);"m-main"==b.id?(M.style.width="0px",M.style.transform="translateX(-8px)"):(M.style.width=b.getBoundingClientRect().width-50+"px",M.style.transform="translateX("+(b.getBoundingClientRect().x-a.getBoundingClientRect().x+25)+"px)")}var Q=document.querySelector(".preload"),R=document.querySelector(".preload__top"),S=document.querySelector(".preload__bottom");function T(){Q.remove();document.body.classList.remove("g-scroll_no")}function U(){S.style.transform="translateY(-200vh)";R.style.transform="translateY(-100vh)"}window.onload=function(){S.style.transform="translateY(-100vh)";S.addEventListener("transitionend",U);R.addEventListener("transitionend",T)};</script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->
-    <script defer src="/js/script.js"></script>
+    <script async src="/js/script.js"></script>
   </body>
 </html>
 
