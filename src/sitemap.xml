@@ -109,32 +109,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.victory.net.ua/ru/terms.html</loc>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ua"
-               href="https://www.victory.net.ua/ua/terms.html"/>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://www.victory.net.ua/ru/terms.html"/>
-    <lastmod>2020-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.victory.net.ua/ru/policy.html</loc>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ua"
-               href="https://www.victory.net.ua/ua/policy.html"/>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://www.victory.net.ua/ru/policy.html"/>
-    <lastmod>2020-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://www.victory.net.ua/ua/main.html</loc>
     <xhtml:link 
                rel="alternate"
@@ -238,32 +212,6 @@
                rel="alternate"
                hreflang="ru"
                href="https://www.victory.net.ua/ru/portfolio/wild.html"/>
-    <lastmod>2020-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.victory.net.ua/ua/terms.html</loc>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ua"
-               href="https://www.victory.net.ua/ua/terms.html"/>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://www.victory.net.ua/ru/terms.html"/>
-    <lastmod>2020-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.victory.net.ua/ua/policy.html</loc>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ua"
-               href="https://www.victory.net.ua/ua/policy.html"/>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://www.victory.net.ua/ru/policy.html"/>
     <lastmod>2020-07-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
