@@ -12,15 +12,18 @@
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="msthemecompatible" content="no"> -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="https://www.facebook.com"/>
 
 
 
       <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
+        <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
       <!-- End Google Tag Manager -->
 
       <!-- Facebook Pixel Code -->
-        <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
+        <script async>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
         <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=561419381401251&ev=PageView&noscript=1"/>
         </noscript>
@@ -353,6 +356,9 @@ color: #F6416C;
 
 
     <header class="header wrapper">
+      
+      <a class="skip-link g-nav" href="/ua/services.html#js-title_animation">Skip to content</a>
+      
           <div aria-hidden="true" class="g-menu_bkg"></div>
 
       <div class="header-main header_grey90 fade-in">
@@ -421,20 +427,20 @@ color: #F6416C;
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 3)"
-                  srcset="img/service@x3.webp">
+                  data-srcset="img/service@x3.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 2)"
-                  srcset="img/service@x2.webp">
+                  data-srcset="img/service@x2.webp">
 
           <source type="image/webp"
                   media="(-webkit-min-device-pixel-ratio: 1)"
-                  srcset="img/service.webp">
+                  data-srcset="img/service.webp">
 
           <img
-               srcset="img/service@x2.png 2x,
+               data-srcset="img/service@x2.png 2x,
                        img/service@x3.png 3x"
-               src="img/service@x1.png" class="page-img" alt="ілюстрація фотоапарата">
+               data-src="img/service@x1.png" class="page-img lazyload" alt="ілюстрація фотоапарата">
 
         </picture>
 
@@ -650,21 +656,21 @@ color: #F6416C;
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/vue.svg" class="frame__line-img" alt="vuejs">
+                    <img data-src="../img/logos/vue.svg" class="frame__line-img" alt="vuejs">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/gsap.svg" class="frame__line-img" alt="gsap">
+                    <img data-src="../img/logos/gsap.svg" class="frame__line-img" alt="gsap">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/bem.svg" class="frame__line-img" alt="bem">
+                    <img data-src="../img/logos/bem.svg" class="frame__line-img" alt="bem">
                   </picture>
                 </li>
 
@@ -679,49 +685,21 @@ color: #F6416C;
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/wordpress.svg" class="frame__line-img" alt="wordpress">
+                    <img data-src="../img/logos/wordpress.svg" class="frame__line-img lazyload" alt="wordpress">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/woocommerce.svg" class="frame__line-img" alt="woocomerce">
+                    <img data-src="../img/logos/woocommerce.svg" class="frame__line-img lazyload" alt="woocomerce">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/readymag.svg" class="frame__line-img" alt="readymag">
-                  </picture>
-                </li>
-
-              </ul>
-
-            </li>
-
-            <li>
-              <ul class="frame__line">
-
-                <li>
-                  <picture>
-                    <!-- <source srcset="#"> -->
-                    <img src="../img/logos/logo.svg" class="frame__line-img" alt="tilda">
-                  </picture>
-                </li>
-
-                <li>
-                  <picture>
-                    <!-- <source srcset="#"> -->
-                    <img src="../img/logos/git.svg" class="frame__line-img" alt="git">
-                  </picture>
-                </li>
-
-                <li>
-                  <picture>
-                    <!-- <source srcset="#"> -->
-                    <img src="../img/logos/webpack.svg" class="frame__line-img" alt="webpack">
+                    <img data-src="../img/logos/readymag.svg" class="frame__line-img lazyload" alt="readymag">
                   </picture>
                 </li>
 
@@ -735,21 +713,21 @@ color: #F6416C;
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/gulp.svg" class="frame__line-img" alt="gulp">
+                    <img data-src="../img/logos/logo.svg" class="frame__line-img lazyload" alt="tilda">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/postcss.svg" class="frame__line-img" alt="postcss">
+                    <img data-src="../img/logos/git.svg" class="frame__line-img lazyload" alt="git">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/javascript.svg" class="frame__line-img" alt="js">
+                    <img data-src="../img/logos/webpack.svg" class="frame__line-img lazyload" alt="webpack">
                   </picture>
                 </li>
 
@@ -763,21 +741,49 @@ color: #F6416C;
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/html.svg" class="frame__line-img" alt="html5">
+                    <img data-src="../img/logos/gulp.svg" class="frame__line-img lazyload" alt="gulp">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/css.svg" class="frame__line-img" alt="css3">
+                    <img data-src="../img/logos/postcss.svg" class="frame__line-img lazyload" alt="postcss">
                   </picture>
                 </li>
 
                 <li>
                   <picture>
                     <!-- <source srcset="#"> -->
-                    <img src="../img/logos/figma.svg" class="frame__line-img" alt="figma">
+                    <img data-src="../img/logos/javascript.svg" class="frame__line-img lazyload" alt="js">
+                  </picture>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li>
+              <ul class="frame__line">
+
+                <li>
+                  <picture>
+                    <!-- <source srcset="#"> -->
+                    <img data-src="../img/logos/html.svg" class="frame__line-img lazyload" alt="html5">
+                  </picture>
+                </li>
+
+                <li>
+                  <picture>
+                    <!-- <source srcset="#"> -->
+                    <img data-src="../img/logos/css.svg" class="frame__line-img lazyload" alt="css3">
+                  </picture>
+                </li>
+
+                <li>
+                  <picture>
+                    <!-- <source srcset="#"> -->
+                    <img data-src="../img/logos/figma.svg" class="frame__line-img lazyload" alt="figma">
                   </picture>
                 </li>
 
@@ -864,6 +870,6 @@ color: #F6416C;
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->
-    <script defer src="/js/script.js"></script>
+    <script async src="/js/script.js"></script>
   </body>
 </html>
