@@ -12,15 +12,18 @@
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="msthemecompatible" content="no"> -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="https://www.facebook.com"/>
 
 
 
       <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
+        <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53H5CXR');</script>
       <!-- End Google Tag Manager -->
 
       <!-- Facebook Pixel Code -->
-        <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
+        <script async>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","561419381401251");fbq("track","PageView");</script>
         <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=561419381401251&ev=PageView&noscript=1"/>
         </noscript>
@@ -353,6 +356,9 @@ color: #F6416C;
 
 
     <header class="header wrapper">
+      
+      <a class="skip-link g-nav" href="/ua/portfolio.html#folios">Skip to content</a>
+      
           <div aria-hidden="true" class="g-menu_bkg"></div>
 
       <div class="header-main header_grey90 fade-in">
@@ -414,7 +420,7 @@ color: #F6416C;
       <!-- <span class="g-tag">design and develop</span>
       <h3 class="g-h5 portfolio__item-title">Beard Humor</h3> -->
 <section class="folios">
-     <a href="/ua/portfolio/beard.html" class="folios__marquee">
+     <a href="/ua/portfolio/beard.html" class="folios__marquee" id="folios">
   <div class="folios__text">
   <span class="folios__text_style">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
   <span class="folios__text_style">Beard&nbsp;Humor&nbsp;*&nbsp;</span>
@@ -943,6 +949,6 @@ picture {
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script> -->
-    <script defer src="/js/script.js"></script>
+    <script async src="/js/script.js"></script>
   </body>
 </html>
