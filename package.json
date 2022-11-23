@@ -14,7 +14,7 @@
   "author": "Yevghen Tereshchenkov <hello@victory.net.ua> (https://victory.net.ua)",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "del": "^4.1.1",
